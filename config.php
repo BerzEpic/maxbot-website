@@ -29,6 +29,10 @@ define('MAXBOT_LIVE_WIDGET_SOURCE_PAGE_ID', 4157);
 define('MAXBOT_SITE_NAME', 'Maxbot');
 define('MAXBOT_YEAR', '2026');
 
+/** Privacy notice contact. Confirm the operator's legal name before publishing. */
+define('MAXBOT_PRIVACY_OPERATOR', 'Maxbot');
+define('MAXBOT_PRIVACY_EMAIL', 'hello@climaxweb.net');
+
 if (!function_exists('mb_url')) {
     /**
      * Build a site URL from a path such as 'features' or 'static/css/maxbot.css'.

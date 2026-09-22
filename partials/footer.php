@@ -58,6 +58,7 @@
 
         <div class="foot-bottom">
             <div>&copy; <?php echo mb_e(MAXBOT_YEAR); ?> <?php echo mb_e(MAXBOT_SITE_NAME); ?>. All rights reserved.</div>
+            <a href="<?php echo mb_e(mb_url('privacy-policy')); ?>">Privacy policy</a>
         </div>
     </div>
 </footer>
