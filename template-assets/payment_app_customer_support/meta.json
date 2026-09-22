@@ -1,0 +1,9 @@
+{
+  "id": "payment_app_customer_support",
+  "name": "Fintech – Customer Support",
+  "description": "Help users solve common payment app issues, navigate support topics, and escalate when needed.",
+  "category": "support",
+  "tags": ["fintech", "customer support", "payments"],
+  "recommended_entities": ["name", "email", "phone", "issue_type", "account_identifier"],
+  "thumbnail": "thumb.svg"
+}

@@ -1,0 +1,48 @@
+	 + 400012945255722600 
+	 - <call>initiationTopic </call> {topic=400012945255722600}
+	 + 970558927648333200 
+	 - <call>initiationTopic </call> {topic=970558927648333200}
+	 + 78073918373845020 
+	 - <call>initiationTopic </call> {topic=78073918373845020}
+	 + 760082065494110700 
+	 - <call>initiationTopic </call> {topic=760082065494110700}
+	 + 180058941973191700 
+	 - <call>initiationTopic </call> {topic=180058941973191700}
+	 + 849754698535238500 
+	 - <call>initiationTopic </call> {topic=849754698535238500}
+	 + 992046912162815700 
+	 - <call>initiationTopic </call> {topic=992046912162815700}
+	 + topic400012945255722600 
+	 - Hi there! 😄 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "What would you like to purchase? 😊"</call> <call>displayresoptions "Product 1 at $5.00" "Product 2 at $7.00" "Product 3 at $9.00" </call>{topic=400012945255722600}
+	 + topicjoin400012945255722600
+	 - <call>displayresoptions "Product 1 at $5.00" "Product 2 at $7.00" "Product 3 at $9.00" </call>{topic=400012945255722600}
+
+> topic 400012945255722600
+
+	 + product 1 at 5 00{weight=1000}
+	 - Noted and calculated. 😎 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "So what is your full name?"</call> {topic=970558927648333200}
+
+	 + product 2 at 7 00{weight=1000}
+	 - Noted and calculated. 😎 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "So what is your full name?"</call> {topic=970558927648333200}
+
+	 + product 3 at 9 00{weight=1000}
+	 - Noted and calculated. 😎 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "So what is your full name?"</call> {topic=970558927648333200}
+< topic 
+
+> topic 970558927648333200
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "0" ""</call> That sounds like the best one I&#039;ve heard till date. 😍 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please give me your email address to get all that you need to know about your purchase order."</call> {topic=78073918373845020}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 78073918373845020
+	 + * 
+	 * <call>validationstoreddata "is_email" "Please enter a valid email address."</call> == valid => <call>storetodbwpoptions "1" ""</call> Woohoo! What will the shipping address be? 🤔{topic=760082065494110700}
+	 - <call>validationstoreddata "is_email" "Please enter a valid email address."</call>
+< topic 
+
+> topic 760082065494110700
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> Ah! Do I know that place? 🤔 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Keep calm, your product is on the way. ❤"</call> <call>stopConversation 2</call>{topic=random}
+	 - <call>validationstoreddata "" ""</call>
+< topic 

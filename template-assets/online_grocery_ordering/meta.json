@@ -1,0 +1,9 @@
+{
+  "id": "online_grocery_ordering",
+  "name": "Ecommerce – Online Grocery Ordering",
+  "description": "Help customers browse items, choose delivery or pickup, and place a grocery order conversationally.",
+  "category": "commerce",
+  "tags": ["ecommerce", "grocery", "ordering"],
+  "recommended_entities": ["name", "email", "phone", "address", "delivery_slot", "order_items"],
+  "thumbnail": "thumb.svg"
+}

@@ -1,0 +1,99 @@
+	 + 317022921790063400 
+	 - <call>initiationTopic </call> {topic=317022921790063400}
+	 + 554923535492098370 
+	 - <call>initiationTopic </call> {topic=554923535492098370}
+	 + 125557089342543500 
+	 - <call>initiationTopic </call> {topic=125557089342543500}
+	 + 553938418988453600 
+	 - <call>initiationTopic </call> {topic=553938418988453600}
+	 + 222613621560674560 
+	 - <call>initiationTopic </call> {topic=222613621560674560}
+	 + 920494809706403800 
+	 - <call>initiationTopic </call> {topic=920494809706403800}
+	 + 599882974788037400 
+	 - <call>initiationTopic </call> {topic=599882974788037400}
+	 + 547045802946352200 
+	 - <call>initiationTopic </call> {topic=547045802946352200}
+	 + 820947052515332900 
+	 - <call>initiationTopic </call> {topic=820947052515332900}
+	 + 700061829762814000 
+	 - <call>initiationTopic </call> {topic=700061829762814000}
+	 + 776335894962576800 
+	 - <call>initiationTopic </call> {topic=776335894962576800}
+	 + 90877661968586480 
+	 - <call>initiationTopic </call> {topic=90877661968586480}
+	 + 823039873501698300 
+	 - <call>initiationTopic </call> {topic=823039873501698300}
+	 + topic317022921790063400
+	 - Hi! 😄 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "If you're a product owner and wish to register the product online, I can help you out." "Do you want me to?"</call> <call>displayresoptions "Yes, please register my product online." </call>{topic=317022921790063400}
+	 + topicjoin317022921790063400
+	 - <call>displayresoptions "Yes, please register my product online." </call>{topic=317022921790063400}
+
+> topic 317022921790063400
+
+	 + yes please register my product online{weight=1000}
+	 - I&#039;ll do that in no time. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "I will be needing some information about your product." "But first, please provide me with your email address so that I can give and take all the necessary details regarding your product registration."</call> {topic=554923535492098370}
+< topic 
+
+> topic 554923535492098370
+	 + * 
+	 * <call>validationstoreddata "is_email" "Please enter a valid email address."</call> == valid => <call>storetodbwpoptions "1" ""</call> Not everyone checks their mailbox daily. 😥 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please give me your phone number for an easier medium of communication."</call> {topic=125557089342543500}
+	 - <call>validationstoreddata "is_email" "Please enter a valid email address."</call>
+< topic 
+
+> topic 125557089342543500
+	 + * 
+	 * <call>validationstoreddata "is_phone" "Please enter a valid phone number."</call> == valid => <call>storetodbwpoptions "2" ""</call> Thanks. 😃 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "As a part of collecting the details of the person registering the product, we'd need your residential address too."</call> {topic=553938418988453600}
+	 - <call>validationstoreddata "is_phone" "Please enter a valid phone number."</call>
+< topic 
+
+> topic 553938418988453600
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> Oops, how could I forget this. 😓 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Tell me your name please. 😪"</call> {topic=222613621560674560}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 222613621560674560
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "0" ""</call> Great, let&#039;s move on to your product now. 😄 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "What is the name of the model?"</call> {topic=920494809706403800}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 920494809706403800
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> Sounds cool already. 😄 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "What's the model ID?"</call> {topic=599882974788037400}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 599882974788037400
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> Noted. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Do you remember where it was purchased from?"</call> {topic=547045802946352200}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 547045802946352200
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> The origin speaks a lot about the product quality. 😍{topic=820947052515332900}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 820947052515332900
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> The origin speaks a lot about the product quality. 😍 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "So when was it purchased?"</call> {topic=700061829762814000}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 700061829762814000
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> Your product will soon be registered. 😀 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Meanwhile, do you want us to send you product announcements and special offers?"</call> <call>displayresoptions "Yes, I don't mind." "No, thank you." </call>{topic=776335894962576800}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 776335894962576800
+
+	 + yes i don t mind{weight=1000}
+	 - We&#039;ll reach out to you soon with your registered product. ❤<call>stopConversation 1</call>{topic=random}
+
+	 + no thank you{weight=1000}
+	 - We&#039;ll reach out to you soon with your registered product. ❤<call>stopConversation 1</call>{topic=random}
+< topic 

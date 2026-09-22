@@ -1,0 +1,196 @@
+	 + 90982496810086960 
+	 - <call>initiationTopic </call> {topic=90982496810086960}
+	 + 99931754565883870 
+	 - <call>initiationTopic </call> {topic=99931754565883870}
+	 + 776834737834824000 
+	 - <call>initiationTopic </call> {topic=776834737834824000}
+	 + 585616205632744200 
+	 - <call>initiationTopic </call> {topic=585616205632744200}
+	 + 587709595438198100 
+	 - <call>initiationTopic </call> {topic=587709595438198100}
+	 + 41419957050497500 
+	 - <call>initiationTopic </call> {topic=41419957050497500}
+	 + 20783715485403588 
+	 - <call>initiationTopic </call> {topic=20783715485403588}
+	 + 80778099278133170 
+	 - <call>initiationTopic </call> {topic=80778099278133170}
+	 + 12324391400276414 
+	 - <call>initiationTopic </call> {topic=12324391400276414}
+	 + 218747223792419400 
+	 - <call>initiationTopic </call> {topic=218747223792419400}
+	 + 48925809797630170 
+	 - <call>initiationTopic </call> {topic=48925809797630170}
+	 + 593802122418332500 
+	 - <call>initiationTopic </call> {topic=593802122418332500}
+	 + 977367990075995900 
+	 - <call>initiationTopic </call> {topic=977367990075995900}
+	 + 122974156251160370 
+	 - <call>initiationTopic </call> {topic=122974156251160370}
+	 + 126039085532762000 
+	 - <call>initiationTopic </call> {topic=126039085532762000}
+	 + 685271058253132500 
+	 - <call>initiationTopic </call> {topic=685271058253132500}
+	 + 950994670569242900 
+	 - <call>initiationTopic </call> {topic=950994670569242900}
+	 + 818319413650237600 
+	 - <call>initiationTopic </call> {topic=818319413650237600}
+	 + 320991913989347900 
+	 - <call>initiationTopic </call> {topic=320991913989347900}
+	 + 498527500623417800 
+	 - <call>initiationTopic </call> {topic=498527500623417800}
+	 + 606103814327355300 
+	 - <call>initiationTopic </call> {topic=606103814327355300}
+	 + 885831632526311700 
+	 - <call>initiationTopic </call> {topic=885831632526311700}
+	 + 186972571419620100 
+	 - <call>initiationTopic </call> {topic=186972571419620100}
+	 + 982850584339857700 
+	 - <call>initiationTopic </call> {topic=982850584339857700}
+	 + 891968663654921100 
+	 - <call>initiationTopic </call> {topic=891968663654921100}
+	 + 697849663267451500 
+	 - <call>initiationTopic </call> {topic=697849663267451500}
+	 + 548462710007513200 
+	 - <call>initiationTopic </call> {topic=548462710007513200}
+	 + 289224440088098900 
+	 - <call>initiationTopic </call> {topic=289224440088098900}
+	 + 668814681925672400 
+	 - <call>initiationTopic </call> {topic=668814681925672400}
+	 + 635458919788439800 
+	 - <call>initiationTopic </call> {topic=635458919788439800}
+	 + 582588309894945300 
+	 - <call>initiationTopic </call> {topic=582588309894945300}
+	 + 226437797188645100 
+	 - <call>initiationTopic </call> {topic=226437797188645100}
+	 + 314417817408062400 
+	 - <call>initiationTopic </call> {topic=314417817408062400}
+	 + topic90982496810086960
+	 - Great to see you at<span style='font-weight:700;'> DesignUp </span> <call>returnImage "https://climaxweb.net/templates/images/773428317a1bc3a3387e884da994436b--DesignUp-Logo-1.png" "265" "100"</call> <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/773428317a1bc3a3387e884da994436b--DesignUp-Logo-1.png|6^9~,|6^9~265|6^9~,|6^9~100|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Can you help us make DesignUp better by answering a few Qs?"</call> <call>displayresoptions "Yes, of course" "Ummm, ok..." </call>{topic=90982496810086960}
+	 + topicjoin90982496810086960
+	 - <call>displayresoptions "Yes, of course" "Ummm, ok..." </call>{topic=90982496810086960}
+
+> topic 90982496810086960
+
+	 + yes of course{weight=1000}
+	 - You&#039;re awesome... we&#039;ll keep it short, promise 🤞<call>displayresoptions "Brilliant" "Super" "Okey" "Meh" </call>{topic=99931754565883870}
+
+	 + ummm ok{weight=1000}
+	 - How do you rate the overall experience of Day 1 (talks)?<call>displayresoptions "Brilliant" "Super" "Okey" "Meh" </call>{topic=99931754565883870}
+< topic 
+
+> topic 99931754565883870
+
+	 + brilliant{weight=1000}
+	 - How likely are you to attend in 2027?<call>displayresoptions "110% (will absolutely attend)" "90%" "50%" "25% (unlikely)" </call>{topic=776834737834824000}
+
+	 + super{weight=1000}
+	 - How likely are you to attend in 2027?<call>displayresoptions "110% (will absolutely attend)" "90%" "50%" "25% (unlikely)" </call>{topic=776834737834824000}
+
+	 + okey{weight=1000}
+	 - How likely are you to attend in 2027?<call>displayresoptions "110% (will absolutely attend)" "90%" "50%" "25% (unlikely)" </call>{topic=776834737834824000}
+
+	 + meh{weight=1000}
+	 - How likely are you to attend in 2027?<call>displayresoptions "110% (will absolutely attend)" "90%" "50%" "25% (unlikely)" </call>{topic=776834737834824000}
+< topic 
+
+> topic 776834737834824000
+
+	 + 110 will absolutely attend{weight=1000}
+	 - Any specific comments, ideas or suggestions?{topic=585616205632744200}
+
+	 + 90{weight=1000}
+	 - Any specific comments, ideas or suggestions?{topic=585616205632744200}
+
+	 + 50{weight=1000}
+	 - Any specific comments, ideas or suggestions?{topic=585616205632744200}
+
+	 + 25 unlikely{weight=1000}
+	 - Any specific comments, ideas or suggestions?{topic=585616205632744200}
+< topic 
+
+> topic 585616205632744200
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> How would you rate the lunch on Day1?<call>displayresoptions "Top stuff, loved everything" "Dessert was great" "Okey" "Too experimental for me" "Went out for lunch" </call>{topic=587709595438198100}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 587709595438198100
+
+	 + top stuff loved everything{weight=1000}
+	 - Just a few more Qs to go - promise :-)<call>displayresoptions "Cool" </call>{topic=41419957050497500}
+
+	 + dessert was great{weight=1000}
+	 - Just a few more Qs to go - promise :-)<call>displayresoptions "Cool" </call>{topic=41419957050497500}
+
+	 + okey{weight=1000}
+	 - Just a few more Qs to go - promise :-)<call>displayresoptions "Cool" </call>{topic=41419957050497500}
+
+	 + too experimental for me{weight=1000}
+	 - Just a few more Qs to go - promise :-)<call>stopConversation 1</call>{topic=random}
+
+	 + went out for lunch{weight=1000}
+	 - Just a few more Qs to go - promise :-)<call>displayresoptions "Cool" </call>{topic=41419957050497500}
+< topic 
+
+> topic 41419957050497500
+
+	 + cool{weight=1000}
+	 - How likely are you to suggest a friend or colleague to attend in 2017?<call>displayresoptions "Absolutely, totally recommend!" "Surely Recommend!" "Kinda" "Not sure" </call>{topic=20783715485403588}
+< topic 
+
+> topic 20783715485403588
+
+	 + absolutely totally recommend{weight=1000}
+	 - You&#039;re awesome! Did you attend Day 2 of workshops?<call>displayresoptions "Yes, I did" "Nope, missed it" "Didn't plan to" </call>{topic=80778099278133170}
+
+	 + surely recommend{weight=1000}
+	 - You&#039;re awesome! Did you attend Day 2 of workshops?<call>displayresoptions "Yes, I did" "Nope, missed it" "Didn't plan to" </call>{topic=80778099278133170}
+
+	 + kinda{weight=1000}
+	 - You&#039;re awesome! Did you attend Day 2 of workshops?<call>displayresoptions "Yes, I did" "Nope, missed it" "Didn't plan to" </call>{topic=80778099278133170}
+
+	 + not sure{weight=1000}
+	 - You&#039;re awesome! Did you attend Day 2 of workshops?<call>displayresoptions "Yes, I did" "Nope, missed it" "Didn't plan to" </call>{topic=80778099278133170}
+< topic 
+
+> topic 80778099278133170
+
+	 + yes i did{weight=1000}
+	 - How do you rate the overall experience of workshops?<call>displayresoptions "Brilliant" "Super" "Okey" "Meh" </call>{topic=12324391400276414}
+
+	 + nope missed it{weight=1000}
+	 - How do you rate the overall experience of workshops?<call>displayresoptions "Brilliant" "Super" "Okey" "Meh" </call>{topic=12324391400276414}
+
+	 + didn t plan to{weight=1000}
+	 - How do you rate the overall experience of workshops?<call>displayresoptions "Brilliant" "Super" "Okey" "Meh" </call>{topic=12324391400276414}
+< topic 
+
+> topic 12324391400276414
+
+	 + brilliant{weight=1000}
+	 - How likely are you to attend workshops in 2027?<call>displayresoptions "110% (will absolutely attend)" "90%" "50%" "25% (unlikely)" </call>{topic=218747223792419400}
+
+	 + super{weight=1000}
+	 - How likely are you to attend workshops in 2027?<call>displayresoptions "110% (will absolutely attend)" "90%" "50%" "25% (unlikely)" </call>{topic=218747223792419400}
+
+	 + okey{weight=1000}
+	 - How likely are you to attend workshops in 2027?<call>displayresoptions "110% (will absolutely attend)" "90%" "50%" "25% (unlikely)" </call>{topic=218747223792419400}
+
+	 + meh{weight=1000}
+	 - How likely are you to attend workshops in 2027?<call>displayresoptions "110% (will absolutely attend)" "90%" "50%" "25% (unlikely)" </call>{topic=218747223792419400}
+< topic 
+
+> topic 218747223792419400
+
+	 + 110 will absolutely attend{weight=1000}
+	 - Thank you for your patience - and for helping us improve! <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "bye and see you soon!"</call> <call>stopConversation 2</call>{topic=random}
+
+	 + 90{weight=1000}
+	 - Thank you for your patience - and for helping us improve! <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "bye and see you soon!"</call> <call>stopConversation 2</call>{topic=random}
+
+	 + 50{weight=1000}
+	 - Thank you for your patience - and for helping us improve! <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "bye and see you soon!"</call> <call>stopConversation 2</call>{topic=random}
+
+	 + 25 unlikely{weight=1000}
+	 - Thank you for your patience - and for helping us improve! <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "bye and see you soon!"</call> <call>stopConversation 2</call>{topic=random}
+< topic 

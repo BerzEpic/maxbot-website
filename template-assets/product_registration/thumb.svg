@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="120" viewBox="0 0 260 120" role="img" aria-label="Post Purchase Product Registration icon">
+  <rect width="260" height="120" rx="18" fill="#143258"/>
+
+  <!-- product box -->
+  <path d="M30 46l24-14 24 14-24 14-24-14z" fill="#f4b41a"/>
+  <path d="M30 46v26l24 14 24-14V46" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M54 60V32" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- warranty badge -->
+  <circle cx="122" cy="58" r="22" fill="#ffffff"/>
+  <path d="M122 42l5 6 8-1-1 8 6 5-6 5 1 8-8-1-5 6-5-6-8 1 1-8-6-5 6-5-1-8 8 1z" fill="#f4b41a"/>
+  <path d="M116 58l4 4 8-9" fill="none" stroke="#143258" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- checklist form -->
+  <rect x="162" y="24" width="70" height="72" rx="10" fill="#ffffff"/>
+  <rect x="174" y="40" width="8" height="8" rx="2" fill="#f4b41a"/>
+  <path d="M176 44l2 2 4-5" fill="none" stroke="#143258" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="188" y1="44" x2="218" y2="44" stroke="#143258" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="174" y="57" width="8" height="8" rx="2" fill="#f4b41a"/>
+  <path d="M176 61l2 2 4-5" fill="none" stroke="#143258" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="188" y1="61" x2="214" y2="61" stroke="#143258" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="174" y="74" width="8" height="8" rx="2" fill="#f4b41a"/>
+  <path d="M176 78l2 2 4-5" fill="none" stroke="#143258" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="188" y1="78" x2="220" y2="78" stroke="#143258" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "id": "ngo_donation_funding",
+  "name": "Nonprofit – Donation Funding",
+  "description": "Engage supporters, explain the cause, and guide them toward making a donation.",
+  "category": "commerce",
+  "tags": ["nonprofit", "donation", "fundraising"],
+  "recommended_entities": ["name", "email", "phone", "donation_amount", "country"],
+  "thumbnail": "thumb.svg"
+}

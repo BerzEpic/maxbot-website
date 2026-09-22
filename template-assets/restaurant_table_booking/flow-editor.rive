@@ -1,0 +1,90 @@
+	 + 117644838313897060 
+	 - <call>initiationTopic </call> {topic=117644838313897060}
+	 + 777186396738882000 
+	 - <call>initiationTopic </call> {topic=777186396738882000}
+	 + 543880366815198700 
+	 - <call>initiationTopic </call> {topic=543880366815198700}
+	 + 163986683514974460 
+	 - <call>initiationTopic </call> {topic=163986683514974460}
+	 + 224819798606020200 
+	 - <call>initiationTopic </call> {topic=224819798606020200}
+	 + 241573012568394900 
+	 - <call>initiationTopic </call> {topic=241573012568394900}
+	 + 358253496555555840 
+	 - <call>initiationTopic </call> {topic=358253496555555840}
+	 + 609670759055935900 
+	 - <call>initiationTopic </call> {topic=609670759055935900}
+	 + 241072336810170050 
+	 - <call>initiationTopic </call> {topic=241072336810170050}
+	 + 871174446099779300 
+	 - <call>initiationTopic </call> {topic=871174446099779300}
+	 + 465708537131943940 
+	 - <call>initiationTopic </call> {topic=465708537131943940}
+	 + 840310478372234900 
+	 - <call>initiationTopic </call> {topic=840310478372234900}
+	 + 270763419331328960 
+	 - <call>initiationTopic </call> {topic=270763419331328960}
+	 + topic117644838313897060
+	 - Be ready to enjoy a unique dining experience that will keep you smiling even when you get home. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/9050cf27820d71cbbd5e85ec925c11d1--gallery-6.jpeg|6^9~,|6^9~200|6^9~,|6^9~200|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Yes...you read it right. 👍" "@+DisplayImage#1" "@-Strong46 OUNCES @-EndStrong is the place for a perfect mix of the best craft beers, mouth-watering food, great music, and a happening vibe. 🎊"</call> <call>displayresoptions "Reserve a Table" "Check out Mouth- Watering Food Menu" "Discover our Beer Menu" "See our Exciting Offers" "Locate us" </call>{topic=117644838313897060}
+	 + topicjoin117644838313897060
+	 - <call>displayresoptions "Reserve a Table" "Check out Mouth- Watering Food Menu" "Discover our Beer Menu" "See our Exciting Offers" "Locate us" </call>{topic=117644838313897060}
+
+> topic 117644838313897060
+
+	 + reserve a table{weight=1000}
+	 - <call>returnImage "https://climaxweb.net/templates/images/f5cd3a1964c16d1ac9492fa1af910b13--gallery-12.jpeg" "200" "200"</call> <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/f5cd3a1964c16d1ac9492fa1af910b13--gallery-12.jpeg|6^9~,|6^9~200|6^9~,|6^9~200|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Whether you want to enjoy Bengaluru weather with our outdoor seats or relax at our open-air rooftop lounge, or just want to enjoy your delicious pint of beer..." "We will take care of everything. 😊" "Just come and free your spirits, be happy and have fun or just put the world behind you and relax. ❤️" "When would you like to visit us? 📌 @-LineBreak Please share the day with us below so that we can reserve your table."</call> {topic=777186396738882000}
+
+	 + check out mouth watering food menu{weight=1000}
+	 - We&#039;re here for the beer, but our lunch and dinner menu is known for pairing perfectly with your beverage of choice. 🍺🌯🍗 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~75ce48421cd96856e983b1e78e9110ef--Screen-Shot-2021-11-09-at-2.44.10-PM.png|6^9~,|6^9~200|6^9~,|6^9~200|6^9~]]],[|6^9~0|6^9~],[|6^9~1|6^9~,[[null,null]]]]" "@+DisplayImage#1 We offer from-scratch, beer-inspired food menu. 😋" "Don't believe us? 🤷" "Then have a look at our signature menu 👉 @+DisplayHyperLink#1 🍔🌮🍢"</call> <call>displayresoptions "Reserve your table now" </call>{topic=241072336810170050}
+
+	 + discover our beer menu{weight=1000}
+	 - <call>returnImage "https://climaxweb.net/templates/images/99fc617d398a38ac053a8e8968dbdc1c--funnybeerquotessomanybeerssolittletimeposter-r42ce6cd5b59442fbac81b9728080a2e2w2q8byvr704.webp" "200" "200"</call> Yes...you read it right. 🤷 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/99fc617d398a38ac053a8e8968dbdc1c--funnybeerquotessomanybeerssolittletimeposter-r42ce6cd5b59442fbac81b9728080a2e2w2q8byvr704.webp|6^9~,|6^9~200|6^9~,|6^9~200|6^9~]]],[|6^9~0|6^9~],[|6^9~1|6^9~,[[null,null]]]]" "We will be pouring a full lineup of Mannheim Brews. 🍺" "Starting from Hefeweizen to India Pale Ale, from Weizenbock to Maibock. ✌" "Have a look at our signature beer menu 👉 @+DisplayHyperLink#1 🍻" "So, what are you waiting for? Come and grab your beer today. 😊"</call> <call>displayresoptions "Reserve your table now" </call>{topic=241072336810170050}
+
+	 + see our exciting offers{weight=1000}
+	 - Have an important date coming up? 🤷 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Consider our taproom for your next event! Birthdays, work functions, anniversaries....you name it. 😊" "You’ll be provided a friendly staff, a delicious menu, and a stress-free experience so you can sit back and enjoy the party. 🍻" "🎁 Check out our current offers: @+DisplayHyperLink#1"</call> <call>displayresoptions "Reserve your table now" </call>{topic=241072336810170050}
+
+	 + locate us{weight=1000}
+	 - <call>returnImage "https://climaxweb.net/templates/images/f5cd3a1964c16d1ac9492fa1af910b13--gallery-12.jpeg" "200" "200"</call> <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/f5cd3a1964c16d1ac9492fa1af910b13--gallery-12.jpeg|6^9~,|6^9~200|6^9~,|6^9~200|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Whether you want to enjoy Bengaluru weather with our outdoor seats or relax at our open-air rooftop lounge, or just want to enjoy your delicious pint of beer..." "We will take care of everything. 😊" "Just come and free your spirits, be happy and have fun or just put the world behind you and relax. ❤️" "When would you like to visit us? 📌 @-LineBreak Please share the day with us below so that we can reserve your table."</call> {topic=777186396738882000}
+< topic 
+
+> topic 777186396738882000
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> Sure, and by what time you will be there? ⏰{topic=543880366815198700}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 543880366815198700
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> Sounds like a plan. ✌ <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please tell us the @-Strong name @-EndStrong under whom we should reserve your booking. ✍"</call> {topic=163986683514974460}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 163986683514974460
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "0" ""</call> Please give me your email address in order to move forward with your reservation. 📧{topic=224819798606020200}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 224819798606020200
+	 + * 
+	 * <call>validationstoreddata "is_email" "Please enter a valid email address."</call> == valid => <call>storetodbwpoptions "1" ""</call> Your reservation details are on the way to your mailbox. 😊{topic=241573012568394900}
+	 - <call>validationstoreddata "is_email" "Please enter a valid email address."</call>
+< topic 
+
+> topic 241573012568394900
+	 + * 
+	 * <call>validationstoreddata "is_email" "Please enter a valid email address."</call> == valid => <call>storetodbwpoptions "1" ""</call> Your reservation details are on the way to your mailbox. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Lastly please give me your @-Strongphone number@-EndStrong so that we can get in touch on the day of the reservation. 📞"</call> {topic=358253496555555840}
+	 - <call>validationstoreddata "is_email" "Please enter a valid email address."</call>
+< topic 
+
+> topic 358253496555555840
+	 + * 
+	 * <call>validationstoreddata "is_phone" "Please enter a valid phone number."</call> == valid => <call>storetodbwpoptions "2" ""</call> Your reservation is confirmed with us. ✔ <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Hope to see you soon @name on @meta"</call> <call>stopConversation 2</call>{topic=random}
+	 - <call>validationstoreddata "is_phone" "Please enter a valid phone number."</call>
+< topic 
+
+> topic 241072336810170050
+
+	 + reserve your table now{weight=1000}
+	 - @+DisplayImage#1 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Whether you want to enjoy Bengaluru weather with our outdoor seats or relax at our open-air rooftop lounge, or just want to enjoy your delicious pint of beer..." "We will take care of everything. 😊" "Just come and free your spirits, be happy and have fun or just put the world behind you and relax. ❤️" "When would you like to visit us? 📌 @-LineBreak Please share the day with us below so that we can reserve your table."</call> {topic=777186396738882000}
+< topic 

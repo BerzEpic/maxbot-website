@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="120" viewBox="0 0 260 120" role="img" aria-label="Ecommerce Online Grocery Ordering icon">
+  <rect width="260" height="120" rx="18" fill="#143258"/>
+
+  <!-- grocery basket -->
+  <path d="M34 48H112L104 86H42L34 48Z" fill="#ffffff"/>
+  <path d="M52 48C52 36 60 28 73 28C86 28 94 36 94 48" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  <line x1="54" y1="56" x2="54" y2="82" stroke="#143258" stroke-width="4" stroke-linecap="round"/>
+  <line x1="72" y1="56" x2="72" y2="82" stroke="#143258" stroke-width="4" stroke-linecap="round"/>
+  <line x1="90" y1="56" x2="90" y2="82" stroke="#143258" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- groceries -->
+  <circle cx="56" cy="42" r="8" fill="#f4b41a"/>
+  <path d="M56 30c3 2 4 5 2 8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <rect x="68" y="34" width="12" height="16" rx="3" fill="#f4b41a"/>
+  <path d="M74 28v6" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="92" cy="40" r="9" fill="#f4b41a"/>
+  <path d="M92 28c4 2 5 6 3 9" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- delivery icon -->
+  <rect x="146" y="42" width="42" height="28" rx="5" fill="#ffffff"/>
+  <path d="M188 50H203L216 62V70H188V50Z" fill="#f4b41a"/>
+  <rect x="194" y="55" width="8" height="7" rx="1.5" fill="#143258"/>
+  <circle cx="160" cy="78" r="8" fill="#ffffff"/>
+  <circle cx="160" cy="78" r="3.5" fill="#143258"/>
+  <circle cx="202" cy="78" r="8" fill="#ffffff"/>
+  <circle cx="202" cy="78" r="3.5" fill="#143258"/>
+
+  <!-- motion lines -->
+  <line x1="132" y1="52" x2="142" y2="52" stroke="#f4b41a" stroke-width="4" stroke-linecap="round"/>
+  <line x1="124" y1="64" x2="142" y2="64" stroke="#f4b41a" stroke-width="4" stroke-linecap="round"/>
+  <line x1="132" y1="76" x2="142" y2="76" stroke="#f4b41a" stroke-width="4" stroke-linecap="round"/>
+</svg>

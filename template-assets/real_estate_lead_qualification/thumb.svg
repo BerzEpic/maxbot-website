@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="120" viewBox="0 0 260 120" role="img" aria-label="Real Estate Lead Qualification icon">
+  <rect width="260" height="120" rx="18" fill="#143258"/>
+  
+  <!-- House -->
+  <path d="M34 59L68 33L102 59" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42 55V87H94V55" fill="none" stroke="#ffffff" stroke-width="5" stroke-linejoin="round"/>
+  <rect x="57" y="66" width="14" height="21" rx="2" fill="#f4b41a"/>
+  <rect x="77" y="63" width="12" height="10" rx="2" fill="#f4b41a"/>
+
+  <!-- Location pin -->
+  <path d="M108 36c0-11 8-18 18-18s18 7 18 18c0 13-18 31-18 31s-18-18-18-31z" fill="#f4b41a"/>
+  <circle cx="126" cy="36" r="6" fill="#143258"/>
+
+  <!-- Checklist card -->
+  <rect x="150" y="26" width="78" height="68" rx="10" fill="#ffffff"/>
+  <rect x="162" y="40" width="8" height="8" rx="2" fill="#f4b41a"/>
+  <path d="M164 44l2 2 4-5" fill="none" stroke="#143258" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="176" y1="44" x2="215" y2="44" stroke="#143258" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="162" y="56" width="8" height="8" rx="2" fill="#f4b41a"/>
+  <path d="M164 60l2 2 4-5" fill="none" stroke="#143258" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="176" y1="60" x2="209" y2="60" stroke="#143258" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="162" y="72" width="8" height="8" rx="2" fill="#f4b41a"/>
+  <path d="M164 76l2 2 4-5" fill="none" stroke="#143258" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="176" y1="76" x2="218" y2="76" stroke="#143258" stroke-width="3" stroke-linecap="round"/>
+</svg>

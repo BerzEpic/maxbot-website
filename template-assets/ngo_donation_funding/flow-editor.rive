@@ -1,0 +1,121 @@
+	 + 473962543184223940 
+	 - <call>initiationTopic </call> {topic=473962543184223940}
+	 + 128751835216687760 
+	 - <call>initiationTopic </call> {topic=128751835216687760}
+	 + 661051189567517200 
+	 - <call>initiationTopic </call> {topic=661051189567517200}
+	 + 648991992255875300 
+	 - <call>initiationTopic </call> {topic=648991992255875300}
+	 + 20017642437728412 
+	 - <call>initiationTopic </call> {topic=20017642437728412}
+	 + 887493925483286900 
+	 - <call>initiationTopic </call> {topic=887493925483286900}
+	 + 120661921209615600 
+	 - <call>initiationTopic </call> {topic=120661921209615600}
+	 + 305714634953493400 
+	 - <call>initiationTopic </call> {topic=305714634953493400}
+	 + 305975834300270100 
+	 - <call>initiationTopic </call> {topic=305975834300270100}
+	 + 170454823093306940 
+	 - <call>initiationTopic </call> {topic=170454823093306940}
+	 + 978770674076385000 
+	 - <call>initiationTopic </call> {topic=978770674076385000}
+	 + 512286944653366660 
+	 - <call>initiationTopic </call> {topic=512286944653366660}
+	 + 801316750046608600 
+	 - <call>initiationTopic </call> {topic=801316750046608600}
+	 + 973606358563488000 
+	 - <call>initiationTopic </call> {topic=973606358563488000}
+	 + 638313591914738200 
+	 - <call>initiationTopic </call> {topic=638313591914738200}
+	 + 852506893758696300 
+	 - <call>initiationTopic </call> {topic=852506893758696300}
+	 + 752794930788197500 
+	 - <call>initiationTopic </call> {topic=752794930788197500}
+	 + 250929292261733900 
+	 - <call>initiationTopic </call> {topic=250929292261733900}
+	 + topic473962543184223940
+	 - Thank you for visiting Untapped Shores. 🙏 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Where we make sure to create happier, healthier lives for the world’s most vulnerable women, children, and villagers." "Would you like to be a part of the change? 🤷"</call> <call>displayresoptions "What impact do you bring?" </call>{topic=473962543184223940}
+	 + topicjoin473962543184223940
+	 - <call>displayresoptions "What impact do you bring?" </call>{topic=473962543184223940}
+
+> topic 473962543184223940
+
+	 + what impact do you bring{weight=1000}
+	 - We transform. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We focus on generating and sharing knowledge with diverse stakeholders to influence sustainable impact at scale. 🌍" "Which one would you like to know more about? 🙋"</call> <call>displayresoptions "Clean Water" "Sanitation and Hygiene" "Maternal Health" "Disaster Relief" </call>{topic=128751835216687760}
+< topic 
+
+> topic 128751835216687760
+
+	 + clean water{weight=1000}
+	 - <call>returnImage "https://climaxweb.net/templates/images/0228c80a7e10f7de96697a909f84abfc--giphy-2.gif" "200" "200"</call> We believe that water is not only a human need but an essential human right <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/0228c80a7e10f7de96697a909f84abfc--giphy-2.gif|6^9~,|6^9~200|6^9~,|6^9~200|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "That's why we invented Pure Shores CPS technology. 🏆" "It is a low-cost technology capable of large scale impact (providing safe water for up to 2,000 people per day." "Put simply, Pure Shores brings these towns the ability to create their own sodium hypochlorite, the global gold standard for water purification."</call> <call>displayresoptions "That's Great!" </call>{topic=661051189567517200}
+
+	 + sanitation and hygiene{weight=1000}
+	 - Water + Sanitation + Hygiene = Permanent improvements in community health. 🌍 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Do you agree? 🤷" "So to work towards it and develop Pure Shores that was uniquely developed to go beyond purifying water." "Which includes hand washing, clinic sterilization, food preparation and eating hall disinfection, maternal room sterilization, medical tool sterilization, all-purpose cleaner, baby bottle disinfection."</call> <call>displayresoptions "Yeah, I would love to" "Not now, Maybe later" </call>{topic=648991992255875300}
+
+	 + maternal health{weight=1000}
+	 - Do you know 15% of maternal death occurs due to infection? 🤷 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We know it because one of the founders of Untapped Shores spent two years working for Merck for Mothers. 🤰" "Our clinic leaders use Pure Shores to erase maternal infection: 👇 @-LineBreak ✔ Sterilization of the birthing suite and all medical tools @-LineBreak ✔ Hand washing @-LineBreak ✔ Purified water is used during birth and issues to the mother to bring home @-LineBreak ✔ Diluted chlorine bleach is distributed (and refills provided) to aid in sterilization at home."</call> <call>displayresoptions "Yeah, I would love to" "Not now, Maybe later" </call>{topic=648991992255875300}
+
+	 + disaster relief{weight=1000}
+	 - When natural disasters occur it can instantly send a population into chaos. <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "And if the water treatment infrastructure is compromised as a result of the event, a water and sanitation crisis becomes an instant public health priority. 🚰" "Do you agree? 🤷" "So, we make sure that our Pure Shores CPS provides the bridge to purify mass amounts of water until adequate aid can reach the victims. ✌"</call> <call>displayresoptions "Yeah, I would love to" "Not now, Maybe later" </call>{topic=648991992255875300}
+< topic 
+
+> topic 661051189567517200
+
+	 + that s great{weight=1000}
+	 - You can too help us in making a difference today.🤷 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Would you like to donate and be part of this change?"</call> <call>displayresoptions "Yeah, I would love to" "Not now, Maybe later" </call>{topic=648991992255875300}
+< topic 
+
+> topic 648991992255875300
+
+	 + yeah i would love to{weight=1000}
+	 - Thank you so much. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "How would you like to donate? 💵"</call> <call>displayresoptions "Give Once" "Give Monthly" "Sponsor a Community" </call>{topic=20017642437728412}
+
+	 + not now maybe later{weight=1000}
+	 - No problem. We respect your decision 🙏 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We would like to send you a mail regarding our latest stories, milestones, and impact updates." "Please share your email address to get these updates. 😊"</call> {topic=801316750046608600}
+< topic 
+
+> topic 20017642437728412
+
+	 + give once{weight=1000}
+	 - Wonderful 🙋 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please select you payment method? 👇"</call> <call>displayresoptions "PayPal" "Offline" </call>{topic=887493925483286900}
+
+	 + give monthly{weight=1000}
+	 - Wonderful 🙋 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please select you payment method? 👇"</call> <call>displayresoptions "PayPal" "Offline" </call>{topic=887493925483286900}
+
+	 + sponsor a community{weight=1000}
+	 - Wonderful 🙋 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please select you payment method? 👇"</call> <call>displayresoptions "PayPal" "Offline" </call>{topic=887493925483286900}
+< topic 
+
+> topic 887493925483286900
+
+	 + paypal{weight=1000}
+	 - Thank you for your time and efforts. 🙏 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "This is your first step towards building the change. 😊"</call> <call>stopConversation 2</call>{topic=random}
+
+	 + offline{weight=1000}
+	 - You could provide us with your contact details for us to get in touch. <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "To begin, can I have your full name please? 😊"</call> {topic=305714634953493400}
+< topic 
+
+> topic 305714634953493400
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "0" ""</call> We would like to send you a mail regarding the initiatives in your local area and how you can do the offline payment. <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please share your email to get these updates. 😊"</call> {topic=305975834300270100}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 305975834300270100
+	 + * 
+	 * <call>validationstoreddata "is_email" "Please enter a valid email address."</call> == valid => <call>storetodbwpoptions "1" ""</call> Thank you for the details. ✍ <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We will get in touch soon. 🙏" "This is your first step towards building the change. 😊"</call> <call>stopConversation 3</call>{topic=random}
+	 - <call>validationstoreddata "is_email" "Please enter a valid email address."</call>
+< topic 
+
+> topic 801316750046608600
+	 + * 
+	 * <call>validationstoreddata "is_email" "Please enter a valid email address."</call> == valid => <call>storetodbwpoptions "1" ""</call> And your full name please? 😊{topic=973606358563488000}
+	 - <call>validationstoreddata "is_email" "Please enter a valid email address."</call>
+< topic 
+
+> topic 973606358563488000
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "0" ""</call> Thank you for your time and the details. ✍ <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Have a nice day. 🙏"</call> <call>stopConversation 2</call>{topic=random}
+	 - <call>validationstoreddata "" ""</call>
+< topic 

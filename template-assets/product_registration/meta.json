@@ -1,0 +1,9 @@
+{
+  "id": "product_registration",
+  "name": "Post Purchase – Product Registration",
+  "description": "Collect ownership and product details so customers can register their product and activate support flows.",
+  "category": "support",
+  "tags": ["product registration", "warranty", "post purchase"],
+  "recommended_entities": ["name", "email", "phone", "product_name", "serial_number", "purchase_date"],
+  "thumbnail": "thumb.svg"
+}

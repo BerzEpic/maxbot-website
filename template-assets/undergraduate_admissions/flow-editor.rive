@@ -1,0 +1,157 @@
+	 + 473310679871106100 
+	 - <call>initiationTopic </call> {topic=473310679871106100}
+	 + 97087218226583280 
+	 - <call>initiationTopic </call> {topic=97087218226583280}
+	 + 791584692317932500 
+	 - <call>initiationTopic </call> {topic=791584692317932500}
+	 + 966282248451723000 
+	 - <call>initiationTopic </call> {topic=966282248451723000}
+	 + 82431801176866430 
+	 - <call>initiationTopic </call> {topic=82431801176866430}
+	 + 396155533695185860 
+	 - <call>initiationTopic </call> {topic=396155533695185860}
+	 + 509607136697846200 
+	 - <call>initiationTopic </call> {topic=509607136697846200}
+	 + 847768774223595400 
+	 - <call>initiationTopic </call> {topic=847768774223595400}
+	 + 156522394203474020 
+	 - <call>initiationTopic </call> {topic=156522394203474020}
+	 + 241483956108608830 
+	 - <call>initiationTopic </call> {topic=241483956108608830}
+	 + 601896871280389200 
+	 - <call>initiationTopic </call> {topic=601896871280389200}
+	 + 645241923796446200 
+	 - <call>initiationTopic </call> {topic=645241923796446200}
+	 + 317353545887749760 
+	 - <call>initiationTopic </call> {topic=317353545887749760}
+	 + 230505314628866370 
+	 - <call>initiationTopic </call> {topic=230505314628866370}
+	 + 524031584978258100 
+	 - <call>initiationTopic </call> {topic=524031584978258100}
+	 + 515522577783910700 
+	 - <call>initiationTopic </call> {topic=515522577783910700}
+	 + 560415890828608100 
+	 - <call>initiationTopic </call> {topic=560415890828608100}
+	 + 363181580908813800 
+	 - <call>initiationTopic </call> {topic=363181580908813800}
+	 + 83272561230084200 
+	 - <call>initiationTopic </call> {topic=83272561230084200}
+	 + 534834478422229200 
+	 - <call>initiationTopic </call> {topic=534834478422229200}
+	 + 635545872892081000 
+	 - <call>initiationTopic </call> {topic=635545872892081000}
+	 + 829860349547153700 
+	 - <call>initiationTopic </call> {topic=829860349547153700}
+	 + 666561064991077500 
+	 - <call>initiationTopic </call> {topic=666561064991077500}
+	 + 531149646010893200 
+	 - <call>initiationTopic </call> {topic=531149646010893200}
+	 + topic473310679871106100
+	 - Hello! Welcome to Illinois Tech 🤗 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "@-StrongIllinois Institute of Technology@-EndStrong has a range of courses you can choose from! 😁💃" "We are a private university with technology-focused research for our students! 🤓😍" "Would you like to apply for our undergraduate programs? Our application is free! 💪"</call> <call>displayresoptions "Yes, let's apply!" "Tell me more about the undergrad program first!" "What are the requirements to apply?" "What are the steps to apply?" "Tell me about scholarships" </call>{topic=473310679871106100}
+	 + topicjoin473310679871106100
+	 - <call>displayresoptions "Yes, let's apply!" "Tell me more about the undergrad program first!" "What are the requirements to apply?" "What are the steps to apply?" "Tell me about scholarships" </call>{topic=473310679871106100}
+
+> topic 473310679871106100
+
+	 + yes let s apply{weight=1000}
+	 - Great! To start, we need to create your account. For that, we need a few details from you.😋 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please tell me your email address. Our councilors will use it to contact you about your application if you're eligible! 😎"</call> {topic=97087218226583280}
+
+	 + tell me more about the undergrad program first{weight=1000}
+	 - We prepare our students to be leaders and innovators 💪😎 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "What sets us apart? Let us tell you! 👇 @-LineBreak ⚡We have 40-degree programs @-LineBreak ⚡With a brilliant campus life @-LineBreak ⚡Providing connections to great research opportunities @-LineBreak ⚡At an amazing location in Chicago" "Would you like to start your application now?"</call> <call>displayresoptions "Yes, let's apply!" "What are the requirements?" "Tell me about the steps to apply" "What are the scholarship opportunities?" </call>{topic=241483956108608830}
+
+	 + what are the requirements to apply{weight=1000}
+	 - We are looking for the best! Students that are academic, community-oriented, and have good work ethics! 🤓💪 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We suggest that you complete the following high school courses before applying👇" "👉 4 years of English" "👉 4 years of Mathematics" "👉 3 years of Science" "Would you like to apply now?"</call> <call>displayresoptions "Yes, please!" "Tell me about the undergrad program" "What are the scholarship prospects?" "What are the steps to apply?" </call>{topic=524031584978258100}
+
+	 + what are the steps to apply{weight=1000}
+	 - There are multiple steps involved to secure an admission in our university 👇 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "STEP 1: APPLICATION FOR ADMISSION" "Which I can help you with right away 🤗"</call> <call>displayresoptions "Next Step" </call>{topic=534834478422229200}
+
+	 + tell me about scholarships{weight=1000}
+	 - Illinois Tech offers both need-based financial aid and merit-based scholarships. 💪💰🤑 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "You can also apply for the priority scholarship (deadline December 1st) to receive the most Illinois Tech scholarship funds! 😍" "Would you like to apply now?"</call> <call>displayresoptions "Yes, please!" "Tell me about the undergrad program" "What are the scholarship prospects?" "What are the steps to apply?" </call>{topic=524031584978258100}
+< topic 
+
+> topic 97087218226583280
+	 + * 
+	 * <call>validationstoreddata "is_email" "Please enter a valid email address."</call> == valid => <call>storetodbwpoptions "1" ""</call> Great! 🤗 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Also your phone number! We'll be in touch about your application to Illinois Tech.🤗"</call> {topic=791584692317932500}
+	 - <call>validationstoreddata "is_email" "Please enter a valid email address."</call>
+< topic 
+
+> topic 791584692317932500
+	 + * 
+	 * <call>validationstoreddata "is_phone" "Please enter a valid phone number."</call> == valid => <call>storetodbwpoptions "2" ""</call> Thank you! 😎😍 <br> Now, what is your full name?{topic=966282248451723000}
+	 - <call>validationstoreddata "is_phone" "Please enter a valid phone number."</call>
+< topic 
+
+> topic 966282248451723000
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "0" ""</call> Sounds amazing! 😍 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "And your date of birth?"</call> {topic=82431801176866430}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 82431801176866430
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> Got it! 🙋 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "What is your address?"</call> {topic=396155533695185860}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 396155533695185860
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> Thanks! 🤗 Moving on... <br> Are you currently based in a European Union country, Iceland, Liechtenstein, Norway, Switzerland, or the United Kingdom?<call>displayresoptions "Yes" "No" </call>{topic=509607136697846200}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 509607136697846200
+
+	 + yes{weight=1000}
+	 - Done! We&#039;ve created your account 😁 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We're glad we could assist you in applying to Illinois Tech! We'll be in touch through mail. 🤓 @-LineBreak Also keep a look out for the Common App email!"</call> <call>stopConversation 2</call>{topic=random}
+
+	 + no{weight=1000}
+	 - Done! We&#039;ve created your account 😁 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We're glad we could assist you in applying to Illinois Tech! We'll be in touch through mail. 🤓 @-LineBreak Also keep a look out for the Common App email!"</call> <call>stopConversation 2</call>{topic=random}
+< topic 
+
+> topic 241483956108608830
+
+	 + yes let s apply{weight=1000}
+	 - Great! To start, we need to create your account. For that, we need a few details from you.😋 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please tell me your email address. Our councilors will use it to contact you about your application if you're eligible! 😎" "👉 3 years of Science"</call> {topic=97087218226583280}
+
+	 + what are the requirements{weight=1000}
+	 - We are looking for the best! Students that are academic, community-oriented, and have good work ethics! 🤓💪 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We suggest that you complete the following high school courses before applying👇" "👉 4 years of English" "👉 4 years of Mathematics" "Would you like to apply now?"</call> <call>displayresoptions "Yes, please!" "Tell me about the undergrad program" "What are the scholarship prospects?" "What are the steps to apply?" </call>{topic=524031584978258100}
+
+	 + tell me about the steps to apply{weight=1000}
+	 - There are multiple steps involved to secure an admission in our university 👇 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "STEP 1: APPLICATION FOR ADMISSION" "Which I can help you with right away 🤗"</call> <call>displayresoptions "Next Step" </call>{topic=534834478422229200}
+
+	 + what are the scholarship opportunities{weight=1000}
+	 - Illinois Tech offers both need-based financial aid and merit-based scholarships. 💪💰🤑 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "You can also apply for the priority scholarship (deadline December 1st) to receive the most Illinois Tech scholarship funds! 😍" "Would you like to apply now?"</call> <call>displayresoptions "Yes, please!" "Tell me about the undergrad program" "What are the scholarship prospects?" "What are the steps to apply?" </call>{topic=524031584978258100}
+< topic 
+
+> topic 524031584978258100
+
+	 + yes please{weight=1000}
+	 - Great! To start, we need to create your account. For that, we need a few details from you.😋 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please tell me your email address. Our councilors will use it to contact you about your application if you're eligible! 😎"</call> {topic=97087218226583280}
+
+	 + tell me about the undergrad program{weight=1000}
+	 - We prepare our students to be leaders and innovators 💪😎 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "What sets us apart? Let us tell you! 👇 @-LineBreak ⚡We have 40-degree programs ⚡With a brilliant campus life @-LineBreak ⚡Providing connections to great research opportunities @-LineBreak ⚡At an amazing location in Chicago" "Would you like to start your application now?"</call> <call>displayresoptions "Yes, please!" "Tell me about the undergrad program" "What are the scholarship prospects?" "What are the steps to apply?" </call>{topic=524031584978258100}
+
+	 + what are the scholarship prospects{weight=1000}
+	 - Illinois Tech offers both need-based financial aid and merit-based scholarships. 💪💰🤑 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "You can also apply for the priority scholarship (deadline December 1st) to receive the most Illinois Tech scholarship funds! 😍" "Would you like to apply now?"</call> <call>displayresoptions "Yes, please!" "Tell me about the undergrad program" "What are the scholarship prospects?" "What are the steps to apply?" </call>{topic=524031584978258100}
+
+	 + what are the steps to apply{weight=1000}
+	 - Illinois Tech offers both need-based financial aid and merit-based scholarships. 💪💰🤑 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "You can also apply for the priority scholarship (deadline December 1st) to receive the most Illinois Tech scholarship funds! 😍" "Would you like to apply now?"</call> <call>displayresoptions "Yes, please!" "Tell me about the undergrad program" "What are the scholarship prospects?" "What are the steps to apply?" </call>{topic=524031584978258100}
+< topic 
+
+> topic 534834478422229200
+
+	 + next step{weight=1000}
+	 - STEP 2: COUNSELOR/TEACHER EVALUATION OR LETTER OF RECOMMENDATION <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "You can select a counselor and/or teacher who knows you well and can write about your strengths as a student. @-LineBreak One letter is required but up to three are accepted."</call> <call>displayresoptions "Next Step" </call>{topic=635545872892081000}
+< topic 
+
+> topic 635545872892081000
+
+	 + next step{weight=1000}
+	 - STEP 3: HIGH SCHOOL/SECONDARY SCHOOL TRANSCRIPTS <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please have your school submit official transcripts sent through their electronic transcript service to ugaprocessing@iit.edu. @-LineBreak If this service is not available then you may mail your sealed official transcripts to: @-LineBreak Illinois Institute of Technology @-LineBreak Office of Undergraduate Admission @-LineBreak 10 West 33rd Street @-LineBreak Perlstein Hall Room 101 @-LineBreak Chicago, IL 60616"</call> <call>displayresoptions "Next Step" </call>{topic=829860349547153700}
+< topic 
+
+> topic 829860349547153700
+
+	 + next step{weight=1000}
+	 - STEP 4: TEST SCORES <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "You'll have to send official SAT I or ACT scores to the Office of Undergraduate Admissions. IIT's SAT code is 1318; the ACT code is 1040." "That's all you have to do to apply! 😀👀" "Would you like to start the process and apply now?"</call> <call>displayresoptions "Yes, please!" "Tell me about the undergrad program" "What are the scholarship prospects?" "What are the steps to apply?" </call>{topic=524031584978258100}
+< topic 

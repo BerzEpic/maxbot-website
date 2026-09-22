@@ -1,0 +1,9 @@
+{
+  "id": "doctor_appointment_booking",
+  "name": "Healthcare – Doctor Appointment",
+  "description": "Guide patients to choose a specialty, select a doctor, and book, reschedule, or cancel an appointment.",
+  "category": "booking",
+  "tags": ["healthcare", "appointments", "doctor"],
+  "recommended_entities": ["name", "email", "phone", "specialty", "date", "time"],
+  "thumbnail": "thumb.svg"
+}

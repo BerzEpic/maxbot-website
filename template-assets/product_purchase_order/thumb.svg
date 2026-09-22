@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="120" viewBox="0 0 260 120" role="img" aria-label="B2B Commerce Purchase Order icon">
+  <rect width="260" height="120" rx="18" fill="#143258"/>
+
+  <!-- document -->
+  <path d="M28 24h74l14 14v58H28z" fill="#ffffff"/>
+  <path d="M102 24v14h14" fill="#f4b41a"/>
+
+  <!-- checklist -->
+  <rect x="40" y="42" width="9" height="9" rx="2" fill="#f4b41a"/>
+  <path d="M42 46l2 2 4-5" fill="none" stroke="#143258" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="56" y1="46.5" x2="90" y2="46.5" stroke="#143258" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="40" y="58" width="9" height="9" rx="2" fill="#f4b41a"/>
+  <path d="M42 62l2 2 4-5" fill="none" stroke="#143258" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="56" y1="62.5" x2="86" y2="62.5" stroke="#143258" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="40" y="74" width="9" height="9" rx="2" fill="#f4b41a"/>
+  <path d="M42 78l2 2 4-5" fill="none" stroke="#143258" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="56" y1="78.5" x2="92" y2="78.5" stroke="#143258" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- stacked boxes -->
+  <rect x="130" y="58" width="28" height="24" rx="4" fill="#ffffff"/>
+  <path d="M130 66h28M144 58v24" fill="none" stroke="#143258" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="150" y="36" width="32" height="26" rx="4" fill="#f4b41a"/>
+  <path d="M150 45h32M166 36v26" fill="none" stroke="#143258" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- package badge -->
+  <circle cx="208" cy="58" r="24" fill="#ffffff"/>
+  <path d="M208 42l12 7v18l-12 7-12-7V49l12-7z" fill="#f4b41a"/>
+  <path d="M208 42v14M196 49l12 7 12-7" fill="none" stroke="#143258" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

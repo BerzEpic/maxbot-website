@@ -1,0 +1,9 @@
+{
+  "id": "restaurant_table_booking",
+  "name": "Restaurant – Table Booking",
+  "description": "Help guests reserve a table by selecting date, time, party size, and dining preferences.",
+  "category": "booking",
+  "tags": ["restaurant", "reservation", "table booking"],
+  "recommended_entities": ["name", "email", "phone", "date", "time", "party_size"],
+  "thumbnail": "thumb.svg"
+}

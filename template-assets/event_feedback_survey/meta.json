@@ -1,0 +1,9 @@
+{
+  "id": "event_feedback_survey",
+  "name": "Events – Feedback Survey",
+  "description": "Collect attendee feedback after an event through a conversational survey experience.",
+  "category": "support",
+  "tags": ["events", "feedback", "survey"],
+  "recommended_entities": ["name", "email", "event_name", "rating", "feedback"],
+  "thumbnail": "thumb.svg"
+}

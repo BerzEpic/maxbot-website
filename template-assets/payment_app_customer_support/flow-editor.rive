@@ -1,0 +1,58 @@
+	 + 233906670529009700 
+	 - <call>initiationTopic </call> {topic=233906670529009700}
+	 + 510644843604420000 
+	 - <call>initiationTopic </call> {topic=510644843604420000}
+	 + 843658692421321200 
+	 - <call>initiationTopic </call> {topic=843658692421321200}
+	 + 238564590591556100 
+	 - <call>initiationTopic </call> {topic=238564590591556100}
+	 + 917165898761949200 
+	 - <call>initiationTopic </call> {topic=917165898761949200}
+	 + 321122457150239800 
+	 - <call>initiationTopic </call> {topic=321122457150239800}
+	 + 300183298312246660 
+	 - <call>initiationTopic </call> {topic=300183298312246660}
+	 + 308721679676197000 
+	 - <call>initiationTopic </call> {topic=308721679676197000}
+	 + 60740170884905130 
+	 - <call>initiationTopic </call> {topic=60740170884905130}
+	 + topic233906670529009700 
+	 - Hey! Welcome to PhonePe! 👋 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Thank you for getting in touch with our support center. 😊" "What do you need help with today?"</call> <call>displayresoptions "How to add a bank account?" "Can I pay by PhonePe?" "I'd like to set/reset UPI pin" </call>{topic=233906670529009700}
+	 + topicjoin233906670529009700
+	 - <call>displayresoptions "How to add a bank account?" "Can I pay by PhonePe?" "I'd like to set/reset UPI pin" </call>{topic=233906670529009700}
+
+> topic 233906670529009700
+
+	 + how to add a bank account{weight=1000}
+	 - Well, it&#039;s pretty simple. You need to open the menu from top right corner of the screen 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Go to Bank Account and tap on &quot;Add New Bank&quot; button." "Now select the bank you want to link and proceed to set up UPI PIN." "Enter the &quot;last six digits&quot; of your Debit/ATM card number and &quot;Expiry Date&quot;." "And just enter the OTP to set your PIN and add your bank account successfully." "Can I have your email id so that I can share an instruction video for support? 😊"</call> {topic=510644843604420000}
+
+	 + can i pay by phonepe{weight=1000}
+	 - Choose the option you need help with 👇<call>displayresoptions "Web" "Android" "iPhone" </call>{topic=917165898761949200}
+
+	 + i d like to set reset upi pin{weight=1000}
+	 - Well, you need to first open the menu from top right corner of the screen and go to the &quot;Bank Accounts&quot; section 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "You will see a &quot;SET&quot; option in case you have never set a UPI Pin for the bank account." "Otherwise you will see a &quot;RESET&quot; option to set a new UPI Pin for the bank account." "Enter the &quot;last six digits&quot; of your Debit/ATM card number and &quot;Expiry Date&quot;." "Enter the OTP and the new UPI Pin you want to set for the account and click submit." "Can I have your email id so that I can share an instruction video for support? 😊"</call> {topic=510644843604420000}
+< topic 
+
+> topic 510644843604420000
+	 + * 
+	 * <call>validationstoreddata "is_email" "Please enter a valid email address."</call> == valid => <call>storetodbwpoptions "1" ""</call> Thank you. What is your name? 😊{topic=843658692421321200}
+	 - <call>validationstoreddata "is_email" "Please enter a valid email address."</call>
+< topic 
+
+> topic 843658692421321200
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "0" ""</call> We will get back to you soon if you have any more queries. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Have a great day! 👋"</call> <call>stopConversation 2</call>{topic=random}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 917165898761949200
+
+	 + web{weight=1000}
+	 - On the web, you need to select &quot;Pay by PhonePe&quot; from the payment options and login to your account. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Choose the bank account and open PhonePe App in your smartphone." "You will see a collect request from merchant in notification section." "Tap pay to proceed for payment, enter your UPI PIN to complete your transaction." "Can I have your email id so that I can share an instruction video for support? 😊"</call> {topic=510644843604420000}
+
+	 + android{weight=1000}
+	 - On your smartphone, select &quot;Pay by PhonePe&quot; from the payment options and login to your account. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Now choose the bank account and enter your UPI PIN to complete the transaction." "Can I have your email id so that I can share an instruction video for support? 😊"</call> {topic=510644843604420000}
+
+	 + iphone{weight=1000}
+	 - On your iPhone, select &quot;Pay by PhonePe&quot; from the payment options and login to your account. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Choose the bank account and open PhonePe App." "You will see a collect request in the pending transaction screen, tap on pay." "Now enter your UPI PIN to complete the transaction." "Can I have your email id so that I can share an instruction video for support? 😊"</call> {topic=510644843604420000}
+< topic 

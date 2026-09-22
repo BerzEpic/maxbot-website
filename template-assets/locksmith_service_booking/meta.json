@@ -1,0 +1,9 @@
+{
+  "id": "locksmith_service_booking",
+  "name": "Local Services – Locksmith Booking",
+  "description": "Let users choose a locksmith service, describe their issue, and schedule or request urgent assistance.",
+  "category": "booking",
+  "tags": ["locksmith", "local services", "service booking"],
+  "recommended_entities": ["name", "phone", "address", "service_type", "date", "time"],
+  "thumbnail": "thumb.svg"
+}

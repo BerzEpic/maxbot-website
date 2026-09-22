@@ -1,0 +1,148 @@
+	 + 739917352780578300 
+	 - <call>initiationTopic </call> {topic=739917352780578300}
+	 + 813132288230992500 
+	 - <call>initiationTopic </call> {topic=813132288230992500}
+	 + 13853301109346016 
+	 - <call>initiationTopic </call> {topic=13853301109346016}
+	 + 63377141745852960 
+	 - <call>initiationTopic </call> {topic=63377141745852960}
+	 + 909950016807865200 
+	 - <call>initiationTopic </call> {topic=909950016807865200}
+	 + 94892750596313090 
+	 - <call>initiationTopic </call> {topic=94892750596313090}
+	 + 589246536300933100 
+	 - <call>initiationTopic </call> {topic=589246536300933100}
+	 + 308807198670489000 
+	 - <call>initiationTopic </call> {topic=308807198670489000}
+	 + 771518290487626900 
+	 - <call>initiationTopic </call> {topic=771518290487626900}
+	 + 495782394856436350 
+	 - <call>initiationTopic </call> {topic=495782394856436350}
+	 + 896466077053982700 
+	 - <call>initiationTopic </call> {topic=896466077053982700}
+	 + 759060690237476400 
+	 - <call>initiationTopic </call> {topic=759060690237476400}
+	 + 548601264167901760 
+	 - <call>initiationTopic </call> {topic=548601264167901760}
+	 + 854780522729901400 
+	 - <call>initiationTopic </call> {topic=854780522729901400}
+	 + 22397426476682080 
+	 - <call>initiationTopic </call> {topic=22397426476682080}
+	 + 413462215488353000 
+	 - <call>initiationTopic </call> {topic=413462215488353000}
+	 + 479001028224441150 
+	 - <call>initiationTopic </call> {topic=479001028224441150}
+	 + 637593216966248700 
+	 - <call>initiationTopic </call> {topic=637593216966248700}
+	 + 428820394259260800 
+	 - <call>initiationTopic </call> {topic=428820394259260800}
+	 + 646347672869739500 
+	 - <call>initiationTopic </call> {topic=646347672869739500}
+	 + 846936901647711700 
+	 - <call>initiationTopic </call> {topic=846936901647711700}
+	 + 864607834793160200 
+	 - <call>initiationTopic </call> {topic=864607834793160200}
+	 + topic739917352780578300
+	 - Thanks for visiting <span style='font-weight:700;'> Mike Pero Real Estate. </span> 👋 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We have a 30-year legacy of providing trusted assistance with buying and selling homes." "As the first choice for an increasing number of home sellers and buyers, we offer quality marketing and a fair commission structure that often comes in well below others. 🏆"</call> <call>displayresoptions "Looking to buy a property" "I want to sell my property" "Mortgage Advisers" </call>{topic=739917352780578300}
+	 + topicjoin1 
+	 - <call>displayresoptions "Looking to buy a property" "I want to sell my property" "Mortgage Advisers" </call>{topic=739917352780578300}
+
+> topic 739917352780578300
+
+	 + looking to buy a property{weight=1000}
+	 - Definitely, we can help you with it. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/8e3b4955a6a04c13734b5f28a7da9079--giphy.gif|6^9~,|6^9~265|6^9~,|6^9~150|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We understand that buying a property is one of the biggest financial commitments and hassle tasks. 🏘" "@+DisplayImage#1 When you’re ready. We’re here to help. ✌" "We have agents nationwide, so wherever you are, we have experts available to help make your buying experience a positive one. 🌎" "Can you tell me a little more about the property that you are interested in? 🏠"</call> <call>displayresoptions "Residential" "Commercial" "Open Homes" </call>{topic=813132288230992500}
+
+	 + i want to sell my property{weight=1000}
+	 - Thinking of selling your home? 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/8e3b4955a6a04c13734b5f28a7da9079--giphy.gif|6^9~,|6^9~265|6^9~,|6^9~150|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "@+DisplayImage#1 When you’re ready. We’re here to help. ✌" "When you list with us, your property will be featured for free on Property TV, reaching audiences of @-Strong 60,000+viewers* @-EndStrong across New Zealand, and not just your local neighborhood, nationwide. 🌎" "Can you tell me a little more about your property? 🏠"</call> <call>displayresoptions "Home" "Apartment" "Land" </call>{topic=637593216966248700}
+
+	 + mortgage advisers{weight=1000}
+	 - Definitely, we can help you with it. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We understand that buying a property is one of the biggest financial commitments and hassle tasks. 🏘"</call> <call>displayresoptions "Residential" "Commercial" "Open Homes" </call>{topic=813132288230992500}
+< topic 
+
+> topic 813132288230992500
+
+	 + residential{weight=1000}
+	 - Hmm...that&#039;s interesting choice 🤔 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/14b9e8af4969668d43e4cc1a133c363b--giphy-1.gif|6^9~,|6^9~265|6^9~,|6^9~150|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "@+DisplayImage#1" "Moving ahead, please let us know what is your budget for this? 💰" "What about number of bedrooms? 🙋"</call> <call>displayresoptions "1" "2" "3" </call>{topic=13853301109346016}
+
+	 + commercial{weight=1000}
+	 - Hmm...that&#039;s interesting choice 🤔 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "@+DisplayImage#1" "Moving ahead, please let us know what is your budget for this? 💰" "What about number of bedrooms? 🙋"</call> <call>displayresoptions "1" "2" "3" </call>{topic=13853301109346016}
+
+	 + open homes{weight=1000}
+	 - Hmm...that&#039;s interesting choice 🤔<call>displayresoptions "1" "2" "3" </call>{topic=13853301109346016}
+< topic 
+
+> topic 13853301109346016
+
+	 + 1{weight=1000}
+	 - And how many bathrooms do you need on this property? 🙋<call>displayresoptions "1" "2" "3" </call>{topic=63377141745852960}
+
+	 + 2{weight=1000}
+	 - And how many bathrooms do you need on this property? 🙋<call>displayresoptions "1" "2" "3" </call>{topic=63377141745852960}
+
+	 + 3{weight=1000}
+	 - And how many bathrooms do you need on this property? 🙋<call>displayresoptions "1" "2" "3" </call>{topic=63377141745852960}
+< topic 
+
+> topic 63377141745852960
+
+	 + 1{weight=1000}
+	 - <call>returnImage "https://climaxweb.net/templates/images/85d53722cf6eea7805d9606bb88cf356--giphy-2.gif" "265" "150"</call> <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/85d53722cf6eea7805d9606bb88cf356--giphy-2.gif|6^9~,|6^9~265|6^9~,|6^9~150|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We have some awesome properties for you to choose from, and we are sure you will love these. ❤️👇"</call> <call>displayrescardsoptions "https://climaxweb.net/templates/images/58cb64f44f46179540e744e72522f879--1.jpeg" "1 Collins Street, Petone" "With three generous bedrooms, separate lounge and open plan kitchen dining, large bathroom and laundry you may consider a complete re-figure or leave as is. Building Area is 100 sqm and Land Area is 372 sqm" "Set Sale" "https://climaxweb.net/templates/images/8259c1a84bcc3dbefbd80d708b18616c--241-Brougham-St-116d68-b82b-25af-66c3-97b5-fc32-1c19-011120220131123210400x300.jpeg" "241 Brougham Street, Christchurch Central" "If you are after an easily managed investment with the possibility of more than two income streams to add to your portfolio then this should be at the top of your list. Positioned amongst all of the attractions and amenities which make the location so popular, this well-maintained apartment and warehouse complex will instantly appeal to all astute investors. Comprised of two units with upstairs living and warehouses below, both units are two bedroom with open plan dining and lounge, separate bathrooms and outdoor balconies." "Set Sale" "https://climaxweb.net/templates/images/95f9e18853fbf5efabf22a9a2a83bf1b--2-Rowan-Pl-3535c-a8ce-989e-9a85-7e24-97c3-ae6a-7c1f20220202105621400x300.jpeg" "2 Rowan Place, Gleniti" "Consisting of a well appointed kitchen, separate dining and living areas, indoor/outdoor flow to a north facing patio area for a relaxing morning coffee or alfresco dining. Two double bedrooms and one single or office space, updated bathroom with walk-in shower, two separate toilets, large laundry area with walk in pantry, drive on to a flat section with plenty of established plantings with a spacious double garage" "Set Sale" </call>{topic=909950016807865200}
+
+	 + 2{weight=1000}
+	 - @+DisplayImage#1 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We have some awesome properties for you to choose from, and we are sure you will love these. ❤️👇"</call> <call>displayrescardsoptions "https://climaxweb.net/templates/images/58cb64f44f46179540e744e72522f879--1.jpeg" "1 Collins Street, Petone" "With three generous bedrooms, separate lounge and open plan kitchen dining, large bathroom and laundry you may consider a complete re-figure or leave as is. Building Area is 100 sqm and Land Area is 372 sqm" "Set Sale" "https://climaxweb.net/templates/images/8259c1a84bcc3dbefbd80d708b18616c--241-Brougham-St-116d68-b82b-25af-66c3-97b5-fc32-1c19-011120220131123210400x300.jpeg" "241 Brougham Street, Christchurch Central" "If you are after an easily managed investment with the possibility of more than two income
+streams to add to your portfolio then this should be at the top of your list. Positioned amongst
+all of the attractions and amenities which make the location so popular, this well-maintained
+apartment and warehouse complex will instantly appeal to all astute investors.
+Comprised of two units with upstairs living and warehouses below, both units are two
+bedroom with open plan dining and lounge, separate bathrooms and outdoor balconies." "Set Sale" "https://climaxweb.net/templates/images/95f9e18853fbf5efabf22a9a2a83bf1b--2-Rowan-Pl-3535c-a8ce-989e-9a85-7e24-97c3-ae6a-7c1f20220202105621400x300.jpeg" "2 Rowan Place, Gleniti" "Consisting of a well appointed kitchen, separate dining and living areas, indoor/outdoor flow to a north facing patio area for a relaxing morning coffee or alfresco dining. Two double bedrooms and one single or office space, updated bathroom with walk-in shower, two separate toilets, large laundry area with walk in pantry, drive on to a flat section with plenty of established plantings with a spacious double garage" "Set Sale" </call>{topic=909950016807865200}
+
+	 + 3{weight=1000}
+	 - @+DisplayImage#1 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We have some awesome properties for you to choose from, and we are sure you will love these. ❤️👇"</call> <call>displayrescardsoptions "https://climaxweb.net/templates/images/58cb64f44f46179540e744e72522f879--1.jpeg" "1 Collins Street, Petone" "With three generous bedrooms, separate lounge and open plan kitchen dining, large bathroom and laundry you may consider a complete re-figure or leave as is. Building Area is 100 sqm and Land Area is 372 sqm" "Set Sale" "https://climaxweb.net/templates/images/8259c1a84bcc3dbefbd80d708b18616c--241-Brougham-St-116d68-b82b-25af-66c3-97b5-fc32-1c19-011120220131123210400x300.jpeg" "241 Brougham Street, Christchurch Central" "If you are after an easily managed investment with the possibility of more than two income
+streams to add to your portfolio then this should be at the top of your list. Positioned amongst
+all of the attractions and amenities which make the location so popular, this well-maintained
+apartment and warehouse complex will instantly appeal to all astute investors.
+Comprised of two units with upstairs living and warehouses below, both units are two
+bedroom with open plan dining and lounge, separate bathrooms and outdoor balconies." "Set Sale" "https://climaxweb.net/templates/images/95f9e18853fbf5efabf22a9a2a83bf1b--2-Rowan-Pl-3535c-a8ce-989e-9a85-7e24-97c3-ae6a-7c1f20220202105621400x300.jpeg" "2 Rowan Place, Gleniti" "Consisting of a well appointed kitchen, separate dining and living areas, indoor/outdoor flow to a north facing patio area for a relaxing morning coffee or alfresco dining. Two double bedrooms and one single or office space, updated bathroom with walk-in shower, two separate toilets, large laundry area with walk in pantry, drive on to a flat section with plenty of established plantings with a spacious double garage" "Set Sale" </call>{topic=909950016807865200}
+< topic 
+
+> topic 909950016807865200
+
+	 + 1 collins street petone{weight=1000}
+	 - It&#039;s great deal. ✌️ <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Can you please share your email address so we can share more details about this property? 📧"</call> {topic=94892750596313090}
+
+	 + 241 brougham street christchurch central{weight=1000}
+	 - It&#039;s great deal. ✌️ <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Can you please share your email address so we can share more details about this property? 📧"</call> {topic=94892750596313090}
+
+	 + 2 rowan place gleniti{weight=1000}
+	 - It&#039;s great deal. ✌️ <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Can you please share your email address so we can share more details about this property? 📧"</call> {topic=94892750596313090}
+< topic 
+
+> topic 94892750596313090
+	 + * 
+	 * <call>validationstoreddata "is_email" "Please enter a valid email address."</call> == valid => <call>storetodbwpoptions "1" ""</call> And your good name please? 😊{topic=589246536300933100}
+	 - <call>validationstoreddata "is_email" "Please enter a valid email address."</call>
+< topic 
+
+> topic 589246536300933100
+	 + * 
+	 * <call>validationstoreddata "is_alpha" "Please enter a valid name."</call> == valid => <call>storetodbwpoptions "0" ""</call> Lastly <call>getVariableData "name"</call>, I need your phone number to get in touch with you. 📞{topic=308807198670489000}
+	 - <call>validationstoreddata "is_alpha" "Please enter a valid name."</call>
+< topic 
+
+> topic 308807198670489000
+	 + * 
+	 * <call>validationstoreddata "is_phone" "Please enter a valid phone number."</call> == valid => <call>storetodbwpoptions "2" ""</call> We hope to connect with you shortly. Good news coming your way 👋<call>stopConversation 1</call>{topic=random}
+	 - <call>validationstoreddata "is_phone" "Please enter a valid phone number."</call>
+< topic 
+
+> topic 637593216966248700
+
+	 + home{weight=1000}
+	 - It&#039;s awesome property.✌️ <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Can you please share your email address to share the offers we get for your property? 📧"</call> {topic=94892750596313090}
+
+	 + apartment{weight=1000}
+	 - It&#039;s awesome property.✌️ <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Can you please share your email address to share the offers we get for your property? 📧"</call> {topic=94892750596313090}
+
+	 + land{weight=1000}
+	 - It&#039;s awesome property.✌️ <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Can you please share your email address to share the offers we get for your property? 📧"</call> {topic=94892750596313090}
+< topic 

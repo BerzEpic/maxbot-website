@@ -1,0 +1,311 @@
+/* =========================================================
+   Maxbot website-themed template preview
+   This file skins the iframe preview to match the landing page
+========================================================= */
+
+html, body.mb-preview-body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: transparent;
+  font-family: var(--mbw-font), sans-serif !important;
+}
+
+.mb-preview-body {
+  background: transparent;
+}
+
+/* Outer preview spacing */
+.inline-widget-content {
+  padding: 0;
+  margin: 0;
+}
+
+.inline-widget-chat {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make the whole preview behave like the old website card */
+.inline-widget-chat .inline-widget-chatbot {
+  width: 100%;
+  display: block;
+}
+
+.inline-widget-chat .inline-chat-layout {
+  position: relative;
+  min-height: 760px;
+  height: 760px;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0.75rem !important;
+  overflow: hidden !important;
+  background: linear-gradient(50deg, #0c66ff 0, #0c1dff 100%) !important;
+  box-shadow: 0 0 1.25rem rgba(31, 45, 61, .05) !important;
+  background-image: none !important;
+}
+
+/* Header styled like your website card top section */
+.mb-preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem !important;
+  border-bottom: 1px solid rgba(255,255,255,0.15) !important;
+  background: transparent !important;
+}
+
+.mb-preview-header-info {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.mb-preview-header-icon {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.mb-preview-header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.mb-preview-header-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.mb-preview-header-sub {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.875rem;
+  margin-top: 0.2rem;
+}
+
+.mb-preview-header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.mb-preview-btn {
+  border: 0;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.mb-preview-btn--ghost {
+  background: rgba(255,255,255,0.14);
+  color: #fff;
+}
+
+.mb-preview-btn--ghost:hover {
+  background: rgba(255,255,255,0.22);
+}
+
+/* Conversation area */
+.inline-widget-chat .inline-chat-conversation-flow {
+  background: transparent !important;
+  padding: 1.5rem 1.5rem 8.5rem !important;
+  height: calc(100% - 88px) !important;
+  max-height: none !important;
+  overflow-y: auto !important;
+  border-bottom: 0 !important;
+}
+
+/* Bot header label */
+.header-msg {
+  color: rgba(255,255,255,0.75) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
+
+.header-msg-text {
+  margin-left: 0 !important;
+}
+
+/* Agent messages: white cards like your original site */
+.message-unit.message-unit-agent {
+  background: #ffffff !important;
+  color: #253649 !important;
+  border-radius: .375rem !important;
+  box-shadow: 0 .125rem .25rem rgba(31, 45, 61, .08) !important;
+  margin-left: 0 !important;
+  max-width: 82%;
+  padding: .75rem 1rem !important;
+}
+
+.message-unit.message-unit-agent:before {
+  display: none !important;
+}
+
+/* User messages: dark website card tone */
+.message-unit.message-unit-customer {
+  background: #253649 !important;
+  color: #ffffff !important;
+  border-radius: .375rem !important;
+  box-shadow: 0 .125rem .25rem rgba(31, 45, 61, .08) !important;
+  margin-right: 0 !important;
+  max-width: 82%;
+  padding: .75rem 1rem !important;
+}
+
+.message-unit.message-unit-customer:after {
+  display: none !important;
+}
+
+/* Time labels */
+.admin-message-status,
+.user-message-status {
+  color: rgba(255,255,255,0.75) !important;
+  font-size: 12px !important;
+}
+
+.admin-message-status-text,
+.user-message-status-text {
+  margin-left: 0 !important;
+}
+
+/* Input area docked like a polished website card footer */
+.chat-input-field.chat-input-field-alt {
+  position: absolute !important;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: auto !important;
+  padding: 0.75rem;
+  border-radius: 0.75rem !important;
+  background: rgba(255,255,255,0.08) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: none !important;
+}
+
+/* When quick replies are shown, they should look like white website buttons */
+.chatbot-quick-replies {
+  width: 100% !important;
+  max-height: none !important;
+  overflow: visible !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.chatbot-quick-replies li {
+  margin: 0 0 .5rem 0 !important;
+}
+
+.card-action-button {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  border-radius: .375rem !important;
+  background: #ffffff !important;
+  color: #273444 !important;
+  border: 1px solid #fff !important;
+  box-shadow: inset 0 1px 0 rgba(31, 45, 61, .15), 0 .125rem .25rem rgba(31,45,61,.08) !important;
+  padding: .75rem 1rem !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+}
+
+.card-red {
+  background: #ffffff !important;
+  color: #273444 !important;
+  border-bottom: 0 !important;
+}
+
+.card-action-button:hover,
+.card-action-button:focus {
+  transform: translateY(-1px);
+  background: #f8fafc !important;
+  color: #0c66ff !important;
+}
+
+/* Textarea look if shown */
+.chat-input-textarea {
+  width: calc(100% - 52px) !important;
+  background: transparent !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+}
+
+.chat-input-textarea::placeholder {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+#input-send-action {
+  float: right;
+}
+
+.chat-input-field .widget-chat-convers {
+  background: #ffffff !important;
+  color: #0c66ff !important;
+  width: 40px !important;
+  height: 40px !important;
+  margin: 0 !important;
+}
+
+.chat-input-field .widget-chat-convers > i {
+  color: #0c66ff !important;
+  line-height: 40px !important;
+}
+
+/* Hide generic launcher styles inside preview iframe */
+#widget-trigger-button,
+.inline-widget-chat .inline-widget-trigger-button,
+.inline-widget-chat .inline-header-chat {
+  display: none !important;
+}
+
+/* Better scrollbar inside preview */
+.inline-chat-conversation-flow::-webkit-scrollbar {
+  width: 8px;
+}
+
+.inline-chat-conversation-flow::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.22);
+  border-radius: 999px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .inline-widget-chat .inline-chat-layout {
+    min-height: 680px;
+    height: 680px;
+    border-radius: 0 !important;
+  }
+
+  .inline-widget-chat .inline-chat-conversation-flow {
+    padding: 1rem 1rem 8rem !important;
+  }
+
+  .chat-input-field.chat-input-field-alt {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .mb-preview-header {
+    padding: 1rem !important;
+  }
+
+  .mb-preview-header-icon {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+  }
+}

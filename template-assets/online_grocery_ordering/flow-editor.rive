@@ -1,0 +1,165 @@
+	 + 805265741129431800 
+	 - <call>initiationTopic </call> {topic=805265741129431800}
+	 + 547687325113759500 
+	 - <call>initiationTopic </call> {topic=547687325113759500}
+	 + 236586134923821860 
+	 - <call>initiationTopic </call> {topic=236586134923821860}
+	 + 656459986471261200 
+	 - <call>initiationTopic </call> {topic=656459986471261200}
+	 + 342154024486264450 
+	 - <call>initiationTopic </call> {topic=342154024486264450}
+	 + 224197804537599840 
+	 - <call>initiationTopic </call> {topic=224197804537599840}
+	 + 659434767838408200 
+	 - <call>initiationTopic </call> {topic=659434767838408200}
+	 + 982842848138875500 
+	 - <call>initiationTopic </call> {topic=982842848138875500}
+	 + 891112183681034100 
+	 - <call>initiationTopic </call> {topic=891112183681034100}
+	 + 235898040261937380 
+	 - <call>initiationTopic </call> {topic=235898040261937380}
+	 + 302764332386582850 
+	 - <call>initiationTopic </call> {topic=302764332386582850}
+	 + 334387732426618700 
+	 - <call>initiationTopic </call> {topic=334387732426618700}
+	 + 296123634284651970 
+	 - <call>initiationTopic </call> {topic=296123634284651970}
+	 + 128525644557399230 
+	 - <call>initiationTopic </call> {topic=128525644557399230}
+	 + 804458495680306300 
+	 - <call>initiationTopic </call> {topic=804458495680306300}
+	 + 920697340682477000 
+	 - <call>initiationTopic </call> {topic=920697340682477000}
+	 + 447745759542446200 
+	 - <call>initiationTopic </call> {topic=447745759542446200}
+	 + 97300861832070980 
+	 - <call>initiationTopic </call> {topic=97300861832070980}
+	 + 187679299684360930 
+	 - <call>initiationTopic </call> {topic=187679299684360930}
+	 + 685782950543872000 
+	 - <call>initiationTopic </call> {topic=685782950543872000}
+	 + 209408256668795260 
+	 - <call>initiationTopic </call> {topic=209408256668795260}
+	 + 428405023572121860 
+	 - <call>initiationTopic </call> {topic=428405023572121860}
+	 + 660957425166771500 
+	 - <call>initiationTopic </call> {topic=660957425166771500}
+	 + 792153149392743000 
+	 - <call>initiationTopic </call> {topic=792153149392743000}
+	 + 437155632952452740 
+	 - <call>initiationTopic </call> {topic=437155632952452740}
+	 + topic805265741129431800
+	 - Welcome to<span style='font-weight:700;'> Spencer</span> , a one-stop platform for all your home essentials requirements. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We have a wide range of quality products across categories such as@-Strong food, personal care, fashion, home essentials, electrical & electronics@-EndStrong to its consumers. 🤷" "Please select how would you like to proceed today? 🏃👇"</call> <call>displayresoptions "Grocery Shopping" "Store Locator" </call>{topic=805265741129431800}
+	 + topicjoin805265741129431800
+	 - <call>displayresoptions "Grocery Shopping" "Store Locator" </call>{topic=805265741129431800}
+
+> topic 805265741129431800
+
+	 + grocery shopping{weight=1000}
+	 - <call>returnImage "https://climaxweb.net/templates/images/76f74a668bfc06fc45276060966e4e66--giphy.gif" "200" "200"</call> Sure, we can help you with that. 🙋 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/76f74a668bfc06fc45276060966e4e66--giphy.gif|6^9~,|6^9~200|6^9~,|6^9~200|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please select the category that best suits your requirement. 😊"</call> <call>displayresoptions "Fruits & Vegetables" "Bakery - Eggs & Dairy" </call>{topic=547687325113759500}
+
+	 + store locator{weight=1000}
+	 - Sure, we can help you with that. 🙋 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please select the category that best suits your requirement. 😊"</call> <call>displayresoptions "Fruits & Vegetables" "Bakery - Eggs & Dairy" </call>{topic=547687325113759500}
+< topic 
+
+> topic 547687325113759500
+
+	 + fruits vegetables{weight=1000}
+	 - <call>returnImage "https://climaxweb.net/templates/images/85bbfd85f9b9d204841a319ed96418df--giphy-1.gif" "200" "200"</call> Please select the item that you would like to order? 🛒<call>displayresoptions "Fresh Fruits" "Fresh Vegetables" </call>{topic=236586134923821860}
+
+	 + bakery eggs dairy{weight=1000}
+	 - <call>returnImage "https://climaxweb.net/templates/images/d3cae8aeb63825c07febe12b1b9a8823--giphy-3.gif" "200" "200"</call> Please select the item that you would like to order? 🛒<call>displayresoptions "Milk & Milk Products" "Bread & Buns" </call>{topic=97300861832070980}
+< topic 
+
+> topic 236586134923821860
+
+	 + fresh fruits{weight=1000}
+	 - <call>returnImage "https://climaxweb.net/templates/images/aa7f154820a52585d4601dda423df445--giphy-2.gif" "200" "200"</call> A fruit day we keeps the worries away. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/aa7f154820a52585d4601dda423df445--giphy-2.gif|6^9~,|6^9~200|6^9~,|6^9~200|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "So, which one would you like to order? 🛒"</call> <call>displayrescardsoptions "https://climaxweb.net/templates/images/07d72a8d4cfb011eda3d066ec9b6fb2c--1000932.jpeg" "KIWI 1PC" "Kiwi help in increase bone mass, protect from DNA damage, improve ingestive health." "Buy Now" "https://climaxweb.net/templates/images/aa400f86d7ce3721d9eb6f537318a5b0--10238541.jpeg" "Orange Kinnow/Santara 1kg" "Orange helps to maintain great skin and vision. It also helps to support strong immune system, combats cancer and strengthens bones." "Buy Now" "https://climaxweb.net/templates/images/469135621f46735eeb35e491aa8e56db--10305321.jpeg" "Pomegranate Kabul 1kg" "Pomegranate fruit is a major iron supplement. Pomegranate fruit helps to cure mouth sores, solve stomach ailments, cures nasal bleeding, provides strength to pregnant ladies and cures skin irritation." "Buy Now" "https://climaxweb.net/templates/images/2c02d3ade3d742b31607eb589d0f1a3a--1000950.jpeg" "Pineapple /Ananas 1pc" "Pineapple help fight arthritis, improve immunity, strengthens bones" "Buy Now" </call>{topic=656459986471261200}
+
+	 + fresh vegetables{weight=1000}
+	 - A vegetable day we keeps the worries away. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "So, which one would you like to order? 🛒"</call> <call>displayresoptions "Grocery Shopping" "Store Locator" </call>{topic=805265741129431800}
+< topic 
+
+> topic 656459986471261200
+
+	 + kiwi 1pc{weight=1000}
+	 - Please also share how much quantity would you like to buy? ✍{topic=342154024486264450}
+
+	 + orange kinnow santara 1kg{weight=1000}
+	 - Please also share how much quantity would you like to buy? ✍<call>stopConversation 1</call>{topic=random}
+
+	 + pomegranate kabul 1kg{weight=1000}
+	 - Please also share how much quantity would you like to buy? ✍<call>stopConversation 1</call>{topic=random}
+
+	 + pineapple ananas 1pc{weight=1000}
+	 - Please also share how much quantity would you like to buy? ✍<call>stopConversation 1</call>{topic=random}
+< topic 
+
+> topic 342154024486264450
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> Got it. 🙋 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/efeef57c94a33138dbf2f0380ad5093d--giphy.gif|6^9~,|6^9~200|6^9~,|6^9~200|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "@+DisplayImage#1 Let me add this to your cart. 🛒" "Do you want to buy anything else today? 👇"</call> <call>displayresoptions "Continue shopping" "No, I am done for today" </call>{topic=224197804537599840}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 224197804537599840
+
+	 + continue shopping{weight=1000}
+	 - <call>returnImage "https://climaxweb.net/templates/images/76f74a668bfc06fc45276060966e4e66--giphy.gif" "200" "200"</call> Sure, we can help you with that. 🙋 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/76f74a668bfc06fc45276060966e4e66--giphy.gif|6^9~,|6^9~200|6^9~,|6^9~200|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please select the category that best suits your requirement. 😊"</call> <call>displayresoptions "Fruits & Vegetables" "Bakery - Eggs & Dairy" </call>{topic=547687325113759500}
+
+	 + no i am done for today{weight=1000}
+	 - Sure. Let&#039;s proceed to checkout 🏃 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "How would you like to receive your order confirmation? 📃"</call> <call>displayresoptions "Email" "Phone" </call>{topic=982842848138875500}
+< topic 
+
+> topic 982842848138875500
+
+	 + email{weight=1000}
+	 - Sounds like a plan. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "So, can I have your email address below? 📧"</call> {topic=891112183681034100}
+
+	 + phone{weight=1000}
+	 - Sounds like a plan. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "So, can I have your phone number below?"</call> {topic=334387732426618700}
+< topic 
+
+> topic 891112183681034100
+	 + * 
+	 * <call>validationstoreddata "is_email" "Please enter a valid email address."</call> == valid => <call>storetodbwpoptions "1" ""</call> And your name please? ✍{topic=235898040261937380}
+	 - <call>validationstoreddata "is_email" "Please enter a valid email address."</call>
+< topic 
+
+> topic 235898040261937380
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "0" ""</call> Thanks <call>getVariableData "name"</call> for sharing your details with us. 🙏 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Your order has been placed. 😊" "You will get your order confirmation on your Email and you can do your payment accordingly." "Thank you for shopping with us today. 🙏"</call> <call>stopConversation 4</call>{topic=random}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 334387732426618700
+	 + * 
+	 * <call>validationstoreddata "is_phone" "Please enter a valid phone number."</call> == valid => <call>storetodbwpoptions "2" ""</call> And your name please? ✍{topic=235898040261937380}
+	 - <call>validationstoreddata "is_phone" "Please enter a valid phone number."</call>
+< topic 
+
+> topic 97300861832070980
+
+	 + milk milk products{weight=1000}
+	 - <call>returnImage "https://climaxweb.net/templates/images/bf71e33a601cd02a96fe5ec79f084647--giphy-5.gif" "200" "200"</call> One glass of milk a day can keep all health problems away. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/bf71e33a601cd02a96fe5ec79f084647--giphy-5.gif|6^9~,|6^9~200|6^9~,|6^9~200|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "So, which one would you like to order? 🛒"</call> <call>displayrescardsoptions "https://climaxweb.net/templates/images/322b51c74d63a86f06740f83bd3f5ee1--1.jpeg" "Amul Taaza Toned Uht Milk Tetra 1L" "Amul Taaza Homogenised Toned Milk is excellent for direct drinking, making tea and coffee, with breakfast cereals and prepration of desert and sweets. It has no added powder or water. Amul Taaza is homogenised toned milk is fortified with Vitamins A and D." "Buy Now" "https://climaxweb.net/templates/images/011daa090db7e2cb90bdc3ac1e25bd1b--2.jpeg" "Nestle Milk Maid 400g" "Made with high-quality milk, your favourite MILKMAID has been delighting generations for over 100 years! · Now come bake with Milkmaid and easily delight ." "Buy Now" </call>{topic=187679299684360930}
+
+	 + bread buns{weight=1000}
+	 - <call>returnImage "https://climaxweb.net/templates/images/09f99b398c0f0b7d39b243b3f8634a7b--giphy-4-4.10.04-PM.gif" "200" "200"</call> Good bread is the most fundamentally satisfying of all foods, and good bread with fresh butter is the greatest of feasts. 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~1|6^9~,[[|6^9~https:\/\/climaxweb.net\/templates\/images\/09f99b398c0f0b7d39b243b3f8634a7b--giphy-4-4.10.04-PM.gif|6^9~,|6^9~200|6^9~,|6^9~200|6^9~]]],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "So, which one would you like to order? 🛒"</call> <call>displayrescardsoptions "https://climaxweb.net/templates/images/b0cbad5088572b6164dabdff8da4febd--1264586.jpeg" "Spencers Whole Wheat Bread 400g" "Sp Pat Whole Wheat Bread 400G" "Buy Now" "https://climaxweb.net/templates/images/a68dc3d036d4bd5dfa449dff35fb9d98--1264581.jpeg" "Spencers Garlic Bread 400g" "Sp Pat Garlic Bread 400G" "Buy Now" </call>{topic=428405023572121860}
+< topic 
+
+> topic 187679299684360930
+
+	 + amul taaza toned uht milk tetra 1l{weight=1000}
+	 - Please also share how much quantity would you like to buy? ✍<call>displayresoptions "Continue shopping" "No, I am done for today" </call>{topic=224197804537599840}
+
+	 + nestle milk maid 400g{weight=1000}
+	 - Please also share how much quantity would you like to buy? ✍<call>displayresoptions "Continue shopping" "No, I am done for today" </call>{topic=224197804537599840}
+< topic 
+
+> topic 428405023572121860
+
+	 + spencers whole wheat bread 400g{weight=1000}
+	 - Please also share how much quantity would you like to buy? ✍<call>displayresoptions "Continue shopping" "No, I am done for today" </call>{topic=224197804537599840}
+
+	 + spencers garlic bread 400g{weight=1000}
+	 - Please also share how much quantity would you like to buy? ✍<call>displayresoptions "Continue shopping" "No, I am done for today" </call>{topic=224197804537599840}
+< topic 

@@ -1,0 +1,34 @@
+# Maxbot demo website — clean URLs
+Options -MultiViews -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /landing/maxbot/
+
+    # Strip a trailing slash from page URLs (but never from real directories)
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)/$ /landing/maxbot/$1 [R=301,L]
+
+    # Retired pages
+    RewriteRule ^blog/?$ /landing/maxbot/ [R=301,L]
+    RewriteRule ^whatsapp-integration/?$ /landing/maxbot/whatsapp [R=301,L]
+
+    # Public pages
+    RewriteRule ^(index|features|templates|template|use-cases|whatsapp|integrations|tutorials|docs|docs-core|docs-whatsapp)$ $1.php [L,QSA]
+
+    # Never expose the internals directly
+    RewriteRule ^(config|partials/.*|src/.*|data/.*|view/.*)\.php$ - [F,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=604800"
+    </FilesMatch>
+    <FilesMatch "\.(png|jpg|jpeg|gif|svg|webp|woff2)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>

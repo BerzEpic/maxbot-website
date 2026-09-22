@@ -1,0 +1,145 @@
+	 + 207115240844170000 
+	 - <call>initiationTopic </call> {topic=207115240844170000}
+	 + 650324155274623100 
+	 - <call>initiationTopic </call> {topic=650324155274623100}
+	 + 300462468378994200 
+	 - <call>initiationTopic </call> {topic=300462468378994200}
+	 + 26373174233011332 
+	 - <call>initiationTopic </call> {topic=26373174233011332}
+	 + 493967100533330500 
+	 - <call>initiationTopic </call> {topic=493967100533330500}
+	 + 661219724719290600 
+	 - <call>initiationTopic </call> {topic=661219724719290600}
+	 + 146259729289205730 
+	 - <call>initiationTopic </call> {topic=146259729289205730}
+	 + 195573708208133020 
+	 - <call>initiationTopic </call> {topic=195573708208133020}
+	 + 674141156815359400 
+	 - <call>initiationTopic </call> {topic=674141156815359400}
+	 + 775348954268774000 
+	 - <call>initiationTopic </call> {topic=775348954268774000}
+	 + 291508335689945700 
+	 - <call>initiationTopic </call> {topic=291508335689945700}
+	 + 51233666036103690 
+	 - <call>initiationTopic </call> {topic=51233666036103690}
+	 + 678051083125535400 
+	 - <call>initiationTopic </call> {topic=678051083125535400}
+	 + 854326923802195700 
+	 - <call>initiationTopic </call> {topic=854326923802195700}
+	 + 550094471292356860 
+	 - <call>initiationTopic </call> {topic=550094471292356860}
+	 + 428457931226092350 
+	 - <call>initiationTopic </call> {topic=428457931226092350}
+	 + 253304785969940450 
+	 - <call>initiationTopic </call> {topic=253304785969940450}
+	 + 196585826758438270 
+	 - <call>initiationTopic </call> {topic=196585826758438270}
+	 + 262677832656351680 
+	 - <call>initiationTopic </call> {topic=262677832656351680}
+	 + 84326331916967580 
+	 - <call>initiationTopic </call> {topic=84326331916967580}
+	 + 198661759157135360 
+	 - <call>initiationTopic </call> {topic=198661759157135360}
+	 + 598516806688954200 
+	 - <call>initiationTopic </call> {topic=598516806688954200}
+	 + 167688440501603700 
+	 - <call>initiationTopic </call> {topic=167688440501603700}
+	 + 50994634365163384 
+	 - <call>initiationTopic </call> {topic=50994634365163384}
+	 + topic207115240844170000
+	 - Hi! Welcome to <span style='font-weight:700;'> UCLA Medical Centre</span> <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Request to schedule an appointment with our expert consultants." "Which area are you looking for the Hospital in?"</call> <call>displayresoptions "New York" "Los Angeles" "Chicago" </call>{topic=207115240844170000}
+	 + topicjoin207115240844170000 
+	 - <call>displayresoptions "New York" "Los Angeles" "Chicago" </call>{topic=207115240844170000}
+
+> topic 207115240844170000
+
+	 + new york{weight=1000}
+	 - You are looking for a doctor in which department?<call>displayresoptions "Dermatology" "ENT" "Emergency Medicine" "Internal Medicine" "Obstetrics & Gynecology" </call>{topic=650324155274623100}
+
+	 + los angeles{weight=1000}
+	 - You are looking for a doctor in which department?<call>displayresoptions "Dermatology" "ENT" "Emergency Medicine" "Internal Medicine" "Obstetrics & Gynecology" </call>{topic=650324155274623100}
+
+	 + chicago{weight=1000}
+	 - You are looking for a doctor in which department?<call>displayresoptions "Dermatology" "ENT" "Emergency Medicine" "Internal Medicine" "Obstetrics & Gynecology" </call>{topic=650324155274623100}
+< topic 
+
+> topic 650324155274623100
+
+	 + dermatology{weight=1000}
+	 - Here are the doctors in that department 👇<call>displayresoptions "James Smith" "Kenneth Martinez" "Barbara Young" "Jeff Wright" "Dorothy Parker" </call>{topic=300462468378994200}
+
+	 + ent{weight=1000}
+	 - Here are the doctors in that department 👇<call>displayresoptions "James Smith" "Kenneth Martinez" "Barbara Young" "Jeff Wright" "Dorothy Parker" </call>{topic=300462468378994200}
+
+	 + emergency medicine{weight=1000}
+	 - Here are the doctors in that department 👇<call>displayresoptions "James Smith" "Kenneth Martinez" "Barbara Young" "Jeff Wright" "Dorothy Parker" </call>{topic=300462468378994200}
+
+	 + internal medicine{weight=1000}
+	 - Here are the doctors in that department 👇<call>displayresoptions "James Smith" "Kenneth Martinez" "Barbara Young" "Jeff Wright" "Dorothy Parker" </call>{topic=300462468378994200}
+
+	 + obstetrics gynecology{weight=1000}
+	 - Here are the doctors in that department 👇<call>displayresoptions "James Smith" "Kenneth Martinez" "Barbara Young" "Jeff Wright" "Dorothy Parker" </call>{topic=300462468378994200}
+< topic 
+
+> topic 300462468378994200
+
+	 + james smith{weight=1000}
+	 - Are you visiting for the first time, or is it a follow-up visit?<call>displayresoptions "First Visit" "Follow-up Visit" </call>{topic=26373174233011332}
+
+	 + kenneth martinez{weight=1000}
+	 - Are you visiting for the first time, or is it a follow-up visit?<call>displayresoptions "First Visit" "Follow-up Visit" </call>{topic=26373174233011332}
+
+	 + barbara young{weight=1000}
+	 - Are you visiting for the first time, or is it a follow-up visit?<call>displayresoptions "First Visit" "Follow-up Visit" </call>{topic=26373174233011332}
+
+	 + jeff wright{weight=1000}
+	 - Are you visiting for the first time, or is it a follow-up visit?<call>displayresoptions "First Visit" "Follow-up Visit" </call>{topic=26373174233011332}
+
+	 + dorothy parker{weight=1000}
+	 - Are you visiting for the first time, or is it a follow-up visit?<call>displayresoptions "First Visit" "Follow-up Visit" </call>{topic=26373174233011332}
+< topic 
+
+> topic 26373174233011332
+
+	 + first visit{weight=1000}
+	 - When do you prefer to meet the doctor?<call>displayresoptions "Next available slot" "Within next 7 days" "Within next 15 days" </call>{topic=493967100533330500}
+
+	 + follow up visit{weight=1000}
+	 - When do you prefer to meet the doctor?<call>displayresoptions "Next available slot" "Within next 7 days" "Within next 15 days" </call>{topic=493967100533330500}
+< topic 
+
+> topic 493967100533330500
+
+	 + next available slot{weight=1000}
+	 - Got it. Let me take your information, and we are done <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please select your gender 👇"</call> <call>displayresoptions "Male" "Female" "Other" </call>{topic=146259729289205730}
+
+	 + within next 7 days{weight=1000}
+	 - Got it. Let me take your information, and we are done <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please select your gender 👇"</call> <call>displayresoptions "Male" "Female" "Other" </call>{topic=146259729289205730}
+
+	 + within next 15 days{weight=1000}
+	 - Got it. Let me take your information, and we are done <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Please select your gender 👇"</call> <call>displayresoptions "Male" "Female" "Other" </call>{topic=146259729289205730}
+< topic 
+
+> topic 146259729289205730
+
+	 + male{weight=1000}
+	 - Your mobile number?{topic=195573708208133020}
+
+	 + female{weight=1000}
+	 - Your mobile number?{topic=195573708208133020}
+
+	 + other{weight=1000}
+	 - Your mobile number?{topic=195573708208133020}
+< topic 
+
+> topic 195573708208133020
+	 + * 
+	 * <call>validationstoreddata "is_phone" "Please enter a valid phone number."</call> == valid => <call>storetodbwpoptions "2" ""</call> Finally, your email address{topic=674141156815359400}
+	 - <call>validationstoreddata "is_phone" "Please enter a valid phone number."</call>
+< topic 
+
+> topic 674141156815359400
+	 + * 
+	 * <call>validationstoreddata "is_email" "Please enter a valid email address."</call> == valid => <call>storetodbwpoptions "1" ""</call> Thank you for your time, we have all the information we need 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "You will soon hear back from our team" "Have a great day 👋"</call> <call>stopConversation 3</call>{topic=random}
+	 - <call>validationstoreddata "is_email" "Please enter a valid email address."</call>
+< topic 

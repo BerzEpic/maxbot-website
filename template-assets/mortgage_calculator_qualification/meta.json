@@ -1,0 +1,9 @@
+{
+  "id": "mortgage_calculator_qualification",
+  "name": "Finance – Mortgage Calculator",
+  "description": "Collect loan details, estimate monthly payments, and qualify users for a mortgage follow-up.",
+  "category": "acquire",
+  "tags": ["finance", "mortgage", "calculator"],
+  "recommended_entities": ["name", "email", "phone", "home_price", "down_payment", "loan_term"],
+  "thumbnail": "thumb.svg"
+}

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="120" viewBox="0 0 260 120" role="img" aria-label="Restaurant Table Booking icon">
+  <rect width="260" height="120" rx="18" fill="#143258"/>
+
+  <!-- table setup -->
+  <ellipse cx="72" cy="61" rx="34" ry="18" fill="#ffffff"/>
+  <ellipse cx="72" cy="61" rx="13" ry="8" fill="#f4b41a"/>
+  <rect x="67" y="79" width="10" height="17" rx="3" fill="#ffffff"/>
+
+  <!-- left place setting -->
+  <circle cx="44" cy="61" r="11" fill="#ffffff"/>
+  <circle cx="44" cy="61" r="5" fill="#f4b41a"/>
+  <rect x="26" y="49" width="3" height="24" rx="1.5" fill="#f4b41a"/>
+  <rect x="22" y="49" width="2" height="9" rx="1" fill="#f4b41a"/>
+  <rect x="25.5" y="49" width="2" height="9" rx="1" fill="#f4b41a"/>
+  <rect x="30" y="49" width="2" height="9" rx="1" fill="#f4b41a"/>
+  <rect x="57" y="49" width="3" height="24" rx="1.5" fill="#f4b41a"/>
+  <path d="M60 49c5 0 7 3 7 7s-2 7-7 7z" fill="#f4b41a"/>
+
+  <!-- right place setting -->
+  <circle cx="100" cy="61" r="11" fill="#ffffff"/>
+  <circle cx="100" cy="61" r="5" fill="#f4b41a"/>
+  <rect x="82" y="49" width="3" height="24" rx="1.5" fill="#f4b41a"/>
+  <rect x="78" y="49" width="2" height="9" rx="1" fill="#f4b41a"/>
+  <rect x="81.5" y="49" width="2" height="9" rx="1" fill="#f4b41a"/>
+  <rect x="86" y="49" width="2" height="9" rx="1" fill="#f4b41a"/>
+  <rect x="113" y="49" width="3" height="24" rx="1.5" fill="#f4b41a"/>
+  <path d="M116 49c5 0 7 3 7 7s-2 7-7 7z" fill="#f4b41a"/>
+
+  <!-- reservation calendar -->
+  <rect x="146" y="22" width="86" height="76" rx="12" fill="#ffffff"/>
+  <rect x="146" y="22" width="86" height="18" rx="12" fill="#f4b41a"/>
+  <rect x="161" y="16" width="6" height="14" rx="3" fill="#ffffff"/>
+  <rect x="211" y="16" width="6" height="14" rx="3" fill="#ffffff"/>
+
+  <rect x="160" y="50" width="13" height="11" rx="3" fill="#143258"/>
+  <rect x="179" y="50" width="13" height="11" rx="3" fill="#143258"/>
+  <rect x="198" y="50" width="13" height="11" rx="3" fill="#143258"/>
+  <rect x="160" y="66" width="13" height="11" rx="3" fill="#143258"/>
+  <rect x="179" y="66" width="13" height="11" rx="3" fill="#143258"/>
+  <rect x="198" y="66" width="13" height="11" rx="3" fill="#143258"/>
+
+  <!-- reservation highlight -->
+  <rect x="179" y="66" width="13" height="11" rx="3" fill="#f4b41a"/>
+  <path d="M182 71l2 2 5-6" fill="none" stroke="#143258" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

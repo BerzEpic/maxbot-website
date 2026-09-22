@@ -1,0 +1,96 @@
+> object gotoTopic javascript
+  return window.topicNavigationUtils.gotoTopic(args);
+< object
+
+> object rsPromptInput javascript
+  return window.topicNavigationUtils.rsPromptInput(args);
+< object
+
+> object outputResponses javascript
+  return window.responseUtils.outputResponses(args);
+< object
+
+> object storeUsersResponse javascript
+  return window.miscUtils.storeUsersResponse(args);
+< object
+
+> object storetodbwpoptions javascript
+  return window.miscUtils.storetodbwpoptions(args);
+< object
+
+> object getVariableData javascript
+  return window.miscUtils.getVariableData(args);
+< object
+
+> object displayresoptions javascript
+  return window.topicNavigationUtils.displayresoptions(args);
+< object
+
+> object displayrescardsoptions javascript
+  return window.topicNavigationUtils.displayrescardsoptions(args);
+< object
+
+> object resortTofaq javascript
+  return window.topicNavigationUtils.resortTofaq(args);
+< object
+
+> object closeConversation javascript
+  return window.topicNavigationUtils.closeConversation();
+< object
+
+> object getWeatherInfo javascript
+  return window.topicNavigationUtils.getWeatherInfo();
+< object
+
+> object testHTML javascript
+  return window.miscUtils.testHTML(args);
+< object
+
+> object DisplayItemsCard javascript
+  return window.responseUtils.DisplayItemsCard(args);
+< object
+
+> object returnImage javascript
+  return window.responseUtils.returnImage(args);
+< object
+
+> object initiationTopic javascript
+  return window.topicNavigationUtils.initiationTopic(args);
+< object
+
+> object returnVideo javascript
+  return window.responseUtils.returnVideo(args);
+< object
+
+> object returnHyperLink javascript
+  return window.responseUtils.returnHyperLink(args);
+< object
+
+> object returnApos javascript
+  return window.topicNavigationUtils.returnApos(args);
+< object
+
+> object validationstoreddata javascript
+  return window.responseUtils.validationstoreddata(args);
+< object
+
+> object printBoldWordsDebut javascript
+  return window.topicNavigationUtils.printBoldWordsDebut();
+< object
+
+> object printBoldWordsEnd javascript
+  return window.topicNavigationUtils.printBoldWordsEnd();
+< object
+
+> object printNewLine javascript
+  return window.topicNavigationUtils.printNewLine();
+< object
+
+> object stopConversation javascript
+  return window.miscUtils.stopConversation(args);
+< object
+
++ *
+- default bot response
+
+

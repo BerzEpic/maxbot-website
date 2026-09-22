@@ -1,0 +1,112 @@
+	 + 281558269273254800 
+	 - <call>initiationTopic </call> {topic=281558269273254800}
+	 + 241477441464872930 
+	 - <call>initiationTopic </call> {topic=241477441464872930}
+	 + 537940550735011260 
+	 - <call>initiationTopic </call> {topic=537940550735011260}
+	 + 720338301913986600 
+	 - <call>initiationTopic </call> {topic=720338301913986600}
+	 + 702239026454427500 
+	 - <call>initiationTopic </call> {topic=702239026454427500}
+	 + 377196885033572100 
+	 - <call>initiationTopic </call> {topic=377196885033572100}
+	 + 937838242068447700 
+	 - <call>initiationTopic </call> {topic=937838242068447700}
+	 + 234256811557205340 
+	 - <call>initiationTopic </call> {topic=234256811557205340}
+	 + 201640539079721340 
+	 - <call>initiationTopic </call> {topic=201640539079721340}
+	 + 405517119801936960 
+	 - <call>initiationTopic </call> {topic=405517119801936960}
+	 + 574353961604406900 
+	 - <call>initiationTopic </call> {topic=574353961604406900}
+	 + 420562615344763460 
+	 - <call>initiationTopic </call> {topic=420562615344763460}
+	 + 817366208485140200 
+	 - <call>initiationTopic </call> {topic=817366208485140200}
+	 + 794482685559129000 
+	 - <call>initiationTopic </call> {topic=794482685559129000}
+	 + 402557817933458800 
+	 - <call>initiationTopic </call> {topic=402557817933458800}
+	 + topic281558269273254800
+	 - Hey there! Welcome to our Mortgage Calculator 😃 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "@-Strong Use our mortgage calculator to estimate your monthly mortgage payment. @-EndStrong" "You can input a different home price, down payment, loan term, and interest rate to see how your monthly payment changes." "Would you like to see how it works?"</call> <call>displayresoptions "Yes" </call>{topic=281558269273254800}
+	 + topicjoin281558269273254800
+	 - <call>displayresoptions "Yes" </call>{topic=281558269273254800}
+
+> topic 281558269273254800
+
+	 + yes{weight=1000}
+	 - Great! We take our calculator, a <span style='font-weight:700;'>step further by factoring in your credit score range, and zip code to give you a more precise payment estimate. </span> <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "So tell me, what is the price of the house you seek mortgage for? (Price in $)"</call> {topic=241477441464872930}
+< topic 
+
+> topic 241477441464872930
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> Thanks! <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "What amount are you comfortable with, for the down payment? (again, price in $)"</call> {topic=537940550735011260}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 537940550735011260
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> Now that you know 2 major components of the mortgage calculator, let me as ask you about the third most important component. <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "And that is the length of loan." "Please tell me the number of years for the loan tenure 👇"</call> {topic=720338301913986600}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 720338301913986600
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> That&#039;s great. We are just few steps away from finding out the monthly payment breakdown. <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Tell me the interest rate percentage."</call> {topic=702239026454427500}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 702239026454427500
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> Thanks, for sharing all the details with me. <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Also, if you are planning to buy in the next 45 days, @-Strong it's important to get pre-qualified @-EndStrong" "This is mainly because many sellers only consider pre-qualified offers 🙆" "Want to check your eligibility for that?"</call> <call>displayresoptions "Yes" "No, tell me the monthly mortgage upfront" </call>{topic=377196885033572100}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 377196885033572100
+
+	 + yes{weight=1000}
+	 - What is the type of mortgage you wish to take?<call>displayresoptions "Purchase" "Refinance" </call>{topic=937838242068447700}
+
+	 + no tell me the monthly mortgage upfront{weight=1000}
+	 - Thanks for being patient with my questions. <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We are done with it now. 🙂" "Let me know your email id so that I can send you a detailed analysis of the monthly mortgage payments."</call> {topic=817366208485140200}
+< topic 
+
+> topic 937838242068447700
+
+	 + purchase{weight=1000}
+	 - And what is the zip code?{topic=201640539079721340}
+
+	 + refinance{weight=1000}
+	 - And what is the zip code?{topic=201640539079721340}
+< topic 
+
+> topic 201640539079721340
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "3" ""</call> Thanks for being patient with my questions. <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We are done with it now. 🙂" "Let me know your email id so that I can send you a detailed analysis of the monthly mortgage payments."</call> {topic=405517119801936960}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 405517119801936960
+	 + * 
+	 * <call>validationstoreddata "is_email" "Please enter a valid email address."</call> == valid => <call>storetodbwpoptions "1" ""</call> And your name?{topic=574353961604406900}
+	 - <call>validationstoreddata "is_email" "Please enter a valid email address."</call>
+< topic 
+
+> topic 574353961604406900
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "0" ""</call> Thank you <call>getVariableData "name"</call> for providing me an opportunity to serve you today. <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "I hope, our analysis will help you in making a better choice for the mortgage." "Have a good day🙂"</call> <call>stopConversation 3</call>{topic=random}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 817366208485140200
+	 + * 
+	 * <call>validationstoreddata "is_email" "Please enter a valid email address."</call> == valid => <call>storetodbwpoptions "1" ""</call> And your name?{topic=794482685559129000}
+	 - <call>validationstoreddata "is_email" "Please enter a valid email address."</call>
+< topic 
+
+> topic 794482685559129000
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "0" ""</call> Thank you <call>getVariableData "name"</call> for providing me an opportunity to serve you today. <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "I hope, our analysis will help you in making a better choice for the mortgage." "Have a good day🙂"</call> <call>stopConversation 3</call>{topic=random}
+	 - <call>validationstoreddata "" ""</call>
+< topic 

@@ -1,0 +1,9 @@
+{
+  "id": "undergraduate_admissions",
+  "name": "Education – Undergraduate Admissions",
+  "description": "Guide prospective students through programs, eligibility, and inquiry submission for university admissions.",
+  "category": "acquire",
+  "tags": ["education", "admissions", "student inquiry"],
+  "recommended_entities": ["name", "email", "phone", "program", "country", "intake"],
+  "thumbnail": "thumb.svg"
+}

@@ -1,0 +1,61 @@
+	 + 713494397239903100 
+	 - <call>initiationTopic </call> {topic=713494397239903100}
+	 + 71533564220945480 
+	 - <call>initiationTopic </call> {topic=71533564220945480}
+	 + 970904686515204700 
+	 - <call>initiationTopic </call> {topic=970904686515204700}
+	 + 143942569546723790 
+	 - <call>initiationTopic </call> {topic=143942569546723790}
+	 + 640142227977596700 
+	 - <call>initiationTopic </call> {topic=640142227977596700}
+	 + 570268028696513150 
+	 - <call>initiationTopic </call> {topic=570268028696513150}
+	 + 925089829714569600 
+	 - <call>initiationTopic </call> {topic=925089829714569600}
+	 + 901343574417039100 
+	 - <call>initiationTopic </call> {topic=901343574417039100}
+	 + 92304516771979710 
+	 - <call>initiationTopic </call> {topic=92304516771979710}
+	 + topic713494397239903100 
+	 - Welcome to Smiley Locksmith &amp; Doors 😁 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We do all kinds of services when it comes to locks." "Our@-Strong licensed locksmiths @-EndStrong are here to care for your lock needs@-Strong 24/7@-Strong and immediately." "Would you like to find a locksmith today?"</call> <call>displayresoptions "I need some help with my locks." </call>{topic=713494397239903100}
+	 + topicjoin713494397239903100
+	 - <call>displayresoptions "I need some help with my locks." </call>{topic=713494397239903100}
+
+> topic 713494397239903100
+
+	 + i need some help with my locks{weight=1000}
+	 - Great, we can help you with that 😊 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We have a wide range of services that we provide" "Let me list out our usual services and you can pick from them."</call> <call>displayresoptions "Emergency Locksmith" "Lock Repair" "Lock Installation" "Re-keying Services" </call>{topic=71533564220945480}
+< topic 
+
+> topic 71533564220945480
+
+	 + emergency locksmith{weight=1000}
+	 - Oh, no! 😮 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We're so sorry to hear that." "Usually, the scenario is such that you are locked in a car or house." "We can help you out of this mess." "Our service costs are $55 onwards for car lockouts and $65 onwards for house lockouts."</call> <call>displayresoptions "Alright, book me an appointment" </call>{topic=970904686515204700}
+
+	 + lock repair{weight=1000}
+	 - We hate faulty locks too! 😑 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Our locksmiths have experience with different kinds of locks and techniques to repair them." "We should be able to fix this issue."</call> <call>displayresoptions "Alright, book me an appointment" </call>{topic=970904686515204700}
+
+	 + lock installation{weight=1000}
+	 - Our experienced locksmiths will know exactly what to do. <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We have experience in installation of all different kinds of locks 😊" "We're constantly aware of the different lock technologies that come into the market too" "And you can get the job done in just $49."</call> <call>displayresoptions "Alright, book me an appointment" </call>{topic=970904686515204700}
+
+	 + re keying services{weight=1000}
+	 - Our experienced locksmiths will know exactly what to do. <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "We have experience in installation of all different kinds of locks 😊" "We're constantly aware of the different lock technologies that come into the market too" "And you can get the job done in just $49."</call> <call>stopConversation 4</call>{topic=random}
+< topic 
+
+> topic 970904686515204700
+
+	 + alright book me an appointment{weight=1000}
+	 - We assure you that our prices are best in the market! 🙌 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "I'll be needing a few details of yours to book an appointment with our locksmith." "What's your name?"</call> {topic=143942569546723790}
+< topic 
+
+> topic 143942569546723790
+	 + * 
+	 * <call>validationstoreddata "" ""</call> == valid => <call>storetodbwpoptions "0" ""</call> Alright, the quickest way to reach someone is on their phone. <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "...especially when our locksmith is on the way and lost" "What is the phone number we can contact you on? 🙂"</call> {topic=640142227977596700}
+	 - <call>validationstoreddata "" ""</call>
+< topic 
+
+> topic 640142227977596700
+	 + * 
+	 * <call>validationstoreddata "is_email" "Please enter a valid email address."</call> == valid => <call>storetodbwpoptions "1" ""</call> Our locksmith will contact you shortly. 🙂 <call>outputResponses "[[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~],[|6^9~0|6^9~]]" "Till then, have a nice day 🌺"</call> <call>stopConversation 2</call>{topic=random}
+	 - <call>validationstoreddata "is_email" "Please enter a valid email address."</call>
+< topic 

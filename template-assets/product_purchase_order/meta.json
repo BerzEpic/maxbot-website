@@ -1,0 +1,9 @@
+{
+  "id": "product_purchase_order",
+  "name": "B2B Commerce – Purchase Order",
+  "description": "Collect product requirements, quantities, and buyer details to generate a purchase order request.",
+  "category": "commerce",
+  "tags": ["purchase order", "b2b", "sales"],
+  "recommended_entities": ["name", "email", "phone", "company", "product", "quantity"],
+  "thumbnail": "thumb.svg"
+}
