@@ -14,7 +14,10 @@ Options -MultiViews -Indexes
     RewriteRule ^whatsapp-integration/?$ /landing/maxbot/whatsapp [R=301,L]
 
     # Public pages
-    RewriteRule ^(index|features|templates|template|use-cases|whatsapp|integrations|tutorials|docs|docs-core|docs-whatsapp|privacy-policy)$ $1.php [L,QSA]
+    RewriteRule ^(index|features|templates|template|use-cases|whatsapp|integrations|tutorials|docs|docs-free|docs-standard|docs-core|docs-whatsapp|privacy-policy)$ $1.php [L,QSA]
+
+    RewriteRule ^(?:tests|config)/ - [F,L]
+    RewriteRule ^(?:README|HANDOFF)\.md$ - [F,L]
 
     # Never expose the internals directly
     RewriteRule ^(config|partials/.*|src/.*|data/.*|view/.*)\.php$ - [F,L]

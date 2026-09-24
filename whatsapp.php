@@ -15,7 +15,7 @@ include __DIR__ . '/partials/navbar.php';
     <div class="container">
         <div class="split split--wide-left" style="gap:56px;">
             <div>
-                <div class="eyebrow eyebrow--green">Add-on · Requires Maxbot Core</div>
+                <div class="eyebrow eyebrow--green">Add-on · Requires Maxbot builder</div>
                 <h1 class="h-display">
                     Every other WhatsApp plugin opens a chat.<br>
                     <span class="mark">This one answers it.</span>
@@ -130,7 +130,7 @@ include __DIR__ . '/partials/navbar.php';
         <div class="callout callout--green" style="margin-top:28px;">
             <strong>Core builds the conversation. The add-on connects it to WhatsApp.</strong>
             The add-on is not a second chatbot builder, it uses the agents, topics, entities and
-            flows that already exist in Maxbot Core.
+            flows that already exist in Maxbot builder.
         </div>
     </div>
 </section>
@@ -339,7 +339,7 @@ include __DIR__ . '/partials/navbar.php';
                 <ol class="steps steps--green">
                     <li>
                         <h4 class="h-4">Install</h4>
-                        <p>Add Maxbot Core and the WhatsApp add-on to WordPress, in that order.</p>
+                        <p>Add Maxbot builder and the WhatsApp add-on to WordPress, in that order.</p>
                     </li>
                     <li>
                         <h4 class="h-4">Connect Meta</h4>
@@ -390,10 +390,10 @@ include __DIR__ . '/partials/navbar.php';
                     <tr><td>Replies automatically</td><td class="no">No</td><td class="yes">Yes</td><td class="col-mb yes">Yes</td></tr>
                     <tr><td>Visual flow builder</td><td class="no">No</td><td class="yes">Yes</td><td class="col-mb yes">Yes</td></tr>
                     <tr><td>Captures name, email, phone</td><td class="no">No</td><td class="yes">Yes</td><td class="col-mb yes">Yes</td></tr>
-                    <tr><td>Monthly platform fee</td><td>None</td><td>Recurring</td><td class="col-mb"><strong>None</strong></td></tr>
+                    <tr><td>Maxbot billing</td><td>—</td><td>Check provider terms</td><td class="col-mb">Depends on edition; add-on terms separate</td></tr>
                     <tr><td>Markup on Meta's rates</td><td>,</td><td>Usually</td><td class="col-mb"><strong>None</strong></td></tr>
                     <tr><td>Contact and conversation limits</td><td>,</td><td>Tiered</td><td class="col-mb"><strong>None</strong></td></tr>
-                    <tr><td>Flows, fields and collected data</td><td>,</td><td>Capped by plan</td><td class="col-mb"><strong>Unlimited</strong></td></tr>
+                    <tr><td>Builder capabilities</td><td>—</td><td>Check provider terms</td><td class="col-mb">Check your installed edition</td></tr>
                     <tr><td>Where customer data lives</td><td>,</td><td>Their servers</td><td class="col-mb"><strong>Your server</strong></td></tr>
                     <tr><td>Managed from WordPress</td><td class="yes">Yes</td><td class="no">No</td><td class="col-mb yes">Yes</td></tr>
                 </tbody>
@@ -421,7 +421,7 @@ include __DIR__ . '/partials/navbar.php';
             </div>
 
             <ul class="ticks ticks--light" style="gap:18px;">
-                <li><?php echo mb_icon('info'); ?><span><b>This is an add-on.</b> It requires Maxbot Core, installed, active and authorized. It extends Maxbot to WhatsApp; it does not replace it.</span></li>
+                <li><?php echo mb_icon('info'); ?><span><b>This is an add-on.</b> It requires Maxbot builder, installed and active. It extends Maxbot to WhatsApp; it does not replace it.</span></li>
                 <li><?php echo mb_icon('info'); ?><span><b>WhatsApp is Meta's platform, and Meta's rules apply.</b> You need a Meta developer app, a Business Portfolio and a WhatsApp Business Account with your own number. Business verification, display-name review and template approval may apply.</span></li>
                 <li><?php echo mb_icon('info'); ?><span><b>HTTPS and a publicly reachable site are required</b>, because Meta has to deliver webhook events to your WordPress installation.</span></li>
                 <li><?php echo mb_icon('info'); ?><span><b>This is not a bulk-messaging or broadcast tool.</b> It is built for conversations customers start, which is exactly what the Cloud API is designed for.</span></li>
@@ -440,12 +440,12 @@ include __DIR__ . '/partials/navbar.php';
 
         <div class="faq">
             <details>
-                <summary>Do I need the Maxbot Core plugin?</summary>
-                <div class="faq-body"><p>Yes. The add-on builds on Core: the agents, topics, flows, entities, Users Data and project model all come from it. Deactivating Core stops the add-on working.</p></div>
+                <summary>Do I need the Maxbot builder plugin?</summary>
+                <div class="faq-body"><p>Yes. The add-on requires a compatible active Maxbot plugin to build and run its conversation flows. Check the add-on’s compatibility requirements for your installed release. Deactivating the required builder stops the add-on working.</p></div>
             </details>
             <details>
                 <summary>Are there monthly fees?</summary>
-                <div class="faq-body"><p>None to us. One purchase. Meta charges you directly for message conversations at its own published rates, and nothing is added on top.</p></div>
+                <div class="faq-body"><p>Maxbot Free has no monthly subscription, Standard is a one-time purchase and Pro is planned as a monthly subscription. Check the separate add-on terms and Meta’s current charges before use.</p></div>
             </details>
             <details>
                 <summary>Can my customers reply from their normal WhatsApp?</summary>
@@ -487,9 +487,9 @@ include __DIR__ . '/partials/navbar.php';
             <a class="btn btn--green" href="<?php echo mb_e(MAXBOT_WHATSAPP_BUY_URL); ?>">
                 Get the WhatsApp add-on <?php echo mb_icon('arrow-right'); ?>
             </a>
-            <a class="btn btn--ghost" href="<?php echo mb_e(MAXBOT_CORE_BUY_URL); ?>">Get Maxbot Core</a>
+            <?php echo mb_edition_cta('standard', 'btn btn--ghost'); ?>
         </div>
-        <p class="tiny" style="margin-top:18px;">Core is required. Both are one-time purchases.</p>
+        <p class="tiny" style="margin-top:18px;">A compatible Maxbot plugin is required. Check the chosen edition and add-on terms separately.</p>
     </div>
 </section>
 

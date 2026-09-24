@@ -54,12 +54,16 @@ $navItem = static function (string $slug, string $label) use ($navCurrent): stri
                     Learn <?php echo mb_icon('chevron-down'); ?>
                 </a>
                 <div class="nav-menu">
-                    <a href="<?php echo mb_e(mb_url('docs-core')); ?>">
+                    <a href="<?php echo mb_e(mb_url('docs-free')); ?>">
                         <span class="mi"><?php echo mb_icon('box'); ?></span>
                         <span>
-                            <strong>Core documentation</strong>
-                            <span>Install, build flows, capture data, publish the widget.</span>
+                            <strong>Maxbot Free documentation</strong>
+                            <span>Set up your agent, build a flow and enable your chatbot.</span>
                         </span>
+                    </a>
+                    <a href="<?php echo mb_e(mb_url('docs')); ?>">
+                        <span class="mi"><?php echo mb_icon('layers'); ?></span>
+                        <span><strong>All edition guides</strong><span>Standard, Pro status and legacy reference.</span></span>
                     </a>
                     <a href="<?php echo mb_e(mb_url('docs-whatsapp')); ?>">
                         <span class="mi"><?php echo mb_icon('whatsapp'); ?></span>
@@ -81,7 +85,7 @@ $navItem = static function (string $slug, string $label) use ($navCurrent): stri
 
         <div class="nav-cta">
             <a class="btn btn--ghost btn--sm" href="<?php echo mb_e(mb_url('templates')); ?>">Browse templates</a>
-            <a class="btn btn--primary btn--sm" href="<?php echo mb_e(MAXBOT_CORE_BUY_URL); ?>">Get Maxbot</a>
+            <?php echo mb_edition_cta('standard', 'btn btn--primary btn--sm', 'Notify me: Standard'); ?>
         </div>
         </div>
     </div>

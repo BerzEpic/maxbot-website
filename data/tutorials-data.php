@@ -5,8 +5,8 @@
 
 return [
     'core' => [
-        'label'       => 'Maxbot Core',
-        'description' => 'Building, testing and publishing the conversation itself.',
+        'label'       => 'Legacy builder tutorials',
+        'description' => 'Earlier full-builder walkthroughs. Advanced screens are not part of the Free guide or a confirmed Standard/Pro feature list.',
         'items'       => [
             [
                 'title'       => 'How to create and launch a simple quick reply chatbot',

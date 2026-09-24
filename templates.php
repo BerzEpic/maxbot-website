@@ -59,6 +59,8 @@ include __DIR__ . '/partials/navbar.php';
         </div>
     </div>
 </section>
+<?php include __DIR__ . '/partials/showcase-notice.php'; ?>
+
 
 <section class="section" id="library">
     <div class="container">
@@ -107,9 +109,7 @@ include __DIR__ . '/partials/navbar.php';
                 gone for good.
             </p>
             <div class="btn-row" style="justify-content:center;margin-top:28px;">
-                <a class="btn btn--primary" href="<?php echo mb_e(MAXBOT_CORE_BUY_URL); ?>">
-                    Get Maxbot Core <?php echo mb_icon('arrow-right'); ?>
-                </a>
+                <?php echo mb_edition_cta('standard', 'btn btn--primary'); ?>
                 <a class="btn btn--ghost" href="<?php echo mb_e(mb_url('docs-core')); ?>#template-library">Read the template docs</a>
             </div>
         </div>

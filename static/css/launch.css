@@ -1,0 +1,25 @@
+/* Scoped additions; the existing Maxbot palette and components are retained. */
+.edition-card {display:flex;flex-direction:column;align-items:flex-start;gap:16px;min-width:0}
+.edition-card .btn {margin-top:auto;white-space:normal;text-align:center}
+.edition-card .tag {white-space:normal}
+.edition-note {margin:24px auto;padding:18px 24px;border-left:4px solid #fdd600;background:#f3f5f8;border-radius:4px;max-width:1240px}
+.edition-note p {margin:0}
+.launch-dialog {border:1px solid #d4dbe3;border-radius:20px;padding:0;width:min(560px,calc(100% - 32px));max-height:calc(100dvh - 32px);color:#002048;background:white;box-shadow:0 24px 80px #00204844;margin:auto;overflow:auto}
+.launch-dialog::backdrop {background:rgba(0,20,45,.65)}
+.launch-inner {padding:36px;position:relative}
+.launch-inner h2 {padding-right:16px;margin:14px 0}
+.launch-close {position:absolute;right:12px;top:10px;border:0;background:transparent;font-family:inherit;font-size:32px;line-height:1;cursor:pointer;width:40px;height:40px;color:inherit}
+.launch-dialog label {display:block;font-weight:600;margin:22px 0 8px}
+.launch-dialog input[type=email] {width:100%;padding:13px 15px;border:1px solid #8999aa;border-radius:8px;font:inherit;color:inherit;background:white}
+.launch-dialog .launch-consent {display:flex;align-items:flex-start;gap:12px;font-size:14px;line-height:1.6;font-weight:400}
+.launch-consent input {flex-shrink:0;width:18px;height:18px;margin-top:3px;accent-color:#002048}
+.launch-dialog .btn-row {margin-top:24px;gap:12px}
+.launch-dialog :focus-visible {outline:3px solid #315e96;outline-offset:3px}
+.launch-field-error {color:#9b2525;font-size:14px;margin-top:6px}
+.launch-field-error:empty,.launch-result:empty {display:none}
+.launch-result {margin-top:22px;padding:14px;border-radius:8px;background:#f3f5f8;line-height:1.6}
+.launch-result[data-state=success] {background:#e7f3ea;color:#17502e}
+.launch-result[data-state=error] {background:#fff0eb;color:#8b3020}
+.launch-dialog [aria-invalid=true] {border-color:#9b2525}
+.launch-dialog button:disabled {opacity:.6;cursor:wait}
+@media(max-width:600px) {.launch-inner{padding:28px 22px}.launch-dialog .btn-row{flex-direction:column;align-items:stretch}.edition-grid{grid-template-columns:1fr}}

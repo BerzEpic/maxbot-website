@@ -2,7 +2,7 @@
 require_once __DIR__ . '/config.php';
 
 $pageTitle       = 'Maxbot tutorials, step-by-step video guides';
-$pageDescription = 'Video tutorials for Maxbot Core and the WhatsApp Integration: build quick reply and advanced keyword-driven flows, capture and reuse user data, use templates, customize the widget, and configure WhatsApp.';
+$pageDescription = 'Video tutorials for Maxbot builder and the WhatsApp Integration: build quick reply and advanced keyword-driven flows, capture and reuse user data, use templates, customize the widget, and configure WhatsApp.';
 $pageUrl         = mb_url('tutorials');
 $navCurrent      = 'tutorials';
 
@@ -19,7 +19,7 @@ $renderGroup = static function (string $key, array $group): void {
             <div class="split" style="align-items:flex-end;margin-bottom:34px;gap:40px;">
                 <div>
                     <div class="eyebrow<?php echo $isWhatsApp ? ' eyebrow--green' : ''; ?>">
-                        <?php echo $isWhatsApp ? 'Add-on tutorials' : 'Core tutorials'; ?>
+                        <?php echo $isWhatsApp ? 'Add-on tutorials' : 'Builder tutorials'; ?>
                     </div>
                     <h2 class="h-2"><?php echo mb_e($group['label']); ?></h2>
                     <p class="lede" style="margin-top:12px;max-width:50ch;"><?php echo mb_e($group['description']); ?></p>
@@ -27,7 +27,7 @@ $renderGroup = static function (string $key, array $group): void {
                 <div style="text-align:right;">
                     <a class="btn btn--ghost btn--sm" href="<?php echo mb_e($isWhatsApp ? mb_url('docs-whatsapp') : mb_url('docs-core')); ?>">
                         <?php echo mb_icon('book'); ?>
-                        <?php echo $isWhatsApp ? 'WhatsApp documentation' : 'Core documentation'; ?>
+                        <?php echo $isWhatsApp ? 'WhatsApp documentation' : 'Legacy builder reference'; ?>
                     </a>
                 </div>
             </div>
@@ -67,6 +67,7 @@ $renderGroup = static function (string $key, array $group): void {
             </div>
         </div>
     </section>
+
     <?php
 };
 ?>
@@ -80,12 +81,12 @@ $renderGroup = static function (string $key, array $group): void {
             </div>
             <div>
                 <p class="lede">
-                    Practical walkthroughs from first flow to advanced routing. The Core tutorials cover quick replies,
+                    Practical walkthroughs from first flow to advanced routing. The Builder tutorials cover quick replies,
                     user data, templates, widget customization, keywords, variables, Join routing, and saved responses.
                     The WhatsApp tutorials cover complete setup and production readiness, plus carousel templates.
                 </p>
                 <div class="btn-row" style="margin-top:22px;">
-                    <a class="btn btn--ghost btn--sm" href="#core"><?php echo mb_icon('box'); ?> Core tutorials</a>
+                    <a class="btn btn--ghost btn--sm" href="#core"><?php echo mb_icon('box'); ?> Builder tutorials</a>
                     <a class="btn btn--ghost btn--sm" href="#whatsapp"><?php echo mb_icon('whatsapp'); ?> WhatsApp tutorials</a>
                 </div>
             </div>
@@ -93,6 +94,7 @@ $renderGroup = static function (string $key, array $group): void {
     </div>
 </section>
 
+<?php include __DIR__ . '/partials/showcase-notice.php'; ?>
 <?php
 foreach ($groups as $key => $group) {
     $renderGroup($key, $group);
@@ -103,10 +105,10 @@ foreach ($groups as $key => $group) {
     <div class="container center">
         <h2 class="h-1" style="max-width:22ch;margin:0 auto;">Prefer to read it?</h2>
         <p class="lede" style="margin:16px auto 0;max-width:54ch;">
-            Both products are documented in full, with separate guides so each one stays focused.
+            Choose your edition guide, consult the legacy builder reference or follow the separate WhatsApp setup.
         </p>
         <div class="btn-row" style="justify-content:center;margin-top:28px;">
-            <a class="btn btn--signal" href="<?php echo mb_e(mb_url('docs-core')); ?>">Core documentation</a>
+            <a class="btn btn--signal" href="<?php echo mb_e(mb_url('docs-core')); ?>">Legacy builder reference</a>
             <a class="btn btn--onink" href="<?php echo mb_e(mb_url('docs-whatsapp')); ?>">WhatsApp documentation</a>
         </div>
     </div>

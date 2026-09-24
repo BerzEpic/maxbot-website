@@ -19,8 +19,8 @@ include __DIR__ . '/partials/navbar.php';
             </div>
             <div>
                 <p class="lede">
-                    Maxbot Core owns the conversation. A channel decides where that conversation
-                    runs. The website widget ships with Core; WhatsApp is a separate add-on. More
+                    Maxbot builder owns the conversation. A channel decides where that conversation
+                    runs. The website widget ships with Maxbot Free; WhatsApp is a separate add-on. More
                     channels are planned, and we will only list one as available when its add-on
                     genuinely is.
                 </p>
@@ -28,6 +28,8 @@ include __DIR__ . '/partials/navbar.php';
         </div>
     </div>
 </section>
+<?php include __DIR__ . '/partials/showcase-notice.php'; ?>
+
 
 <!-- ======================================================== AVAILABLE -->
 <section class="section">
@@ -44,7 +46,7 @@ include __DIR__ . '/partials/navbar.php';
                         <span class="channel-logo channel-logo--core"><?php echo mb_icon('message'); ?></span>
                         <div>
                             <h3 class="h-3">Website widget</h3>
-                            <span class="tag tag--core" style="margin-top:6px;display:inline-block;">Included in Maxbot Core</span>
+                            <span class="tag tag--core" style="margin-top:6px;display:inline-block;">Included in Maxbot builder</span>
                         </div>
                     </div>
                     <p>
@@ -101,7 +103,7 @@ include __DIR__ . '/partials/navbar.php';
             <h2 class="h-1">Planned, and not pretending otherwise.</h2>
             <p class="lede" style="margin-top:16px;">
                 The architecture is built so a new channel can be added without changing what
-                Maxbot Core is. These add-ons are not released yet, so nothing here is on sale
+                Maxbot builder is. These add-ons are not released yet, so nothing here is on sale
                 and nothing here is included with a current purchase.
             </p>
         </div>
@@ -175,13 +177,13 @@ include __DIR__ . '/partials/navbar.php';
                 <div class="eyebrow">Why this structure</div>
                 <h2 class="h-1">The flow outlives the channel.</h2>
                 <p class="lede" style="margin-top:16px;">
-                    Because the conversation lives in Core and the channel is only a delivery
+                    Because the conversation lives in the builder and the channel is only a delivery
                     surface, a support flow you build today keeps working when a new channel
                     arrives. The same captured fields, the same branches, the same project model.
                 </p>
                 <div class="btn-row" style="margin-top:26px;">
                     <a class="textlink" href="<?php echo mb_e(mb_url('features')); ?>">
-                        See what Core provides <?php echo mb_icon('arrow-right'); ?>
+                        Explore builder examples <?php echo mb_icon('arrow-right'); ?>
                     </a>
                 </div>
             </div>

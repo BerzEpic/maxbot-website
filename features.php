@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/config.php';
 
-$pageTitle       = 'Maxbot Core features, the visual chatbot builder for WordPress';
+$pageTitle       = 'Maxbot builder features, the visual chatbot builder for WordPress';
 $pageDescription = 'Agents, topics, the visual Flow Editor, quick replies and cards, entities and validation, Users Data, templates, rich content, Test Flow, projects and the website widget.';
 $pageUrl         = mb_url('features');
 $navCurrent      = 'features';
@@ -14,17 +14,17 @@ include __DIR__ . '/partials/navbar.php';
     <div class="container">
         <div class="split" style="align-items:flex-end;">
             <div>
-                <div class="eyebrow">Maxbot Core</div>
+                <div class="eyebrow">Maxbot builder</div>
                 <h1 class="h-display" style="max-width:17ch;">The builder behind every Maxbot conversation.</h1>
             </div>
             <div>
                 <p class="lede">
-                    Core is where the conversation is designed, tested and published. Channels only
-                    decide where it runs. Everything on this page is included in the plugin, on
-                    either licence.
+                    Explore the conversation-building tools shown in the existing Maxbot builder.
+                    Advanced examples below are a legacy product showcase; see the edition guides
+                    for current Free instructions and confirmed commercial models.
                 </p>
                 <div class="btn-row" style="margin-top:22px;">
-                    <a class="btn btn--primary btn--sm" href="<?php echo mb_e(MAXBOT_CORE_BUY_URL); ?>">Get Maxbot Core</a>
+                    <?php echo mb_edition_cta('standard', 'btn btn--primary btn--sm'); ?>
                     <a class="btn btn--ghost btn--sm" href="<?php echo mb_e(mb_url('docs-core')); ?>">Read the docs</a>
                 </div>
             </div>
@@ -376,63 +376,8 @@ include __DIR__ . '/partials/navbar.php';
 </section>
 
 <!-- ====================================================== REQUIREMENTS -->
-<section class="section" id="licensing">
-    <div class="container">
-        <div class="split split--top">
-            <div>
-                <div class="eyebrow">Licensing and requirements</div>
-                <h2 class="h-1">One purchase, no platform fee.</h2>
-                <p class="lede" style="margin-top:16px;">
-                    Both licences include the complete builder, unlimited flows, topics, entities,
-                    blocks, branches and stored entries. The licence sets how many projects you
-                    deploy.
-                </p>
-
-                <div class="cmp-wrap" style="margin-top:24px;">
-                    <table class="cmp" style="min-width:0;">
-                        <thead>
-                            <tr><th>Licence</th><th class="col-mb">Maxbot project allowance</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Regular</td><td class="col-mb">One project</td></tr>
-                            <tr><td>Extended</td><td class="col-mb"><strong>Unlimited projects</strong></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <p class="small" style="margin-top:16px;">
-                    Under Envato's standard terms, an Extended licence removes the Maxbot project
-                    limit inside the licensed installation. It does not mean one purchase can be
-                    installed on unlimited websites.
-                </p>
-            </div>
-
-            <div>
-                <article class="card">
-                    <h3 class="h-3">What you need</h3>
-                    <ul class="ticks" style="margin-top:16px;">
-                        <li><?php echo mb_icon('check'); ?><span>WordPress 6.5 or later</span></li>
-                        <li><?php echo mb_icon('check'); ?><span>PHP 8.0 or later</span></li>
-                        <li><?php echo mb_icon('check'); ?><span>WordPress administrator access</span></li>
-                        <li><?php echo mb_icon('check'); ?><span>HTTPS for production, and for any channel using a public callback</span></li>
-                        <li><?php echo mb_icon('check'); ?><span>A valid Maxbot Core purchase and authorization</span></li>
-                        <li><?php echo mb_icon('check'); ?><span>For WhatsApp: the separate add-on, a Meta developer account, a Business Portfolio and a WhatsApp Business Account</span></li>
-                    </ul>
-
-                    <div class="callout callout--warn" style="margin-top:20px;">
-                        Test updates on staging with current file and database backups before moving
-                        them to production.
-                    </div>
-
-                    <div class="btn-row" style="margin-top:22px;">
-                        <a class="btn btn--primary" href="<?php echo mb_e(MAXBOT_CORE_BUY_URL); ?>">
-                            Get Maxbot Core <?php echo mb_icon('arrow-right'); ?>
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </div>
+<section class="section band band--tint" id="licensing">
+    <div class="container"><?php include __DIR__ . '/partials/editions.php'; ?></div>
 </section>
 
 <?php include __DIR__ . '/partials/footer.php'; ?>

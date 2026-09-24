@@ -2,7 +2,7 @@
 /**
  * Shared documentation renderer.
  *
- * Content is supplied by docs-core.php and docs-whatsapp.php. This file owns
+ * Content is supplied by the edition guides and retained product references. This file owns
  * only the presentation.
  */
 
@@ -14,7 +14,8 @@ if (!isset($pageTitle, $docVersion, $docKind, $heroTitle, $heroText, $docGroups,
 
 $isWhatsApp      = $docKind === 'WhatsApp Add-on';
 $pageDescription = $pageDescription ?? $pageDesc ?? $heroText;
-$pageUrl         = $pageUrl ?? mb_url($isWhatsApp ? 'docs-whatsapp' : 'docs-core');
+$docRoute        = $docRoute ?? ($isWhatsApp ? 'docs-whatsapp' : 'docs-core');
+$pageUrl         = mb_url($docRoute);
 $navCurrent      = 'docs';
 
 if (!function_exists('maxbot_docs_e')) {
@@ -72,9 +73,10 @@ include __DIR__ . '/navbar.php';
                 <a href="<?php echo mb_e(mb_url('docs')); ?>">
                     <?php echo mb_icon('home'); ?> Documentation home
                 </a>
-                <a class="<?php echo $isWhatsApp ? '' : 'is-active'; ?>" href="<?php echo mb_e(mb_url('docs-core')); ?>">
-                    <?php echo mb_icon('box'); ?> Maxbot Core
-                </a>
+                <?php foreach (['docs-free' => 'Maxbot Free', 'docs-standard' => 'Maxbot Standard', 'docs-core' => 'Legacy builder reference'] as $route => $label): ?>
+                <a class="<?php echo $docRoute === $route ? 'is-active' : ''; ?>" href="<?php echo mb_e(mb_url($route)); ?>"><?php echo mb_icon('box'); ?> <?php echo mb_e($label); ?></a>
+                <?php endforeach; ?>
+                <span class="small">Maxbot Pro · Coming soon</span>
                 <a class="is-wa <?php echo $isWhatsApp ? 'is-active' : ''; ?>" href="<?php echo mb_e(mb_url('docs-whatsapp')); ?>">
                     <?php echo mb_icon('whatsapp'); ?> WhatsApp Add-on
                 </a>
@@ -102,6 +104,7 @@ include __DIR__ . '/navbar.php';
 
     <div class="docs-main">
         <header class="docs-hero<?php echo $isWhatsApp ? ' docs-hero--wa' : ''; ?>">
+            <nav aria-label="Breadcrumb" class="small"><a href="<?php echo mb_e(mb_url('docs')); ?>">Documentation</a> / <?php echo mb_e($docKind); ?></nav>
             <div class="eyebrow<?php echo $isWhatsApp ? ' eyebrow--green' : ''; ?>">
                 <?php echo maxbot_docs_e($docKind); ?> documentation · <?php echo maxbot_docs_e($docVersion); ?>
             </div>

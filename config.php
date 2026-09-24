@@ -9,12 +9,9 @@
 define('APP_BASE_PATH', __DIR__);
 define('APP_BASE_URL', '/landing/maxbot');
 
-/**
- * Purchase / call-to-action destinations.
- * Replace these two values with the real marketplace item URLs.
- */
-define('MAXBOT_CORE_BUY_URL', 'https://codecanyon.net/item/maxbot-chatbot-builder-wordpress-plugin/25237469');
+/** WhatsApp is a separate product; its existing destination is preserved. */
 define('MAXBOT_WHATSAPP_BUY_URL', '#');
+require_once __DIR__ . '/src/Editions.php';
 
 /**
  * Live demo widgets are served by the real WordPress/Maxbot installation.

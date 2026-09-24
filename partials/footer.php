@@ -6,14 +6,11 @@
             <div>
                 <h2 class="h-2">Build the conversation once.<br>Let it answer every night.</h2>
                 <p class="lede" style="margin-top:14px;max-width:52ch;">
-                    Maxbot Core runs inside WordPress. Add the WhatsApp Integration when you want the same
-                    flow answering on WhatsApp.
+                    Choose Maxbot Free, Standard or Pro for your WordPress chatbot. Explore the editions and the separate WhatsApp Add-on.
                 </p>
             </div>
             <div class="btn-row" style="justify-content:flex-end;">
-                <a class="btn btn--signal" href="<?php echo mb_e(MAXBOT_CORE_BUY_URL); ?>">
-                    Get Maxbot Core <?php echo mb_icon('arrow-right'); ?>
-                </a>
+                <?php echo mb_edition_cta('standard', 'btn btn--signal'); ?>
                 <a class="btn btn--onink" href="<?php echo mb_e(mb_url('templates')); ?>">Browse templates</a>
             </div>
         </div>
@@ -22,8 +19,8 @@
             <div>
                 <div class="foot-logo"><img src="<?php echo mb_e(mb_url('content/logo.png')); ?>" alt="Maxbot"></div>
                 <p class="small" style="margin-top:16px;max-width:34ch;">
-                    A native WordPress chatbot builder for guided conversations, quick replies, cards,
-                    validated data capture, a website widget, and official WhatsApp Cloud API automation.
+                    A WordPress chatbot builder for guided conversations and helpful quick replies.
+                    Explore the edition guides and the separate WhatsApp Integration.
                 </p>
             </div>
 
@@ -33,7 +30,7 @@
                     <li><a href="<?php echo mb_e(mb_url('features')); ?>">Features</a></li>
                     <li><a href="<?php echo mb_e(mb_url('templates')); ?>">Templates</a></li>
                     <li><a href="<?php echo mb_e(mb_url('use-cases')); ?>">Use cases</a></li>
-                    <li><a href="<?php echo mb_e(mb_url('features')); ?>#licensing">Licensing</a></li>
+                    <li><a href="<?php echo mb_e(mb_url('features')); ?>#licensing">Editions</a></li>
                 </ul>
             </div>
 
@@ -49,7 +46,9 @@
             <div>
                 <h5>Learn</h5>
                 <ul>
-                    <li><a href="<?php echo mb_e(mb_url('docs-core')); ?>">Core docs</a></li>
+                    <li><a href="<?php echo mb_e(mb_url('docs-free')); ?>">Maxbot Free docs</a></li>
+                    <li><a href="<?php echo mb_e(mb_url('docs-standard')); ?>">Maxbot Standard guide</a></li>
+                    <li><a href="<?php echo mb_e(mb_url('docs-core')); ?>">Legacy builder reference</a></li>
                     <li><a href="<?php echo mb_e(mb_url('docs-whatsapp')); ?>">WhatsApp docs</a></li>
                     <li><a href="<?php echo mb_e(mb_url('tutorials')); ?>">Tutorials</a></li>
                 </ul>
@@ -64,5 +63,6 @@
 </footer>
 
 <?php //include __DIR__ . '/live-widget.php'; ?>
+<?php include __DIR__ . '/launch-modal.php'; ?>
 </body>
 </html>

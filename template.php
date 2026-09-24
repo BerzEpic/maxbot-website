@@ -63,9 +63,7 @@ include __DIR__ . '/partials/navbar.php';
                 </div>
 
                 <div class="btn-row" style="margin-top:26px;">
-                    <a class="btn btn--primary" href="<?php echo mb_e(MAXBOT_CORE_BUY_URL); ?>">
-                        Get Maxbot Core <?php echo mb_icon('arrow-right'); ?>
-                    </a>
+                    <?php echo mb_edition_cta('standard', 'btn btn--primary'); ?>
                     <a class="btn btn--ghost" href="<?php echo mb_e(mb_url('templates')); ?>">All templates</a>
                 </div>
             </div>
@@ -94,6 +92,8 @@ include __DIR__ . '/partials/navbar.php';
         </div>
     </div>
 </section>
+<?php include __DIR__ . '/partials/showcase-notice.php'; ?>
+
 
 <section class="section">
     <div class="container">

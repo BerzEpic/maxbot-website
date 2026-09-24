@@ -4,12 +4,12 @@ if (!headers_sent()) {
 }
 
 $docVersion = 'v3.2.1';
-$docKind    = 'Maxbot Core';
-$pageTitle  = 'Maxbot Core Documentation';
-$pageDesc   = 'Complete documentation for installing Maxbot and building, testing, and publishing guided chatbot flows.';
+$docKind    = 'Legacy builder reference';
+$pageTitle  = 'Maxbot legacy builder reference | Documentation';
+$pageDesc   = 'Reference for the earlier Maxbot full builder. Current Free and Standard guidance is documented separately.';
 $pageUrl    = 'docs-core.php';
-$heroTitle  = 'Build complete chatbot experiences with Maxbot Core.';
-$heroText   = 'Install the plugin, create agents and topics, build guided conversations with quick replies and cards, capture data, test the experience, and publish it on WordPress.';
+$heroTitle  = 'Legacy Maxbot builder reference.';
+$heroText   = 'This retained guide describes the earlier full builder and its screenshots. It is not the Maxbot Free guide or a confirmed Standard/Pro feature list. Choose your edition from the navigation for current guidance.';
 $heroBadges = ['WordPress plugin', 'Visual Flow Editor', 'Quick reply buttons', 'Data capture', 'Web widget'];
 $nextPage   = ['href' => 'docs-whatsapp.php', 'label' => 'Next: configure the WhatsApp Add-on'];
 
@@ -18,7 +18,7 @@ $docGroups = [
         ['id' => 'overview', 'title' => 'What Maxbot is'],
         ['id' => 'requirements', 'title' => 'Requirements'],
         ['id' => 'installation', 'title' => 'Installation'],
-        ['id' => 'license-limits', 'title' => 'License and limits'],
+        ['id' => 'license-limits', 'title' => 'Current editions'],
         ['id' => 'core-concepts', 'title' => 'Core concepts'],
         ['id' => 'typical-workflow', 'title' => 'Typical workflow'],
     ]],
@@ -112,7 +112,6 @@ HTML,
                 <li>A currently supported WordPress and PHP environment.</li>
                 <li>HTTPS for production use and for any channel integration that requires a public callback.</li>
                 <li>The installable Maxbot plugin ZIP from the product download.</li>
-                <li>Your CodeCanyon purchase code for authorization.</li>
                 <li>A staging site and current database/files backup before installation or updates.</li>
             </ul>
             <div class="docs-callout warning"><strong>Upload the installable ZIP only.</strong> If the marketplace package contains documentation, licenses, and several archives, extract it first.</div>
@@ -120,32 +119,26 @@ HTML,
     ],
     [
         'id' => 'installation',
-        'title' => 'Install and authorize Maxbot',
+        'title' => 'Install Maxbot',
         'body' => <<<'HTML'
             <ol class="docs-steps">
                 <li>In WordPress, open <strong>Plugins → Add New Plugin</strong>.</li>
                 <li>Select <strong>Upload Plugin</strong>, choose the installable Maxbot ZIP, and select <strong>Install Now</strong>.</li>
                 <li>After installation finishes, select <strong>Activate Plugin</strong>.</li>
                 <li>Open the new <strong>Maxbot</strong> menu.</li>
-                <li>Enter the purchase code and complete license authorization.</li>
-                <li>Confirm that Agents, Topics, Entities, Templates, Projects, Users Data, and Training are available.</li>
+                <li>The following legacy sections describe screens from the earlier full builder. For current setup, select the Free or Standard guide in the navigation.</li>
             </ol>
             <div class="docs-callout success"><strong>Update safely:</strong> back up the site, update on staging, test a published project and its stored data, then update production.</div>
 HTML,
     ],
     [
         'id' => 'license-limits',
-        'title' => 'License and project limits',
+        'title' => 'Current editions and licensing',
         'body' => <<<'HTML'
-            <div class="docs-table-wrap"><table class="docs-table">
-                <thead><tr><th>License</th><th>Project limit</th><th>Unlimited inside the allowed projects</th></tr></thead>
-                <tbody>
-                    <tr><td>Regular / standard</td><td>1 project</td><td>Conversation flows, topics, entities, user entries, messages, blocks, and branches.</td></tr>
-                    <tr><td>Extended</td><td>Unlimited projects</td><td>Conversation flows, topics, entities, user entries, messages, blocks, and branches.</td></tr>
-                </tbody>
-            </table></div>
-            <p>The WhatsApp Integration is a separate add-on. Its buyers must also install and authorize Maxbot Core.</p>
-            <p class="docs-license-note"><strong>Envato licensing note:</strong> Maxbot’s unlimited-project allowance does not mean unlimited website installations. Under Envato’s standard Regular and Extended Licenses, one purchase covers one end product; an Extended License does not provide unlimited-site use.</p>
+            <p>Maxbot Free is planned for WordPress.org and has no monthly subscription. Maxbot Standard is planned for CodeCanyon as a one-time purchase with lifetime access. Maxbot Pro is planned for this website using Freemius with a monthly subscription; its checkout is not available yet.</p>
+            <p>Free and Standard use the Free service without product-license verification or per-project licensing. API authentication remains separate. A product’s feature limits are not license allowances.</p>
+            <p>These commercial models do not establish website allowances or a promise of lifetime support, updates or hosted-service availability. Check the terms provided with your edition. The old Regular/Extended project-quota model no longer describes these editions.</p>
+            <p>The WhatsApp Integration remains a separate add-on. Check the add-on’s requirements for your installed release.</p>
 HTML,
     ],
     [
@@ -160,7 +153,7 @@ HTML,
                 <article class="docs-card"><h3>Data entity</h3><p>A reusable structured field such as name, email, phone, company, country, or a custom value.</p></article>
                 <article class="docs-card"><h3>Variable</h3><p>The stable identifier used to reuse a saved value, such as <span class="docs-code">@name</span> or <span class="docs-code">@email</span>.</p></article>
                 <article class="docs-card"><h3>Quick reply</h3><p>A visible button or card that gives the user a clear choice and opens its connected child block.</p></article>
-                <article class="docs-card"><h3>Add-on</h3><p>An optional product that extends the core builder without changing the core project limits or workflow model.</p></article>
+                <article class="docs-card"><h3>Add-on</h3><p>An optional product that extends the core builder through a supported integration.</p></article>
             </div>
 HTML,
     ],
@@ -807,7 +800,7 @@ HTML,
         'body' => <<<'HTML'
             <p>Integrations connect Maxbot flows to additional channels or external systems. Add-ons are modular products that extend the core builder without forcing every advanced feature into the base plugin.</p>
             <p>Current add-ons may introduce another communication channel, while future directions can include broader automation, analytics, lead handling, premium content, or AI-assisted capabilities. Availability depends on the installed product and version.</p>
-            <div class="docs-callout"><strong>Product boundary:</strong> this guide documents Maxbot Core. WhatsApp credentials, webhooks, production numbers, templates, and channel-specific troubleshooting are covered in the separate <a href="docs-whatsapp.php">WhatsApp Add-on documentation</a>.</div>
+            <div class="docs-callout"><strong>Product boundary:</strong> this guide documents the earlier full builder. WhatsApp credentials, webhooks, production numbers, templates, and channel-specific troubleshooting are covered in the separate <a href="docs-whatsapp.php">WhatsApp Add-on documentation</a>.</div>
 HTML,
     ],
     [

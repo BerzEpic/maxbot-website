@@ -27,7 +27,7 @@
     });
 
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') close();
+      if (e.key === 'Escape' && !document.querySelector('dialog[open]')) close();
     });
 
     window.addEventListener('resize', function () {

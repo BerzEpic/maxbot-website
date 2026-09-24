@@ -18,20 +18,19 @@ include __DIR__ . '/partials/navbar.php';
     <div class="container">
         <div class="hero-grid">
             <div class="seq">
-                <div class="eyebrow">WordPress plugin · No monthly fee</div>
+                <div class="eyebrow">WordPress chatbot · Free, Standard &amp; Pro</div>
                 <h1 class="h-display">
                     Build the conversation once.<br>
-                    Let it <span class="mark">answer forever</span>.
+                    Let it <span class="mark">guide your visitors</span>.
                 </h1>
                 <p class="lede" style="margin-top:20px;">
                     Maxbot is a visual chatbot builder for WordPress. Design a guided conversation with
-                    buttons instead of typing, capture the answers into your own database, and publish it
-                    on your website, or on WhatsApp.
+                    quick replies and helpful messages, test each path, and publish it on your website.
+                    Choose the edition that fits your next step.
                 </p>
                 <div class="btn-row" style="margin-top:28px;">
-                    <a class="btn btn--primary" href="<?php echo mb_e(MAXBOT_CORE_BUY_URL); ?>">
-                        Get Maxbot Core <?php echo mb_icon('arrow-right'); ?>
-                    </a>
+                    <a class="btn btn--primary" href="<?php echo mb_e(mb_url('docs-free')); ?>">Start with Maxbot Free</a>
+                    <?php echo mb_edition_cta('standard', 'btn btn--ghost'); ?>
                     <a class="btn btn--ghost" href="<?php echo mb_e(mb_url('templates')); ?>">
                         <?php echo mb_icon('cursor'); ?> Try a live template
                     </a>
@@ -76,15 +75,17 @@ include __DIR__ . '/partials/navbar.php';
         </div>
     </div>
 </section>
+<?php include __DIR__ . '/partials/showcase-notice.php'; ?>
+
 
 <!-- ============================================================ STATS -->
 <section class="band band--line-top band--line-bottom">
     <div class="container" style="padding-top:34px;padding-bottom:34px;">
         <div class="stats">
-            <div><b>1</b><span>Purchase, not a subscription</span></div>
-            <div><b>0</b><span>Monthly platform fees</span></div>
-            <div><b>&infin;</b><span>Flows, fields &amp; collected data</span></div>
-            <div><b>2</b><span>Channels: website &amp; WhatsApp</span></div>
+            <div><b>Free</b><span>No monthly subscription</span></div>
+            <div><b>Standard</b><span>One-time purchase</span></div>
+            <div><b>Pro</b><span>Monthly · Coming soon</span></div>
+            <div><b>WordPress</b><span>Your chatbot, on your website</span></div>
         </div>
     </div>
 </section>
@@ -215,7 +216,7 @@ include __DIR__ . '/partials/navbar.php';
 
                 <div class="btn-row" style="margin-top:28px;">
                     <a class="textlink" href="<?php echo mb_e(mb_url('features')); ?>">
-                        All Core features <?php echo mb_icon('arrow-right'); ?>
+                        Explore the builder <?php echo mb_icon('arrow-right'); ?>
                     </a>
                 </div>
             </div>
@@ -399,7 +400,7 @@ include __DIR__ . '/partials/navbar.php';
             <div class="eyebrow eyebrow--center">Channels</div>
             <h2 class="h-1">Build once. Publish where your customers already are.</h2>
             <p class="lede" style="margin-top:16px;">
-                The website widget ships with Maxbot Core. WhatsApp is a separate add-on that runs the
+                The website widget ships with Maxbot builder. WhatsApp is a separate add-on that runs the
                 same flows on Meta's official Cloud API.
             </p>
         </div>
@@ -408,7 +409,7 @@ include __DIR__ . '/partials/navbar.php';
             <article class="channel channel--live">
                 <div class="channel-top">
                     <span class="channel-logo channel-logo--core"><?php echo mb_icon('message'); ?></span>
-                    <span class="tag tag--core">In Core</span>
+                    <span class="tag tag--core">Builder showcase</span>
                 </div>
                 <div>
                     <h3>Website widget</h3>
@@ -488,7 +489,7 @@ include __DIR__ . '/partials/navbar.php';
                     <a class="btn btn--onink" href="<?php echo mb_e(mb_url('docs-whatsapp')); ?>">Read the setup docs</a>
                 </div>
 
-                <p class="tiny" style="margin-top:20px;">Requires Maxbot Core, installed and authorized.</p>
+                <p class="tiny" style="margin-top:20px;">Requires a compatible Maxbot installation and the separate WhatsApp Add-on.</p>
             </div>
 
             <div class="reveal">
@@ -526,48 +527,8 @@ include __DIR__ . '/partials/navbar.php';
 </section>
 
 <!-- ========================================================= LICENSING -->
-<section class="section band band--tint band--line-top" id="licensing">
-    <div class="container">
-        <div class="split split--top">
-            <div class="reveal">
-                <div class="eyebrow">Licensing</div>
-                <h2 class="h-1">Build without limits. Scale when you're ready.</h2>
-                <p class="lede" style="margin-top:16px;">
-                    Both licences include the complete builder. What the licence sets is how many
-                    projects you deploy, a project being one flow, on one channel, in one place.
-                </p>
-                <p class="small" style="margin-top:16px;">
-                    Envato's standard terms still apply to installations: an Extended licence removes
-                    the Maxbot project limit inside the licensed installation, not the number of
-                    websites a single purchase covers.
-                </p>
-            </div>
-
-            <div class="grid grid-2 reveal">
-                <article class="card">
-                    <span class="tag tag--core">Regular</span>
-                    <h3 class="h-3" style="margin-top:14px;">One project</h3>
-                    <p style="margin-top:8px;">Where almost everyone starts, and it goes further than people expect.</p>
-                    <ul class="ticks" style="margin-top:16px;">
-                        <li><?php echo mb_icon('check'); ?><span>Unlimited flows and topics</span></li>
-                        <li><?php echo mb_icon('check'); ?><span>Unlimited fields and entries</span></li>
-                        <li><?php echo mb_icon('check'); ?><span>All templates included</span></li>
-                    </ul>
-                </article>
-
-                <article class="card" style="border-color:#f0dfa0;background:var(--signal-tint);">
-                    <span class="tag tag--signal">Extended</span>
-                    <h3 class="h-3" style="margin-top:14px;">No project limit</h3>
-                    <p style="margin-top:8px;">For several experiences running at once, multiple channels, campaigns or departments.</p>
-                    <ul class="ticks ticks--signal" style="margin-top:16px;">
-                        <li><?php echo mb_icon('check'); ?><span>Everything in Regular</span></li>
-                        <li><?php echo mb_icon('check'); ?><span>Unlimited Maxbot projects</span></li>
-                        <li><?php echo mb_icon('check'); ?><span>Website and WhatsApp side by side</span></li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </div>
+<section class="section band band--tint" id="licensing">
+    <div class="container"><?php include __DIR__ . '/partials/editions.php'; ?></div>
 </section>
 
 <!-- ============================================================= LEARN -->
@@ -579,10 +540,10 @@ include __DIR__ . '/partials/navbar.php';
         </div>
 
         <div class="grid grid-3 reveal">
-            <a class="card card--hover" href="<?php echo mb_e(mb_url('docs-core')); ?>">
+            <a class="card card--hover" href="<?php echo mb_e(mb_url('docs-free')); ?>">
                 <div class="card-icon"><?php echo mb_icon('box'); ?></div>
-                <h3 class="h-3">Core documentation</h3>
-                <p style="margin-top:8px;">Installation, the Flow Editor, entities, testing, projects and publishing.</p>
+                <h3 class="h-3">Maxbot Free documentation</h3>
+                <p style="margin-top:8px;">Starter Guide, Agent, Project, Flow Editor, testing and Conversations.</p>
                 <span class="textlink" style="margin-top:16px;">Open <?php echo mb_icon('arrow-right'); ?></span>
             </a>
 
@@ -596,7 +557,7 @@ include __DIR__ . '/partials/navbar.php';
             <a class="card card--hover" href="<?php echo mb_e(mb_url('tutorials')); ?>">
                 <div class="card-icon card-icon--signal"><?php echo mb_icon('play'); ?></div>
                 <h3 class="h-3">Video tutorials</h3>
-                <p style="margin-top:8px;">Short, practical walkthroughs for Core and for the WhatsApp setup.</p>
+                <p style="margin-top:8px;">Short, practical walkthroughs for the builder and the WhatsApp setup.</p>
                 <span class="textlink" style="margin-top:16px;">Watch <?php echo mb_icon('arrow-right'); ?></span>
             </a>
         </div>

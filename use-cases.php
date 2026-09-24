@@ -32,6 +32,8 @@ include __DIR__ . '/partials/navbar.php';
         </div>
     </div>
 </section>
+<?php include __DIR__ . '/partials/showcase-notice.php'; ?>
+
 
 <!-- ============================================================== LEAD -->
 <section class="section">

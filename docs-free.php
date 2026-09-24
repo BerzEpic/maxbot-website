@@ -1,0 +1,103 @@
+<?php
+$docVersion = 'Free 3.0.30';
+$docKind = 'Maxbot Free';
+$docRoute = 'docs-free';
+$pageTitle = 'Maxbot Free documentation | Setup, flows and conversations';
+$pageDescription = 'Install Maxbot Free, follow the Starter Guide, configure Agent and Project, build and test a quick-reply flow, enable the chatbot and review conversations.';
+$heroTitle = 'Your first chatbot, from setup to website.';
+$heroText = 'A practical guide to Maxbot Free: one agent, one flow and a clear path from your first quick reply to a working website conversation.';
+$heroBadges = ['Free edition', 'No monthly subscription', 'Quick replies', 'WordPress'];
+$nextPage = ['href' => 'docs.php', 'label' => 'Explore the edition guides'];
+$docGroups = [
+    ['title' => 'Start here', 'items' => [
+        ['id' => 'overview', 'title' => 'What Maxbot Free does'],
+        ['id' => 'requirements', 'title' => 'Before you install'],
+        ['id' => 'installation', 'title' => 'Install and activate'],
+        ['id' => 'starter-guide', 'title' => 'Follow the Starter Guide'],
+    ]],
+    ['title' => 'Build your chatbot', 'items' => [
+        ['id' => 'agent', 'title' => 'Configure your Agent'],
+        ['id' => 'project', 'title' => 'Configure Project'],
+        ['id' => 'flow-editor', 'title' => 'Open the Flow Editor'],
+        ['id' => 'first-flow', 'title' => 'Build your first conversation'],
+        ['id' => 'save-flow', 'title' => 'Save your changes'],
+    ]],
+    ['title' => 'Test and publish', 'items' => [
+        ['id' => 'test-flow', 'title' => 'Test through Test Flow'],
+        ['id' => 'enable-chatbot', 'title' => 'Enable and check the website'],
+    ]],
+    ['title' => 'Review and maintain', 'items' => [
+        ['id' => 'conversations', 'title' => 'Review Conversations'],
+        ['id' => 'notifications', 'title' => 'Set conversation notifications'],
+        ['id' => 'integrations', 'title' => 'Channels and integrations'],
+        ['id' => 'troubleshooting', 'title' => 'Troubleshoot setup and delivery'],
+        ['id' => 'edition', 'title' => 'Know which edition you are using'],
+    ]],
+];
+$docSections = [
+    ['id' => 'overview', 'title' => 'What Maxbot Free does', 'body' => <<<'HTML'
+<p class="docs-lead">Maxbot Free lets you build a guided conversation inside WordPress, test it and display it in a website chat widget. Visitors choose quick replies and follow the messages you have prepared.</p><p>Your setup has one Agent form, one Project configuration and a Flow Editor that opens the single internal topic directly. Review recorded interactions in Conversations. You do not need to create or manage a Topics list.</p><p>Free has no monthly subscription, product-license verification or per-project licensing. Its single-flow interface is a product design choice, not a license allowance. This guide follows the Free implementation labelled <strong>Maxbot Core 3.0.30</strong> in its plugin package.</p>
+HTML
+    ],
+    ['id' => 'requirements', 'title' => 'Before you install', 'body' => <<<'HTML'
+<ul><li>Administrator access to a WordPress website.</li><li>For the referenced Free 3.0.30 release: WordPress <strong>6.4 or later</strong> and PHP <strong>7.4 or later</strong>, as declared in the plugin header. Check the requirements bundled with any newer release before updating.</li><li>JavaScript enabled in the browser for the editor and Test Flow.</li><li>A server connection to the Maxbot Free service for saving and compiling flows. This technical authentication is separate from purchasing a license.</li><li>A published public page on which to check your chatbot, plus a current files/database backup before installation or updates.</li></ul><p>Use HTTPS for the website, particularly when enabling browser notifications or using a channel with a public callback. Try changes on a staging copy first.</p>
+HTML
+    ],
+    ['id' => 'installation', 'title' => 'Install and activate', 'body' => <<<'HTML'
+<p>WordPress.org is the planned distribution channel for Free. A directory download is not linked here until a listing is available. If you already have the official installable Free ZIP, use the upload method below.</p><ol class="docs-steps"><li>Open <strong>Plugins → Add New Plugin → Upload Plugin</strong> in WordPress.</li><li>Select the installable Free plugin ZIP, choose <strong>Install Now</strong>, then <strong>Activate Plugin</strong>.</li><li>Open the <strong>Maxbot</strong> menu. If the first-run welcome screen opens, follow the Starter Guide.</li><li>Confirm that you are working in the Free edition before using these instructions. Existing packages may display the name <strong>Maxbot Core</strong>.</li></ol><p>No purchase code is needed to activate Free. If updating an existing installation, replace the plugin with the new package rather than deleting it first: the option to delete Core data on uninstall can remove local settings and conversations.</p>
+HTML
+    ],
+    ['id' => 'starter-guide', 'title' => 'Follow the Starter Guide', 'body' => <<<'HTML'
+<p>The welcome screen leads into the following steps in this order:</p><ol class="docs-steps"><li><strong>Intended use:</strong> choose who you are building for and your main goal, or skip the questions.</li><li><strong>Agent:</strong> keep the prepared profile or edit the identity visitors will see.</li><li><strong>Project setup:</strong> choose the welcome message, opening behavior and pages where the chatbot can appear.</li><li><strong>Build and save:</strong> use the real Flow Editor. <strong>Continue to Test Flow</strong> saves and compiles your changes before opening the preview.</li><li><strong>Test Flow:</strong> try the replies and ending, then choose <strong>The conversation works, continue</strong>. Use <strong>Edit my flow</strong> if a branch needs fixing.</li><li><strong>Email notifications:</strong> optionally enable conversation emails, set the notification email, select events and decide whether to include the transcript. Leaving this disabled does not block setup.</li><li><strong>Stay in touch:</strong> optionally subscribe for Maxbot recommendations, tutorials and product updates. Review what the form shares and give consent only if you want those emails. <strong>Skip this step</strong> continues setup without signup.</li><li><strong>Enable chatbot:</strong> explicitly enable the saved and tested flow, open a selected page and check it before finishing.</li></ol><div class="docs-callout"><strong>Three separate actions:</strong> saving stores and compiles the flow; testing checks the conversation; enabling makes it available on your selected website pages. A newly configured chatbot stays disabled until you enable it. Reopening setup preserves an already enabled chatbot.</div><p>The optional Stay in touch request is recorded when accepted. It does not require email confirmation or an immediate welcome email. Conversation notification emails are a separate setting.</p>
+HTML
+    ],
+    ['id' => 'agent', 'title' => 'Configure your Agent', 'body' => <<<'HTML'
+<ol class="docs-steps"><li>Open <strong>Maxbot → Agent</strong>, or use the Agent step in the guide.</li><li>Review <strong>Agent name</strong>, <strong>Avatar</strong>, <strong>Role</strong> and <strong>Introduction</strong>. Keep the default avatar or choose an image from the WordPress media library.</li><li>Use a name and role that explain the chatbot’s job, such as “Site assistant” and “Visitor help”. Keep the introduction brief: “I can help you find our opening hours and contact details.”</li><li>Fill the required text fields and choose <strong>Save agent</strong>. In the wizard, use <strong>Save and Continue</strong>.</li><li>Open Test Flow to check that the identity looks correct.</li></ol><p>Agent is a single profile form. There is no need to add agents to a list or assign multiple agents.</p>
+HTML
+    ],
+    ['id' => 'project', 'title' => 'Configure Project', 'body' => <<<'HTML'
+<p>Open <strong>Maxbot → Project</strong>. For your first website conversation, select <strong>Web Widget</strong> as the channel.</p><ol class="docs-steps"><li>Write a short <strong>Welcome Message</strong>.</li><li>Under <strong>When should the chat open?</strong>, choose one of the four modes below.</li><li>Select the relevant <strong>Target Pages/Posts</strong>. Use a published public page you can open as a visitor.</li><li>Keep <strong>Enabled</strong> off while preparing your first flow. Save the project, then build and test before turning it on.</li></ol><div class="docs-table-wrap"><table class="docs-table"><thead><tr><th>Opening mode</th><th>What to check</th></tr></thead><tbody><tr><td>Open on button click (you can trigger via JS)</td><td>The visitor chooses when to open the chat.</td></tr><tr><td>Auto-open after delay</td><td>Set Delay (seconds), then wait that long on the selected page.</td></tr><tr><td>Open on scroll depth</td><td>Set Scroll %, then scroll far enough to trigger the chat.</td></tr><tr><td>Open on exit intent</td><td>Check the behavior on the devices and browsers your visitors use.</td></tr></tbody></table></div><p>The Starter Guide uses shorter descriptions for these same opening modes. Project does not need a separate “Open Flow Editor” field: open Flow Editor from the Maxbot menu.</p>
+HTML
+    ],
+    ['id' => 'flow-editor', 'title' => 'Open the Flow Editor', 'body' => <<<'HTML'
+<p>Choose <strong>Maxbot → Flow Editor</strong>. It opens the Free edition’s single internal topic directly. Each block represents a point in the conversation, with the message to send, the choices the visitor can make and the next step.</p><p>Plan a short conversation first. For example, offer “Opening hours” and “Contact us”, answer each choice with a bot message, then end that branch explicitly. This example needs no entities, saved variables, templates, card layouts or additional topics.</p>
+HTML
+    ],
+    ['id' => 'first-flow', 'title' => 'Build your first conversation', 'body' => <<<'HTML'
+<ol class="docs-steps"><li>Select the first block. In <strong>Bot Responses</strong>, add: “Hello! What would you like to know?”</li><li>Add two text quick replies: <strong>Opening hours</strong> and <strong>Contact us</strong>. Connect each choice to its own response block.</li><li>In the Opening hours branch, add a bot message with your real business hours. For a practice flow, write “Our opening hours are listed on the Contact page.”</li><li>In the Contact us branch, add “You can find our contact details on the Contact page.” Replace this with the details you want visitors to use.</li><li>For each final block, use <strong>Next Step</strong> to explicitly end the conversation by choosing <strong>Close Discussion</strong> under <strong>Choose what happens next</strong> (the Stop / Close Conversation action). Do not leave a branch waiting for an answer that it never requests.</li><li>Read both paths from the first message to the ending. Check that each quick reply goes to its intended response.</li></ol><div class="docs-callout"><strong>Keep the first flow small.</strong> Two clear choices, two helpful answers and an explicit ending are enough to check the complete build, test and publishing journey.</div>
+HTML
+    ],
+    ['id' => 'save-flow', 'title' => 'Save your changes', 'body' => <<<'HTML'
+<p>In the regular editor, select <strong>Save flow</strong>. Wait for <strong>Flow is saved</strong> before testing or leaving. If the editor reports <strong>Flow was not saved</strong>, keep the page open and follow the troubleshooting steps below.</p><p>In the Starter Guide, <strong>Continue to Test Flow</strong> performs the save and compilation before proceeding. Saving requires the Free service connection; it is not a purchase-code check. Saving alone does not enable the chatbot.</p>
+HTML
+    ],
+    ['id' => 'test-flow', 'title' => 'Test through Test Flow', 'body' => <<<'HTML'
+<ol class="docs-steps"><li>Open <strong>Test Flow</strong> for the saved flow.</li><li>Check the agent identity and first message.</li><li>Select Opening hours and verify its answer and explicit ending.</li><li>Start the preview conversation again and test Contact us. Test every path after adding new choices.</li><li>If a reply is missing, the wrong branch opens or the conversation keeps waiting, return to the editor, fix the block or next step, save and test again.</li></ol><p>Test Flow uses the web widget. It previews the conversation; it does not replace the separate check on a public website page. In the wizard, confirm <strong>The conversation works, continue</strong> after the test is ready.</p>
+HTML
+    ],
+    ['id' => 'enable-chatbot', 'title' => 'Enable and check the website', 'body' => <<<'HTML'
+<ol class="docs-steps"><li>After saving and testing, choose <strong>Enable chatbot</strong> in the final Starter Guide step. Outside the guide, use the <strong>Enabled</strong> control in Project and save.</li><li>Choose a page under <strong>Page to check</strong> and select <strong>Open selected page</strong>, or open a selected public page directly.</li><li>Check as a visitor, including in a private browser window. Follow the configured opening action: click, wait, scroll or exit intent.</li><li>Complete both paths of your test conversation. Check the wording and layout on a phone as well as a desktop.</li><li>Return to the guide and choose <strong>I’ve checked my chatbot</strong> before finishing setup.</li></ol><p>If the final step says no published public pages are selected, return to Project and select an appropriate page. After editing a live flow, save and repeat the public-page test.</p>
+HTML
+    ],
+    ['id' => 'conversations', 'title' => 'Review Conversations', 'body' => <<<'HTML'
+<p>Open <strong>Maxbot → Conversations</strong> to review recorded interactions. Use the time and channel to find the visit you tested, then select <strong>View Conversation</strong>.</p><p>The conversation opens in the same web widget used for Test Flow, so you can read the actual exchange in its familiar layout. Close the preview when finished. A successfully loaded New conversation becomes Read. The list uses <strong>New</strong> and <strong>Read</strong> status labels.</p><p>If the list is empty, complete a conversation on a selected public page and refresh it. If a specific conversation cannot load, close the modal, reload the list and try that entry again. Free conversation review belongs here, not on a Users Data page.</p>
+HTML
+    ],
+    ['id' => 'notifications', 'title' => 'Set conversation notifications', 'body' => <<<'HTML'
+<p>Notifications are evaluated when the flow explicitly closes or completes the conversation. Saving a message, selecting a quick reply or closing the visible chat window does not by itself mean the flow has completed. Include an explicit ending in every final branch.</p><h3>WordPress and browser notifications</h3><ol><li>Open <strong>Settings → Notifications</strong>.</li><li>Under WordPress Notifications, turn on <strong>Enable notification center</strong> if you want notifications inside WordPress.</li><li>For this computer, use <strong>Enable Browser Notifications</strong> and respond to the browser’s permission request. Check the displayed permission/subscription status.</li><li>Choose the events under <strong>Notify me about</strong> and select <strong>Save Changes</strong>.</li></ol><p>The current Free choices are <strong>New conversation</strong>, <strong>New visitor message</strong>, <strong>Quick Reply selected</strong> and <strong>Flow completed</strong>. They describe events included at conversation close; they do not turn delivery into a message-by-message stream.</p><h3>Email notifications</h3><ol><li>Open <strong>Settings → Email Notifications</strong>.</li><li>Select <strong>Enable email notifications</strong> and enter the <strong>Recipient</strong>.</li><li>Choose events and optionally <strong>Include full conversation transcript</strong>.</li><li>Select <strong>Save Changes</strong>, then use <strong>Send Test Email</strong> to check delivery.</li></ol><p>These settings apply across the plugin’s conversations; there is no project filter to configure. Email notifications are separate from optional Maxbot signup. The Free interface does not offer the User data/lead notification choice.</p>
+HTML
+    ],
+    ['id' => 'integrations', 'title' => 'Channels and integrations', 'body' => <<<'HTML'
+<p><strong>Web Widget</strong> is available in the base Free plugin. Start there to publish a conversation on the website.</p><p><strong>WhatsApp Business</strong> requires the separate WhatsApp Integration add-on. The Free channel registry includes the integration point, but availability depends on an installed, enabled and configured compatible add-on. Review the add-on’s release requirements and the separate WhatsApp guide before changing the Project channel.</p><p>Facebook Messenger, Instagram DM and Telegram Bot appear as <strong>Coming soon</strong> in the reference release. They cannot be selected as working channels merely because they appear in the interface. The Integrations page helps you review available add-ons; a listed future channel is not an active integration.</p>
+HTML
+    ],
+    ['id' => 'troubleshooting', 'title' => 'Troubleshoot setup and delivery', 'body' => <<<'HTML'
+<div class="docs-table-wrap"><table class="docs-table"><thead><tr><th>Problem</th><th>What to check</th></tr></thead><tbody><tr><td>Setup returns to an earlier step</td><td>Check that Project is configured, the current flow is saved and the latest version has been tested. Changes can require testing again.</td></tr><tr><td>Flow was not saved</td><td>Keep the editor open. Check your connection and WordPress session, then retry. Ask your host to check outbound access to the Free API and relevant server errors if it persists. Do not purchase a license to resolve a service-authentication error.</td></tr><tr><td>Test Flow shows old or missing replies</td><td>Save successfully, reopen the preview and test from the start. Check branch connections and the final next step.</td></tr><tr><td>Chatbot missing from the website</td><td>Verify Enabled is on and saved, the current page is selected and public, and the opening condition is met. Clear your site/page cache after a change and check in a private window. Inspect browser errors if scripts are blocked.</td></tr><tr><td>No conversation notification</td><td>Complete a public-page conversation through the closing action, labelled Close Discussion in this release. Check that its events match your saved preferences and that the delivery channel is enabled.</td></tr><tr><td>Browser test accepted but nothing appears</td><td>Check the browser’s site permission and the operating system’s notification settings, including do-not-disturb mode. Use Check Browser Display and Send Test Notification when shown. A server acceptance response does not prove the browser displayed a notification.</td></tr><tr><td>No notification email</td><td>Verify the Recipient, saved enable setting and spam folder. Use Send Test Email. If the test fails, check the website’s existing email delivery; if it succeeds, check the flow’s ending and chosen events.</td></tr><tr><td>Optional signup is unavailable</td><td>Use Skip this step. Signup is not needed to build, test or enable the chatbot. An accepted signup does not send a confirmation or welcome email.</td></tr></tbody></table></div><p>When asking for help, include the plugin version, the page or step, what you expected and the exact error. Redact visitor messages, personal information and credentials.</p>
+HTML
+    ],
+    ['id' => 'edition', 'title' => 'Know which edition you are using', 'body' => <<<'HTML'
+<p>Check the active plugin name and version in <strong>WordPress → Plugins</strong>. This Free guide covers the current simplified interface: Dashboard, Agent, Project, Flow Editor, Conversations, Integrations and Settings. Existing Free packages use the name Maxbot Core.</p><p>Free is planned for WordPress.org; Standard for CodeCanyon with a one-time purchase and lifetime access; Pro for this website using Freemius with a monthly subscription. Pro checkout and documentation are coming soon. The older “Core” full-builder guide is retained as a legacy reference, not a feature promise for either paid edition.</p><p>Free and Standard both use the Free API without product-license verification or per-project licensing. This does not mean unlimited websites or identical features. If Pro is also active in your installation, confirm which interface is running before following Free instructions.</p>
+HTML
+    ],
+];
+include __DIR__ . '/partials/docs-renderer.php';

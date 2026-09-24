@@ -7,7 +7,7 @@ $pageUrl    = 'docs-whatsapp.php';
 $heroTitle  = 'Connect Maxbot to WhatsApp Cloud API.';
 $heroText   = 'Install the add-on, create the Meta app, configure credentials and webhooks, link a tested Maxbot flow, move to a production number and permanent token, and build approved carousel templates.';
 $heroBadges = ['Separate add-on', 'Meta Cloud API', 'Webhook delivery', 'Production token', 'Carousel templates'];
-$nextPage   = ['href' => 'docs-core.php', 'label' => 'Return to Maxbot Core documentation'];
+$nextPage   = ['href' => 'docs.php', 'label' => 'Return to the documentation hub'];
 
 $docGroups = [
     ['title' => 'Start here', 'items' => [
@@ -56,10 +56,11 @@ $docSections = [
         'id' => 'overview',
         'title' => 'Product boundary',
         'body' => <<<'HTML'
-            <p class="docs-lead">Maxbot WhatsApp Integration is an add-on. It extends an installed and authorized Maxbot Core plugin; it does not replace the core builder.</p>
-            <p>Core owns agents, topics, entities, conversation blocks, Flow Editor logic, Users Data, training, and the project model. The add-on receives Meta webhook events, resolves the linked WhatsApp project and assigned flow, passes the message into Maxbot, and sends the resulting response through WhatsApp Cloud API.</p>
+            <p class="docs-lead">Maxbot WhatsApp Integration is an add-on. It extends a compatible, active Maxbot plugin; it does not replace the core builder.</p>
+            <p>This guide retains the existing add-on workflow and screenshots. Some examples use screens from the legacy full builder; they are not a Standard/Pro feature comparison. Free users configure the single flow in Flow Editor and use Project and Conversations. Check your add-on release’s compatibility requirements before installation.</p>
+            <p>The builder owns the conversation blocks, Flow Editor logic and project configuration. The add-on receives Meta webhook events, resolves the linked WhatsApp project and assigned flow, passes the message into Maxbot, and sends the resulting response through WhatsApp Cloud API.</p>
             <div class="docs-grid">
-                <article class="docs-card"><h3>Build in Core</h3><p>Create and test the complete conversation,including keywords, fallbacks, validation, joins, and endings,before connecting the channel.</p></article>
+                <article class="docs-card"><h3>Build in Maxbot</h3><p>Create and test the complete conversation,including keywords, fallbacks, validation, joins, and endings,before connecting the channel.</p></article>
                 <article class="docs-card"><h3>Connect in the Add-on</h3><p>Configure Meta assets, webhook delivery, the linked project, production credentials, templates, testing, and channel-specific operations.</p></article>
             </div>
 HTML,
@@ -69,7 +70,7 @@ HTML,
         'title' => 'Prerequisites',
         'body' => <<<'HTML'
             <ul>
-                <li>An installed, active, and authorized Maxbot Core plugin.</li>
+                <li>An installed, active Maxbot plugin compatible with this add-on release.</li>
                 <li>A complete Maxbot topic/flow that already passes Test Flow.</li>
                 <li>The installable Maxbot WhatsApp Integration add-on ZIP.</li>
                 <li>A Meta developer account and a Business Portfolio.</li>
@@ -85,13 +86,13 @@ HTML,
         'title' => 'Install the WhatsApp add-on',
         'body' => <<<'HTML'
             <ol class="docs-steps">
-                <li>Confirm Maxbot Core is installed, active, authorized, and functioning.</li>
+                <li>Confirm your compatible Maxbot plugin is installed, active and functioning.</li>
                 <li>Open <strong>Plugins → Add New Plugin → Upload Plugin</strong>.</li>
                 <li>Choose the installable WhatsApp add-on ZIP and select <strong>Install Now</strong>.</li>
                 <li>Activate the add-on.</li>
                 <li>Open <strong>Maxbot → WhatsApp Integration</strong> and confirm Settings, Templates, Dashboard/Logs, and Troubleshooting are available.</li>
             </ol>
-            <div class="docs-callout warning"><strong>Dependency:</strong> do not deactivate or remove Maxbot Core while the add-on is active.</div>
+            <div class="docs-callout warning"><strong>Dependency:</strong> do not deactivate or remove the compatible Maxbot plugin while the add-on is active.</div>
 HTML,
     ],
     [
@@ -245,7 +246,7 @@ HTML,
         'title' => 'Create a WhatsApp project',
         'body' => <<<'HTML'
             <ol class="docs-steps">
-                <li>In Maxbot Core, create and fully test the topic/flow that should answer WhatsApp messages.</li>
+                <li>In the compatible Maxbot plugin, create and fully test the topic/flow that should answer WhatsApp messages.</li>
                 <li>Open <strong>Projects</strong> and select <strong>Add New Project</strong>.</li>
                 <li>Enter a project name and select the WhatsApp project/channel type.</li>
                 <li>Assign the correct agent and conversation flow.</li>
@@ -482,7 +483,7 @@ HTML,
                 <li>Use a system-user token with only the required assets and permissions.</li>
                 <li>Restrict WordPress administrator and Meta Business access.</li>
                 <li>Rotate credentials after staff, ownership, permission, or exposure changes.</li>
-                <li>Keep WordPress, Maxbot Core, the add-on, and server dependencies updated.</li>
+                <li>Keep WordPress, the compatible Maxbot plugin, the add-on, and server dependencies updated.</li>
             </ul>
 HTML,
     ],
@@ -493,7 +494,7 @@ HTML,
             <div class="docs-table-wrap"><table class="docs-table">
                 <thead><tr><th>Problem</th><th>What to check</th></tr></thead>
                 <tbody>
-                    <tr><td>Add-on activation fails</td><td>Maxbot Core must be installed and active. Upload the installable add-on ZIP and verify server compatibility and dependencies.</td></tr>
+                    <tr><td>Add-on activation fails</td><td>the compatible Maxbot plugin must be installed and active. Upload the installable add-on ZIP and verify server compatibility and dependencies.</td></tr>
                     <tr><td>Webhook verification fails</td><td>The callback must be public HTTPS; save Maxbot first; both verify-token values must match exactly; security or cache layers must not block Meta’s verification request.</td></tr>
                     <tr><td>Connection works but no incoming reply</td><td>Check the <span class="docs-code">messages</span> subscription, App Secret, WABA/number pairing, webhook delivery, linked project, assigned flow, enabled state, trigger match, and active-conversation option.</td></tr>
                     <tr><td>Test message does not arrive</td><td>Use international digits, the correct Phone Number ID and token, an approved template, and a recipient active on WhatsApp.</td></tr>
@@ -510,7 +511,7 @@ HTML,
         'title' => 'Production launch checklist',
         'body' => <<<'HTML'
             <ul>
-                <li>Maxbot Core and the WhatsApp add-on are active, authorized, and current.</li>
+                <li>Your compatible Maxbot plugin and the WhatsApp add-on are active and current.</li>
                 <li>The core flow passes all expected, fallback, validation, join, and ending tests.</li>
                 <li>The production phone number is registered and its display name is approved.</li>
                 <li>The App ID, App Secret, WABA ID, Phone Number ID, public number, and system-user token belong to matching production assets.</li>
@@ -533,7 +534,7 @@ HTML,
                 <li>Remove or disable Meta webhook subscriptions when the integration is permanently retired.</li>
                 <li>Revoke the system-user token and remove unnecessary app/business asset assignments.</li>
                 <li>Review the add-on cleanup setting, then deactivate and remove the add-on.</li>
-                <li>Keep Maxbot Core installed when other web or channel projects still use it.</li>
+                <li>Keep the compatible Maxbot plugin installed when other web or channel projects still use it.</li>
             </ol>
 HTML,
     ],

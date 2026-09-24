@@ -38,8 +38,10 @@ $bodyClass       = $bodyClass ?? '';
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="<?php echo mb_e(mb_url('static/css/maxbot.css')); ?>?v=2.0">
-<script src="<?php echo mb_e(mb_url('static/js/maxbot.js')); ?>?v=2.0" defer></script>
+<link rel="stylesheet" href="<?php echo mb_e(mb_url('static/css/maxbot.css')); ?>?v=3.0">
+<script src="<?php echo mb_e(mb_url('static/js/maxbot.js')); ?>?v=3.0" defer></script>
+<link rel="stylesheet" href="<?php echo mb_e(mb_url('static/css/launch.css')); ?>?v=3.0">
+<script src="<?php echo mb_e(mb_url('static/js/launch.js')); ?>?v=3.0" defer></script>
 </head>
 <body<?php echo $bodyClass !== '' ? ' class="' . mb_e($bodyClass) . '"' : ''; ?>>
 <a class="sr-only" href="#main">Skip to content</a>
