@@ -25,9 +25,9 @@ $renderGroup = static function (string $key, array $group): void {
                     <p class="lede" style="margin-top:12px;max-width:50ch;"><?php echo mb_e($group['description']); ?></p>
                 </div>
                 <div style="text-align:right;">
-                    <a class="btn btn--ghost btn--sm" href="<?php echo mb_e($isWhatsApp ? mb_url('docs-whatsapp') : mb_url('docs-core')); ?>">
+                    <a class="btn btn--ghost btn--sm" href="<?php echo mb_e($isWhatsApp ? mb_url('docs-whatsapp') : mb_url('docs-pro')); ?>">
                         <?php echo mb_icon('book'); ?>
-                        <?php echo $isWhatsApp ? 'WhatsApp documentation' : 'Legacy builder reference'; ?>
+                        <?php echo $isWhatsApp ? 'WhatsApp documentation' : 'Maxbot Pro documentation'; ?>
                     </a>
                 </div>
             </div>
@@ -105,10 +105,10 @@ foreach ($groups as $key => $group) {
     <div class="container center">
         <h2 class="h-1" style="max-width:22ch;margin:0 auto;">Prefer to read it?</h2>
         <p class="lede" style="margin:16px auto 0;max-width:54ch;">
-            Choose your edition guide, consult the legacy builder reference or follow the separate WhatsApp setup.
+            Choose your edition guide, explore the Pro builder documentation or follow the separate WhatsApp setup.
         </p>
         <div class="btn-row" style="justify-content:center;margin-top:28px;">
-            <a class="btn btn--signal" href="<?php echo mb_e(mb_url('docs-core')); ?>">Legacy builder reference</a>
+            <a class="btn btn--signal" href="<?php echo mb_e(mb_url('docs-pro')); ?>">Maxbot Pro documentation</a>
             <a class="btn btn--onink" href="<?php echo mb_e(mb_url('docs-whatsapp')); ?>">WhatsApp documentation</a>
         </div>
     </div>

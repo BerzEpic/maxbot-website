@@ -1,0 +1,21 @@
+/* Checkout messages appear above the existing website design without a new modal. */
+.checkout-status {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 1200;
+  width: min(440px, calc(100vw - 32px));
+  padding: 14px 18px;
+  border: 1px solid #c9d3e3;
+  border-radius: 12px;
+  background: #fff;
+  color: #1b2b39;
+  box-shadow: 0 10px 36px rgba(19, 35, 59, .16);
+  font: 14px/1.5 Inter, system-ui, sans-serif;
+}
+.checkout-status[hidden] { display: none; }
+.checkout-status[data-state="error"] { border-color: #c66b62; }
+.checkout-status[data-state="success"] { border-color: #4b956d; }
+.checkout-sandbox-notice { border: 1px solid #c7a244; background: #fff8e8; color: #604407; padding: 10px 16px; margin: 0; text-align: center; font-size: 13px; }
+[data-freemius-checkout][disabled] { cursor: progress; opacity: .7; }
+@media (max-width: 600px) { .checkout-status { bottom: 12px; right: 12px; } }

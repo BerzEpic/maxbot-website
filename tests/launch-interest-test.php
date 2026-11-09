@@ -14,12 +14,12 @@ foreach (['', 'bad', 'a b@example.com', "a\n@example.com", str_repeat('a', 255) 
     check(LaunchInterest::validate(array_replace($input, ['email' => $email]))['body']['code'] === 'invalid_email', 'reject email');
 }
 foreach ([false, 'true', 1, null] as $consent) check(LaunchInterest::validate(array_replace($input, ['consent' => $consent]))['body']['code'] === 'consent_required', 'explicit boolean consent');
-foreach ([null, [], ['email' => []], array_merge($input, ['name' => 'injected']), array_replace($input, ['edition' => 'free']), array_replace($input, ['edition' => []])] as $bad) {
+foreach ([null, [], ['email' => []], array_merge($input, ['name' => 'injected']), array_replace($input, ['edition' => 'free']), array_replace($input, ['edition' => 'unknown']), array_replace($input, ['edition' => []])] as $bad) {
     check(LaunchInterest::validate($bad)['body']['code'] === 'invalid_request', 'reject malformed payload');
 }
 // Synthetic adapter contract ONLY. These markers are not production API fields or accepted values.
 $config = ['enabled' => true, 'editions' => []];
-foreach (['standard', 'pro'] as $edition) {
+foreach (['pro'] as $edition) {
     $config['editions'][$edition] = [
         'build_payload' => static function ($valid) { return ['email' => $valid['email'], 'consent' => true, 'fixture_edition' => $valid['edition']]; },
         'confirms_launch_consent' => static function ($body, $valid) { return ($body['fixture_recorded_edition'] ?? null) === $valid['edition']; },
@@ -27,7 +27,7 @@ foreach (['standard', 'pro'] as $edition) {
 }
 $body = ['success' => true, 'code' => 'ok', 'data' => ['status' => 'accepted'], 'fixture_recorded_edition' => 'pro'];
 $mock = static function ($status, $body) { return static function () use ($status, $body) { return compact('status', 'body'); }; };
-foreach (['standard', 'pro'] as $edition) {
+foreach (['pro'] as $edition) {
     $current = array_replace($input, ['edition' => $edition]);
     $expected = array_replace($body, ['fixture_recorded_edition' => $edition]);
     $result = LaunchInterest::submit($current, $config, static function ($url, $payload) use ($edition, $expected) {
@@ -38,7 +38,7 @@ foreach (['standard', 'pro'] as $edition) {
     });
     check($result['body']['code'] === 'launch_interest_recorded', 'verified mock success');
 }
-foreach ([['success' => false], null, ['success' => true], array_replace($body, ['fixture_recorded_edition' => 'standard']),
+foreach ([['success' => false], null, ['success' => true], array_replace($body, ['fixture_recorded_edition' => 'free']),
     ['success' => true, 'code' => 'ok', 'data' => ['status' => 'accepted']], // real old duplicate: insufficient evidence
     array_replace($body, ['data' => ['status' => 'unsubscribed']]), array_replace($body, ['code' => 'failure'])] as $bad) {
     check(LaunchInterest::submit($input, $config, $mock(200, $bad))['body']['success'] === false, 'never infer success');

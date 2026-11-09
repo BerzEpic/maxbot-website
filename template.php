@@ -63,7 +63,7 @@ include __DIR__ . '/partials/navbar.php';
                 </div>
 
                 <div class="btn-row" style="margin-top:26px;">
-                    <?php echo mb_edition_cta('standard', 'btn btn--primary'); ?>
+                    <?php echo mb_edition_cta('pro', 'btn btn--primary'); ?>
                     <a class="btn btn--ghost" href="<?php echo mb_e(mb_url('templates')); ?>">All templates</a>
                 </div>
             </div>

@@ -9,7 +9,7 @@
   var submit = document.getElementById('launch-submit');
   var result = document.getElementById('launch-result');
   var opener, edition, pending = null, previousOverflow = '';
-  var names = {standard: 'Maxbot Standard', pro: 'Maxbot Pro'};
+  var names = {pro: 'Maxbot Pro'};
 
   function announce(message, state) {
     result.textContent = message;
@@ -32,11 +32,9 @@
     opener = button; edition = button.dataset.launchEdition; reset();
     form.elements.edition.value = edition;
     var name = names[edition];
-    document.getElementById('launch-edition-label').textContent = name + (edition === 'pro' ? ' · Coming soon' : ' · Availability updates');
-    document.getElementById('launch-title').textContent = edition === 'pro' ? 'Be first to know when Maxbot Pro launches' : 'Know when Maxbot Standard is available';
-    document.getElementById('launch-description').textContent = edition === 'pro'
-      ? 'Maxbot Pro is on the way. Leave your email and we’ll let you know as soon as it’s available.'
-      : 'Maxbot Standard is planned for CodeCanyon as a one-time purchase. Leave your email for its availability announcement.';
+    document.getElementById('launch-edition-label').textContent = name + ' · Coming soon';
+    document.getElementById('launch-title').textContent = 'Be first to know when Maxbot Pro launches';
+    document.getElementById('launch-description').textContent = 'Maxbot Pro is on the way. Leave your email and we’ll let you know as soon as it’s available.';
     document.getElementById('launch-consent-copy').textContent = 'I agree to receive emails about the ' + name + ' launch.';
     previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';

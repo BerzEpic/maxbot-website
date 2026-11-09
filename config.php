@@ -9,8 +9,12 @@
 define('APP_BASE_PATH', __DIR__);
 define('APP_BASE_URL', '/landing/maxbot');
 
+/** Optional absolute path to a private PHP config OUTSIDE the public website directory. */
+define('MAXBOT_FREEMIUS_PRIVATE_FILE', ''); // Example: /home/account/private/maxbot-freemius.php
+
 /** WhatsApp is a separate product; its existing destination is preserved. */
 define('MAXBOT_WHATSAPP_BUY_URL', '#');
+require_once __DIR__ . '/src/FreemiusCheckout.php';
 require_once __DIR__ . '/src/Editions.php';
 
 /**

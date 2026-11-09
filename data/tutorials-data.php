@@ -5,8 +5,8 @@
 
 return [
     'core' => [
-        'label'       => 'Legacy builder tutorials',
-        'description' => 'Earlier full-builder walkthroughs. Advanced screens are not part of the Free guide or a confirmed Standard/Pro feature list.',
+        'label'       => 'Maxbot Pro tutorials',
+        'description' => 'Full-builder walkthroughs for Maxbot Pro. Free users can follow the dedicated setup guide.',
         'items'       => [
             [
                 'title'       => 'How to create and launch a simple quick reply chatbot',

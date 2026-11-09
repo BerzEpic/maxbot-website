@@ -1,28 +1,33 @@
 <?php
-/** Product direction, availability and actions live here, independently of features. */
+/** Public edition descriptions and shared call-to-action markup. */
 function mb_editions(): array
 {
+    $mode = FreemiusCheckout::mode();
     return [
-        'free' => ['name' => 'Maxbot Free', 'channel' => 'WordPress.org', 'billing' => 'Free · no monthly subscription',
-            'status' => 'Listing to be announced', 'docs' => 'docs-free', 'checkout' => ''],
-        'standard' => ['name' => 'Maxbot Standard', 'channel' => 'CodeCanyon', 'billing' => 'One-time purchase · lifetime access',
-            'status' => 'Checkout not available here yet', 'docs' => 'docs-standard', 'checkout' => ''],
-        'pro' => ['name' => 'Maxbot Pro', 'channel' => 'This website, using Freemius', 'billing' => 'Monthly subscription',
-            'status' => 'Coming soon', 'docs' => null, 'checkout' => ''],
+        'free' => [
+            'name' => 'Maxbot Free',
+            'channel' => 'WordPress.org',
+            'billing' => 'Free · no monthly subscription',
+            'status' => 'Listing to be announced',
+            'docs' => 'docs-free',
+        ],
+        'pro' => [
+            'name' => 'Maxbot Pro',
+            'channel' => 'This website, via Freemius Checkout',
+            'billing' => 'Professional · annual subscription (price shown at checkout)',
+            'status' => $mode === 'sandbox' ? 'Sandbox testing' : ($mode === 'production' ? 'Checkout available' : 'Checkout not enabled'),
+            'docs' => 'docs-pro',
+        ],
     ];
 }
 
 function mb_edition_cta(string $edition, string $class = 'btn btn--primary', ?string $label = null): string
 {
     $item = mb_editions()[$edition] ?? null;
-    if (!$item || $edition === 'free') {
-        throw new InvalidArgumentException('A paid edition is required for this action.');
+    if (!$item || $edition !== 'pro') {
+        throw new InvalidArgumentException('Only Maxbot Pro has a Freemius checkout action.');
     }
-    // A verified Standard checkout can be restored by editing just its configuration.
-    if ($edition === 'standard' && filter_var($item['checkout'], FILTER_VALIDATE_URL)
-        && parse_url($item['checkout'], PHP_URL_SCHEME) === 'https') {
-        return '<a class="' . mb_e($class) . '" href="' . mb_e($item['checkout']) . '">Get ' . mb_e($item['name']) . '</a>';
-    }
-    return '<button type="button" class="' . mb_e($class) . '" data-launch-edition="' . mb_e($edition)
-        . '" aria-haspopup="dialog">' . mb_e($label ?? ('Notify me about ' . $item['name'])) . '</button>';
+    return '<button type="button" class="' . mb_e($class) . '" data-freemius-checkout="professional"'
+        . ' aria-label="' . mb_e($label ?? 'Buy Maxbot Pro Professional') . '">'
+        . mb_e($label ?? 'Buy Maxbot Pro') . '</button>';
 }

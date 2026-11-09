@@ -57,7 +57,7 @@ $docSections = [
         'title' => 'Product boundary',
         'body' => <<<'HTML'
             <p class="docs-lead">Maxbot WhatsApp Integration is an add-on. It extends a compatible, active Maxbot plugin; it does not replace the core builder.</p>
-            <p>This guide retains the existing add-on workflow and screenshots. Some examples use screens from the legacy full builder; they are not a Standard/Pro feature comparison. Free users configure the single flow in Flow Editor and use Project and Conversations. Check your add-on release’s compatibility requirements before installation.</p>
+            <p>This guide retains the existing add-on workflow and screenshots. Some examples use the Pro builder’s advanced screens. Free users configure the single flow in Flow Editor and use Project and Conversations. Check your add-on release’s compatibility requirements before installation.</p>
             <p>The builder owns the conversation blocks, Flow Editor logic and project configuration. The add-on receives Meta webhook events, resolves the linked WhatsApp project and assigned flow, passes the message into Maxbot, and sends the resulting response through WhatsApp Cloud API.</p>
             <div class="docs-grid">
                 <article class="docs-card"><h3>Build in Maxbot</h3><p>Create and test the complete conversation,including keywords, fallbacks, validation, joins, and endings,before connecting the channel.</p></article>

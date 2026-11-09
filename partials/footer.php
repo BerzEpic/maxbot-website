@@ -6,11 +6,11 @@
             <div>
                 <h2 class="h-2">Build the conversation once.<br>Let it answer every night.</h2>
                 <p class="lede" style="margin-top:14px;max-width:52ch;">
-                    Choose Maxbot Free, Standard or Pro for your WordPress chatbot. Explore the editions and the separate WhatsApp Add-on.
+                    Choose Maxbot Free or Pro for your WordPress chatbot. Explore the editions and the separate WhatsApp Add-on.
                 </p>
             </div>
             <div class="btn-row" style="justify-content:flex-end;">
-                <?php echo mb_edition_cta('standard', 'btn btn--signal'); ?>
+                <?php echo mb_edition_cta('pro', 'btn btn--signal'); ?>
                 <a class="btn btn--onink" href="<?php echo mb_e(mb_url('templates')); ?>">Browse templates</a>
             </div>
         </div>
@@ -47,8 +47,7 @@
                 <h5>Learn</h5>
                 <ul>
                     <li><a href="<?php echo mb_e(mb_url('docs-free')); ?>">Maxbot Free docs</a></li>
-                    <li><a href="<?php echo mb_e(mb_url('docs-standard')); ?>">Maxbot Standard guide</a></li>
-                    <li><a href="<?php echo mb_e(mb_url('docs-core')); ?>">Legacy builder reference</a></li>
+                    <li><a href="<?php echo mb_e(mb_url('docs-pro')); ?>">Maxbot Pro docs</a></li>
                     <li><a href="<?php echo mb_e(mb_url('docs-whatsapp')); ?>">WhatsApp docs</a></li>
                     <li><a href="<?php echo mb_e(mb_url('tutorials')); ?>">Tutorials</a></li>
                 </ul>
@@ -63,6 +62,9 @@
 </footer>
 
 <?php //include __DIR__ . '/live-widget.php'; ?>
-<?php include __DIR__ . '/launch-modal.php'; ?>
+<?php if (FreemiusCheckout::mode() === 'sandbox'): ?>
+    <div class="checkout-sandbox-notice" role="note">Maxbot Pro checkout is running in sandbox mode for testing. No real payments are processed.</div>
+<?php endif; ?>
+<div id="freemius-checkout-status" class="checkout-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></div>
 </body>
 </html>

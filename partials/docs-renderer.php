@@ -14,7 +14,7 @@ if (!isset($pageTitle, $docVersion, $docKind, $heroTitle, $heroText, $docGroups,
 
 $isWhatsApp      = $docKind === 'WhatsApp Add-on';
 $pageDescription = $pageDescription ?? $pageDesc ?? $heroText;
-$docRoute        = $docRoute ?? ($isWhatsApp ? 'docs-whatsapp' : 'docs-core');
+$docRoute        = $docRoute ?? ($isWhatsApp ? 'docs-whatsapp' : 'docs-pro');
 $pageUrl         = mb_url($docRoute);
 $navCurrent      = 'docs';
 
@@ -73,10 +73,9 @@ include __DIR__ . '/navbar.php';
                 <a href="<?php echo mb_e(mb_url('docs')); ?>">
                     <?php echo mb_icon('home'); ?> Documentation home
                 </a>
-                <?php foreach (['docs-free' => 'Maxbot Free', 'docs-standard' => 'Maxbot Standard', 'docs-core' => 'Legacy builder reference'] as $route => $label): ?>
+                <?php foreach (['docs-free' => 'Maxbot Free', 'docs-pro' => 'Maxbot Pro'] as $route => $label): ?>
                 <a class="<?php echo $docRoute === $route ? 'is-active' : ''; ?>" href="<?php echo mb_e(mb_url($route)); ?>"><?php echo mb_icon('box'); ?> <?php echo mb_e($label); ?></a>
                 <?php endforeach; ?>
-                <span class="small">Maxbot Pro · Coming soon</span>
                 <a class="is-wa <?php echo $isWhatsApp ? 'is-active' : ''; ?>" href="<?php echo mb_e(mb_url('docs-whatsapp')); ?>">
                     <?php echo mb_icon('whatsapp'); ?> WhatsApp Add-on
                 </a>

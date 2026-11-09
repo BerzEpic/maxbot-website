@@ -8,7 +8,7 @@ final class LaunchInterest
     {
         if (!is_array($input) || count($input) !== 3 || array_diff(array_keys($input), ['email', 'consent', 'edition'])
             || !isset($input['email'], $input['edition']) || !is_string($input['email']) || !is_string($input['edition'])
-            || !in_array($input['edition'], ['standard', 'pro'], true)) {
+            || $input['edition'] !== 'pro') {
             return self::failure(422, 'invalid_request');
         }
         $email = trim($input['email']);

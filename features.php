@@ -19,13 +19,13 @@ include __DIR__ . '/partials/navbar.php';
             </div>
             <div>
                 <p class="lede">
-                    Explore the conversation-building tools shown in the existing Maxbot builder.
-                    Advanced examples below are a legacy product showcase; see the edition guides
-                    for current Free instructions and confirmed commercial models.
+                    Explore the current Maxbot Pro builder: design guided conversations,
+                    capture answers and connect each step. For the Free edition’s setup and
+                    available tools, use its dedicated guide.
                 </p>
                 <div class="btn-row" style="margin-top:22px;">
-                    <?php echo mb_edition_cta('standard', 'btn btn--primary btn--sm'); ?>
-                    <a class="btn btn--ghost btn--sm" href="<?php echo mb_e(mb_url('docs-core')); ?>">Read the docs</a>
+                    <?php echo mb_edition_cta('pro', 'btn btn--primary btn--sm'); ?>
+                    <a class="btn btn--ghost btn--sm" href="<?php echo mb_e(mb_url('docs-pro')); ?>">Read the docs</a>
                 </div>
             </div>
         </div>
@@ -159,7 +159,7 @@ include __DIR__ . '/partials/navbar.php';
                 <p style="margin-top:8px;">When a plain button isn't enough context: an image, a title, a short description and button text. Useful for products, plans, services and categories.</p>
                 <div class="ccard" style="margin-top:16px;flex:1 1 auto;border-color:var(--line);">
                     <div class="ccard-media" style="background:var(--tint);color:var(--navy);"><?php echo mb_icon('image'); ?></div>
-                    <h4>Standard service</h4>
+                    <h4>Essential service</h4>
                     <p>Two-hour visit, parts included</p>
                     <span class="ccard-btn" style="color:var(--navy);">Choose this</span>
                 </div>

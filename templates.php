@@ -109,8 +109,8 @@ include __DIR__ . '/partials/navbar.php';
                 gone for good.
             </p>
             <div class="btn-row" style="justify-content:center;margin-top:28px;">
-                <?php echo mb_edition_cta('standard', 'btn btn--primary'); ?>
-                <a class="btn btn--ghost" href="<?php echo mb_e(mb_url('docs-core')); ?>#template-library">Read the template docs</a>
+                <?php echo mb_edition_cta('pro', 'btn btn--primary'); ?>
+                <a class="btn btn--ghost" href="<?php echo mb_e(mb_url('docs-pro')); ?>#template-library">Read the template docs</a>
             </div>
         </div>
     </div>

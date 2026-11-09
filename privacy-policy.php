@@ -40,12 +40,12 @@ include __DIR__ . '/partials/navbar.php';
             <div class="eyebrow">Maxbot</div>
             <h1>Privacy policy</h1>
             <p>Understand what you share with Maxbot, why we use it, and the choices you have.</p>
-            <p class="small" style="margin-top:18px;">Last updated: <time datetime="2026-09-24">24 September 2026</time></p>
+            <p class="small" style="margin-top:18px;">Last updated: <time datetime="2026-11-09">9 November 2026</time></p>
         </header>
 
         <section id="about" class="doc-sec" data-docs-section aria-labelledby="about-title">
             <h2 id="about-title">Who we are</h2>
-            <p style="margin-top:16px;"><?php echo mb_e(MAXBOT_PRIVACY_OPERATOR); ?> operates the Maxbot website and central Free service at climaxweb.net. This notice covers this website, optional Maxbot tutorial subscriptions, product updates and edition launch requests, and the Free service described below.</p>
+            <p style="margin-top:16px;"><?php echo mb_e(MAXBOT_PRIVACY_OPERATOR); ?> operates the Maxbot website and central Free service at climaxweb.net. This notice covers this website, optional Maxbot tutorial subscriptions, purchases made through Freemius, and the Free service described below.</p>
             <p>For questions about your information, contact <a class="textlink" href="mailto:<?php echo mb_e(MAXBOT_PRIVACY_EMAIL); ?>"><?php echo mb_e(MAXBOT_PRIVACY_EMAIL); ?></a>.</p>
             <div class="docs-callout"><strong>Subscribing is optional.</strong> You can use Maxbot Free, finish setup and access the tutorials without joining the email list. Reading this policy does not subscribe you.</div>
         </section>
@@ -59,8 +59,8 @@ include __DIR__ . '/partials/navbar.php';
                 <li><strong>Your intended use and selected setup answers</strong>: who you are building for and your main goal. The form shows the selected answers before you agree to share them.</li>
                 <li><strong>Your consent</strong>, recorded with the consent wording version, this policy's URL and the date of submission.</li>
             </ul>
-            <p>The website launch form asks only for your email and explicit consent for the selected edition’s launch. When signup is available, the existing Maxbot Free service records the request and its consent context. We do not ask for a name or setup answers on this website form, and launch consent does not subscribe you to unrelated marketing.</p>
-            <p>Contact records include status and consent history. Existing opt-outs are preserved. A form success message means the service accepted the relevant request; an unavailable or failed submission is not reported as a signup.</p>
+            <p>When you click a Maxbot Pro purchase button, your browser opens Freemius Checkout. Freemius collects the billing, identity and payment information needed to process the purchase and manage the subscription or license. The Maxbot marketing website does not collect card numbers or license keys through this checkout.</p>
+            <p>Freemius processes purchases under its own terms and privacy notice. Sandbox checkout is only for internal testing and uses no real payments.</p>
             <p>The signup request does not include your website URL, license key, installation credentials, chatbot flows or visitors' conversation histories. Your chosen setup answers help us make recommendations relevant to what you want to build.</p>
             <p>When you open the signup step, your WordPress server checks whether signup is available and retrieves this policy link. This check does not send the contact form or create a subscription. Like other web requests, it can appear in server access logs.</p>
         </section>
@@ -68,8 +68,8 @@ include __DIR__ . '/partials/navbar.php';
         <section id="emails" class="doc-sec" data-docs-section aria-labelledby="emails-title">
             <h2 id="emails-title">Email choices</h2>
             <p style="margin-top:16px;">The consent checkbox starts unchecked. Entering a notification email elsewhere in setup does not subscribe you. Choose <strong>Skip this step</strong> if you do not want tutorials or product updates by email.</p>
-            <p>Accepted signup requests are recorded immediately. There is no confirmation-email step, signup receipt or immediate welcome email. A website launch request covers a future announcement for the selected edition; it does not send that announcement at signup.</p>
-            <p>You can withdraw consent or ask to remove a launch request by contacting us. Existing unsubscribe links remain usable where provided. Withdrawing launch consent does not change your chatbot settings.</p>
+            <p>Accepted optional tutorial or product-update signups are recorded by the Free service according to its consent process. A Freemius product purchase is separate from optional marketing email consent.</p>
+            <p>You can withdraw optional email consent by contacting us or using an unsubscribe link where available. Cancelling a Freemius subscription or modifying billing information is handled through Freemius account management.</p>
             <p>Your chatbot and its visitor-notification settings continue to work when you skip signup or unsubscribe. Deactivating or uninstalling the plugin does not unsubscribe you from the central email list.</p>
         </section>
 
@@ -77,14 +77,14 @@ include __DIR__ . '/partials/navbar.php';
             <h2 id="website-title">Using this website</h2>
             <p style="margin-top:16px;">Our web hosting and security services may process your IP address, request time, requested page, browser information and referring page to deliver the website, diagnose faults and prevent abuse. Requests from the plugin reach us from your WordPress server; visiting this website reaches us from your browser.</p>
             <p>The website loads fonts from Google Fonts, and template previews load a JavaScript library from the jQuery CDN. Your browser connects to those providers to retrieve these resources, which exposes connection information such as your IP address. External media in a preview can also connect to its provider.</p>
-            <p>Tutorial links open YouTube. Maxbot Standard and Pro notification buttons open an email form on this website; separate external product links may open a marketplace. Those services apply their own privacy and cookie policies when you visit them. This website's marketing pages do not include an advertising pixel or analytics tracker in their page code.</p>
-            <p>The launch form does not save your email in browser storage. A temporary server-side rate counter uses a hash of the connecting IP address to limit signup abuse. Chatbot previews may use browser storage for conversation state. Your browser settings let you clear stored data and manage cookies; doing so can reset a preview or conversation. Hosting and third-party services may apply their own security or session cookies.</p>
+            <p>Tutorial links open YouTube. When you click a Maxbot Pro purchase button, the website loads the external Freemius Checkout script and opens its secure payment overlay. Separate external links may open other service providers. Those providers apply their own privacy and cookie policies. This website does not send purchase details to its own analytics endpoint.</p>
+            <p>We do not save license keys or payment-card information in browser storage through the purchase button. Chatbot previews may use browser storage for conversation state. Your browser settings let you clear stored data and manage cookies; hosting and third-party services may apply their own security or session cookies.</p>
         </section>
 
         <section id="chatbots" class="doc-sec" data-docs-section aria-labelledby="chatbots-title">
             <h2 id="chatbots-title">Chatbots and the Free service</h2>
             <p style="margin-top:16px;">Chatbot conversations and settings on a customer's WordPress site are managed by that site's operator. Contact that operator about information you share with their chatbot. Its configured email, messaging or other integrations may receive information according to that site's settings and privacy notice.</p>
-            <p>Separately from the optional signup, saving a flow in Maxbot Free or Standard uses the central Free compilation service. It receives the authored flow inputs and responses, node relationships, variable and entity definitions, and topic identifier to produce the runnable flow. Information you type into those definitions is part of that request.</p>
+            <p>Separately from the optional signup, saving a flow in Maxbot Free uses the central Free compilation service. It receives the authored flow inputs and responses, node relationships, variable and entity definitions, and topic identifier to produce the runnable flow. Information you type into those definitions is part of that request.</p>
             <p>The Free service uses a random installation identifier and authentication credential rather than a project purchase license. The server stores the installation identifier, a hash of the credential, and registration or revocation information. Enrollment also sends the client version. This connection does not subscribe you to emails, and the subscription request does not include these credentials.</p>
             <p>Setup progress and the decision to skip the invitation are saved in your WordPress installation. They are not an activity feed sent to the subscription service.</p>
         </section>
@@ -92,7 +92,7 @@ include __DIR__ . '/partials/navbar.php';
         <section id="purposes" class="doc-sec" data-docs-section aria-labelledby="purposes-title">
             <h2 id="purposes-title">Why we use information</h2>
             <ul>
-                <li><strong>Launch announcements for the selected edition, or separately requested tutorials, recommendations and product updates:</strong> based on your consent, using the contact details and preferences you choose to share.</li>
+                <li><strong>Separately requested tutorials, recommendations and product updates:</strong> based on your consent, using the contact details and preferences you choose to share.</li>
                 <li><strong>Providing the Free service and responding to requests:</strong> to deliver the functionality or assistance you ask for.</li>
                 <li><strong>Security and subscription administration:</strong> to prevent abuse, resolve delivery problems, record consent and respect unsubscribe requests.</li>
             </ul>
@@ -102,7 +102,7 @@ include __DIR__ . '/partials/navbar.php';
 
         <section id="providers" class="doc-sec" data-docs-section aria-labelledby="providers-title">
             <h2 id="providers-title">Service providers</h2>
-            <p style="margin-top:16px;">Hosting, database and email-delivery providers process the information needed to run the service. For example, the email provider receives your recipient address and the message it delivers. Authorized people administering Maxbot may access records to provide support, manage subscriptions and investigate problems.</p>
+            <p style="margin-top:16px;">Hosting, database and email-delivery providers process the information needed to run the service. Freemius separately processes Maxbot Pro purchases, payments, renewals and licenses. For example, the email provider receives your recipient address and the message it delivers. Authorized people administering Maxbot may access records to provide support, manage subscriptions and investigate problems.</p>
             <p>Provider processing locations depend on our hosting and email arrangements and can differ from your country. Contact us for the current providers, processing locations and any applicable international-transfer safeguards.</p>
             <p>HTTPS protects requests in transit. Keep any private subscription-management links private. No internet service or storage system can be guaranteed completely secure.</p>
         </section>

@@ -18,7 +18,7 @@ include __DIR__ . '/partials/navbar.php';
     <div class="container">
         <div class="hero-grid">
             <div class="seq">
-                <div class="eyebrow">WordPress chatbot · Free, Standard &amp; Pro</div>
+                <div class="eyebrow">WordPress chatbot · Free &amp; Pro</div>
                 <h1 class="h-display">
                     Build the conversation once.<br>
                     Let it <span class="mark">guide your visitors</span>.
@@ -30,7 +30,7 @@ include __DIR__ . '/partials/navbar.php';
                 </p>
                 <div class="btn-row" style="margin-top:28px;">
                     <a class="btn btn--primary" href="<?php echo mb_e(mb_url('docs-free')); ?>">Start with Maxbot Free</a>
-                    <?php echo mb_edition_cta('standard', 'btn btn--ghost'); ?>
+                    <?php echo mb_edition_cta('pro', 'btn btn--ghost'); ?>
                     <a class="btn btn--ghost" href="<?php echo mb_e(mb_url('templates')); ?>">
                         <?php echo mb_icon('cursor'); ?> Try a live template
                     </a>
@@ -83,8 +83,7 @@ include __DIR__ . '/partials/navbar.php';
     <div class="container" style="padding-top:34px;padding-bottom:34px;">
         <div class="stats">
             <div><b>Free</b><span>No monthly subscription</span></div>
-            <div><b>Standard</b><span>One-time purchase</span></div>
-            <div><b>Pro</b><span>Monthly · Coming soon</span></div>
+            <div><b>Pro</b><span>Professional · Annual plan</span></div>
             <div><b>WordPress</b><span>Your chatbot, on your website</span></div>
         </div>
     </div>

@@ -63,7 +63,7 @@ $navItem = static function (string $slug, string $label) use ($navCurrent): stri
                     </a>
                     <a href="<?php echo mb_e(mb_url('docs')); ?>">
                         <span class="mi"><?php echo mb_icon('layers'); ?></span>
-                        <span><strong>All edition guides</strong><span>Standard, Pro status and legacy reference.</span></span>
+                        <span><strong>All edition guides</strong><span>Free setup and Pro builder documentation.</span></span>
                     </a>
                     <a href="<?php echo mb_e(mb_url('docs-whatsapp')); ?>">
                         <span class="mi"><?php echo mb_icon('whatsapp'); ?></span>
@@ -85,7 +85,7 @@ $navItem = static function (string $slug, string $label) use ($navCurrent): stri
 
         <div class="nav-cta">
             <a class="btn btn--ghost btn--sm" href="<?php echo mb_e(mb_url('templates')); ?>">Browse templates</a>
-            <?php echo mb_edition_cta('standard', 'btn btn--primary btn--sm', 'Notify me: Standard'); ?>
+            <?php echo mb_edition_cta('pro', 'btn btn--primary btn--sm', 'Buy Pro'); ?>
         </div>
         </div>
     </div>

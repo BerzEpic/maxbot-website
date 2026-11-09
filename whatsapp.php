@@ -445,7 +445,7 @@ include __DIR__ . '/partials/navbar.php';
             </details>
             <details>
                 <summary>Are there monthly fees?</summary>
-                <div class="faq-body"><p>Maxbot Free has no monthly subscription, Standard is a one-time purchase and Pro is planned as a monthly subscription. Check the separate add-on terms and Meta’s current charges before use.</p></div>
+                <div class="faq-body"><p>Maxbot Free has no monthly subscription. Maxbot Pro Professional uses annual subscription billing through Freemius Checkout. Check the separate add-on terms and Meta’s current charges before use.</p></div>
             </details>
             <details>
                 <summary>Can my customers reply from their normal WhatsApp?</summary>
@@ -487,7 +487,7 @@ include __DIR__ . '/partials/navbar.php';
             <a class="btn btn--green" href="<?php echo mb_e(MAXBOT_WHATSAPP_BUY_URL); ?>">
                 Get the WhatsApp add-on <?php echo mb_icon('arrow-right'); ?>
             </a>
-            <?php echo mb_edition_cta('standard', 'btn btn--ghost'); ?>
+            <?php echo mb_edition_cta('pro', 'btn btn--ghost'); ?>
         </div>
         <p class="tiny" style="margin-top:18px;">A compatible Maxbot plugin is required. Check the chosen edition and add-on terms separately.</p>
     </div>

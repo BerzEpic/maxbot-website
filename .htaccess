@@ -13,8 +13,10 @@ Options -MultiViews -Indexes
     RewriteRule ^blog/?$ /landing/maxbot/ [R=301,L]
     RewriteRule ^whatsapp-integration/?$ /landing/maxbot/whatsapp [R=301,L]
 
+    RewriteRule ^docs-standard(?:\.php)?$ /landing/maxbot/docs [R=301,L]
+
     # Public pages
-    RewriteRule ^(index|features|templates|template|use-cases|whatsapp|integrations|tutorials|docs|docs-free|docs-standard|docs-core|docs-whatsapp|privacy-policy)$ $1.php [L,QSA]
+    RewriteRule ^(index|features|templates|template|use-cases|whatsapp|integrations|tutorials|docs|docs-free|docs-pro|docs-core|docs-whatsapp|privacy-policy)$ $1.php [L,QSA]
 
     RewriteRule ^(?:tests|config)/ - [F,L]
     RewriteRule ^(?:README|HANDOFF)\.md$ - [F,L]
